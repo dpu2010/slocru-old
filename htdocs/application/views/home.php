@@ -9,7 +9,3 @@
                 Philippians 4:7
             </div>
         </div>
-        <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="../assets/js/bootstrap.min.js"></script>
-    </body>
-</html>
