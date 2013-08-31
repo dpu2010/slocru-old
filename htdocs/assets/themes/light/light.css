@@ -60,7 +60,7 @@ Supports Thumbs: true
 	z-index: 11;
 }
 .theme-light .nivo-directionNav a:hover {
-    background-color: #eee;
+    /*background-color: #eee;*/
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
