@@ -37,44 +37,57 @@ $this->load->helper('html');
         </style>
     </head>
     <body>
-        <div class="navbar navbar-fixed-top" style="box-shadow: 2px 1px 5px #888888">
-            <!--<img src="assets/img/crulogo.png" style="width:50%" />-->
-            <ul class="nav navbar-nav pull-left" style="width:100%;">
-                <?php
-                $link1 = array(
-                    'What\'s new',
-                    'Get Involved',
-                    'CRU',
-                    'Bible Study',
-                    'Resources'
-                );
-                $link2 = array(
-                    'Staff',
-                    'About',
-                    'Housing',
-                    'Give',
-                    'Rides'
-                );
-                foreach ($link1 as $value) {
-                    echo '<li style="width:9.09%; text-align:center; border-right: 1px solid #ddd">';
-                    echo '<a href = "#">';
-                    echo $value;
-                    echo '</a></li>';
-                }
+        <header class="navbar navbar-default" role="banner">
+            <div class="container">
+                <div class="navbar navbar-fixed-top" style="box-shadow: 2px 1px 5px #888888">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#toolbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                </div>
+                <div id="toolbar" class='collapse navbar-collapse' style="height: 1px">
+                    <!--<img src="assets/img/crulogo.png" style="width:50%" />-->
+                    <ul class="nav navbar-nav pull-left">
+                        <?php
+                        $link1 = array(
+                            'What\'s new',
+                            'Get Involved',
+                            'CRU',
+                            'Bible Study',
+                            'Resources'
+                        );
+                        $link2 = array(
+                            'Staff',
+                            'About',
+                            'Housing',
+                            'Give',
+                            'Rides'
+                        );
+                        foreach ($link1 as $value) {
+                            echo '<li style="border-right: 1px solid #ddd">';
+                            echo '<a href = "#">';
+                            echo $value;
+                            echo '</a></li>';
+                        }
 
-                echo '<li style="width:9.09%; background-image: url(\'assets/img/top_link.png\')">';
-                echo '<a href = "#">';
+                        echo '<li style="background-image: url(\'assets/img/top_link.png\')">';
+                        echo '<a href = "#">';
 
-                //Cross image
-                echo '&nbsp;';
+                        //Cross image
+                        echo '&nbsp;';
 
-                echo '</a></li>';
-                foreach ($link2 as $value) {
-                    echo '<li style="width:9.09%; text-align:center;  border-left: 1px solid #ddd">';
-                    echo '<a href = "#">';
-                    echo $value;
-                    echo '</a></li>';
-                }
-                ?>
-            </ul>
-        </div>
+                        echo '</a></li>';
+                        foreach ($link2 as $value) {
+                            echo '<li style="border-left: 1px solid #ddd">';
+                            echo '<a href = "#">';
+                            echo $value;
+                            echo '</a></li>';
+                        }
+                        ?>
+                    </ul>
+                </div>
+            </div>
+        </header>
