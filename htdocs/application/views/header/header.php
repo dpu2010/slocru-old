@@ -1,5 +1,41 @@
 <?php
 $this->load->helper('html');
+
+function print_navbar_links($use_image) {
+    $link1 = array(
+        'What\'s New',
+        'Get Involved',
+        'CRU',
+        'Bible Study',
+        'Resources'
+    );
+    $link2 = array(
+        'Staff',
+        'About',
+        'Housing',
+        'Rides',
+        'Give'
+    );
+    foreach ($link1 as $value) {
+        echo '<li>';
+        echo '<a href = "#">';
+        echo $value;
+        echo '</a></li>';
+    }
+    if ($use_image) {
+        //echo '<li style="background-image: url(\'assets/img/top_link.png\')">';
+        //echo '<a href = "#">'; 
+        //echo '</a></li>';
+        echo '<li><img src="assets/img/top_link.png"></li>';
+    }
+
+    foreach ($link2 as $value) {
+        echo '<li>';
+        echo '<a href = "#">';
+        echo $value;
+        echo '</a></li>';
+    }
+}
 ?>
 <html>
     <head>
@@ -15,10 +51,31 @@ $this->load->helper('html');
                 padding: 0;
 
                 -webkit-font-smoothing: antialiased;
-
-                -webkit-box-sizing: border-box;
+                /*-webkit-box-sizing: border-box;
                 -moz-box-sizing: border-box;
-                box-sizing: border-box;
+                box-sizing: border-box;*/
+            }
+            #desktop-navbar {
+                width: 100%;
+            }
+            #desktop-navbar > li {
+                float: none;
+                display: inline-block;
+                width: 9%;
+            }
+            #navbar-div {
+                box-shadow: 1px 5px 5px -4px #888888;
+                overflow: hidden;
+            }
+            #mobile-navbar {
+                padding-left: 10px;
+            }
+            .navbar-collapse {               
+                max-height: none; /* The default 340px cuts off links. */
+            }
+            .navbar-header button {
+                float: left;
+                margin-left: 15px;
             }
             .nivoSlider {
                 position:relative;
@@ -37,57 +94,22 @@ $this->load->helper('html');
         </style>
     </head>
     <body>
-        <header class="navbar navbar-default" role="banner">
-            <div class="container">
-                <div class="navbar navbar-fixed-top" style="box-shadow: 2px 1px 5px #888888">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#toolbar">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                </div>
-                <div id="toolbar" class='collapse navbar-collapse' style="height: 1px">
-                    <!--<img src="assets/img/crulogo.png" style="width:50%" />-->
-                    <ul class="nav navbar-nav pull-left">
-                        <?php
-                        $link1 = array(
-                            'What\'s new',
-                            'Get Involved',
-                            'CRU',
-                            'Bible Study',
-                            'Resources'
-                        );
-                        $link2 = array(
-                            'Staff',
-                            'About',
-                            'Housing',
-                            'Give',
-                            'Rides'
-                        );
-                        foreach ($link1 as $value) {
-                            echo '<li style="border-right: 1px solid #ddd">';
-                            echo '<a href = "#">';
-                            echo $value;
-                            echo '</a></li>';
-                        }
-
-                        echo '<li style="background-image: url(\'assets/img/top_link.png\')">';
-                        echo '<a href = "#">';
-
-                        //Cross image
-                        echo '&nbsp;';
-
-                        echo '</a></li>';
-                        foreach ($link2 as $value) {
-                            echo '<li style="border-left: 1px solid #ddd">';
-                            echo '<a href = "#">';
-                            echo $value;
-                            echo '</a></li>';
-                        }
-                        ?>
-                    </ul>
-                </div>
+        <div class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="visible-xs visible-sm navbar-toggle" data-toggle="collapse" data-target="#navbar-div">
+                    <img src="assets/img/top_link.png">
+                </button>
             </div>
-        </header>
+            <div id="navbar-div" class="collapse navbar-collapse navbar-inner">
+                <ul id="desktop-navbar" class="nav navbar-nav text-center hidden-xs hidden-sm">
+                    <?php
+                    print_navbar_links(/* use_image= */true);
+                    ?>
+                </ul>       
+                <ul id="mobile-navbar" class="nav navbar-nav visible-xs visible-sm">
+                    <?php
+                    print_navbar_links(/* use_image= */false);
+                    ?>
+                </ul>
+            </div>
+        </div>
