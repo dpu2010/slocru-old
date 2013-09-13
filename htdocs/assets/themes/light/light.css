@@ -31,7 +31,7 @@ Supports Thumbs: true
 
 .theme-light .nivo-controlNav {
 	text-align: left;
-	padding: 0;
+	padding: 0 0 0 25px;
 	position: relative;
 	z-index: 10;
 }
@@ -67,12 +67,12 @@ Supports Thumbs: true
 }
 .theme-light a.nivo-nextNav {
 	background-position:160% 50%;
-	right:0px;
+	right:25px;
 }
 .theme-light a.nivo-prevNav {
     background-position:-60% 50%;
     left: auto;
-	right: 35px;
+	right: 60px;
 }
 
 .theme-light .nivo-caption {
