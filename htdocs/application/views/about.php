@@ -29,13 +29,13 @@
         </p>
         <br/>
         <p>
-            Slo Cru is active on the Cal Poly and Cuesta CC campuses. We have
+            Slo cru is active on the Cal Poly and Cuesta CC campuses. We have
             weekly bible studies in all of the dorm and on-campus apartments, as
             well as in several locations throughout the town.
         </p>
         <br/>
         <p>
-            We gather every Tuesday at 7:30p at Mountainbrook Community Churc
+            We gather every Tuesday at 7:30pm at Mountainbrook Community Church
             for praise, fellowship, and a message from our campus director Jamey
             Pappas (Rides are available, 
             <a href="http://www.slocru.com/rides/login">get one</a>).

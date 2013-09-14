@@ -59,7 +59,7 @@ $downloads = array(
             <div class="text-center" style="font-size: 24pt; font-weight: 300; margin-bottom: 20px;">
                 Links
             </div>
-            <ul class="list-unstyled" style="margin-left: 6em">
+            <ul class="list-unstyled" style="font-size: 16pt; font-weight: 300;">
                 <?php
                 foreach ($links as $name => $parts) {
                     echo '<div style="margin-bottom: 1em;">';
@@ -76,7 +76,7 @@ $downloads = array(
             <div class="text-center" style="font-size: 24pt; font-weight: 300; margin-bottom: 20px;">
                 Downloads
             </div>
-            <ul class="list-unstyled" style="margin-left: 6em">
+            <ul class="list-unstyled" style="margin-left: 10%; font-size: 16pt; font-weight: 300;">
                 <?php
                 foreach ($downloads as $title => $files) {
                     echo '<div style="margin-bottom: 1em;">';

@@ -37,7 +37,7 @@ function print_navbar_links($use_image) {
 ?>
 <html>
     <head>
-        <title>Slo Cru | Campus Crusade for Christ at Cal Poly and Cuesta</title>
+        <title>Slo cru | Campus Crusade for Christ at Cal Poly and Cuesta</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Bootstrap -->
         <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,400italic' rel='stylesheet' type='text/css'/>

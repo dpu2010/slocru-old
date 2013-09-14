@@ -88,7 +88,7 @@
     <div class="row" style="padding: 5px 25px 10px 25px">
         <div class="col-md-8">
             <img src="../assets/img/dropshadowup2.png" style="width:100%; height:25px;"/>
-            <div style="height: 300px;padding: 10px 25px 10px 25px">
+            <div style="height: 300px;padding: 10px 25px 10px 25px; overflow-y: scroll;">
                 <?php foreach ($events as $value) { ?>
                     <div class="row">
                         <div class="pull-left" style="font-size: 20pt; font-weight: 300;"><i><?php echo $value['title']['$t']; ?></i></div>
@@ -164,12 +164,12 @@
         $("#three").height($("#three").width());
         $("#one").mouseenter(function() {
             var str = '<div style="font-size: 30pt; text-align: center;">what is slo cru</div>\n\
-                    <div style="font-size: 18pt; line-height: 120%; margin-bottom: 10px;">CRU is a \n\
+                    <div style="font-size: 18pt; line-height: 120%; margin-bottom: 10px;">Cru is a \n\
                     worldwide Christian ministry. It\'s our goal to give every student the\n\
                     opportunity to hear the good news of Jesus Christ.<br/></div>';
             str += '<div class="container">\n\
                         <div class="row" style="padding: 10px 15px 10px 15px">\n\
-                            <a href="<?php echo base_url() . 'studies'; ?>" class="btn btn-primary"><i>LEARN MORE</i></a>\n\
+                            <a href="<?php echo base_url() . 'about'; ?>" class="btn btn-primary"><i>LEARN MORE</i></a>\n\
                         </div>\n\
                     </div>';
             $("#one").html(str);
