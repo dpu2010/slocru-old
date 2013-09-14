@@ -1,38 +1,36 @@
 <?php
 $this->load->helper('html');
+$this->load->helper('url');
 
 function print_navbar_links($use_image) {
-    $link1 = array(
-        'What\'s New',
-        'Get Involved',
-        'CRU',
-        'Bible Study',
-        'Resources'
+    $left_links = array(
+        'Bible Studies' => base_url() . 'studies',
+        'Get Involved' => base_url() . 'studies',
+        'Resources' => base_url() . 'resources',
+        'Staff' => base_url() . 'staff'
     );
-    $link2 = array(
-        'Staff',
-        'About',
-        'Housing',
-        'Rides',
-        'Give'
+    $right_links = array(
+        'About' => base_url() . 'about',
+        'Housing' => 'http://www.slocrusade.com/housing/',
+        'Rides' => 'http://www.slocru.com/rides/login/',
+        'Give' => 'https://give.cru.org/2281756'
     );
-    foreach ($link1 as $value) {
+    foreach ($left_links as $name => $href) {
         echo '<li>';
-        echo '<a href = "#">';
-        echo $value;
+        echo '<a href="' . $href . '">';
+        echo $name;
         echo '</a></li>';
     }
     if ($use_image) {
-        //echo '<li style="background-image: url(\'assets/img/top_link.png\')">';
-        //echo '<a href = "#">'; 
-        //echo '</a></li>';
-        echo '<li><img src="assets/img/top_link.png"></li>';
+        echo '<li>';
+        echo '<img id="home-button" src="assets/img/top_link.png">';
+        echo '</li>';
     }
 
-    foreach ($link2 as $value) {
+    foreach ($right_links as $name => $href) {
         echo '<li>';
-        echo '<a href = "#">';
-        echo $value;
+        echo '<a href="' . $href . '">';
+        echo $name;
         echo '</a></li>';
     }
 }
@@ -42,12 +40,19 @@ function print_navbar_links($use_image) {
         <title>Slo Cru | Campus Crusade for Christ at Cal Poly and Cuesta</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Bootstrap -->
-                <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,400italic' rel='stylesheet' type='text/css'/>
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,400italic' rel='stylesheet' type='text/css'/>
         <link href="../assets/css/bootstrap.css" rel="stylesheet" media="screen"/>
         <link href="../assets/css/nivo-slider.css" rel="stylesheet" media="screen"/>
         <link href="../assets/themes/light/light.css" rel="stylesheet" media="screen"/>
         <script src="http://code.jquery.com/jquery.js"></script>
         <script src="../assets/js/bootstrap.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#home-button").click(function() {
+                    window.location.href = "<?php echo base_url() ?>";
+                });
+            });
+        </script>
         <style type="text/css">
             * {
                 margin: 0;
@@ -65,6 +70,9 @@ function print_navbar_links($use_image) {
                 float: none;
                 display: inline-block;
                 width: 9%;
+            }
+            #home-button:hover {
+                cursor: pointer;
             }
             #navbar-div {
                 box-shadow: 1px 5px 5px -4px #888888;
