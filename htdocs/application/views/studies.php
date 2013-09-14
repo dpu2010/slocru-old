@@ -1,26 +1,37 @@
 <div class="container" style="box-shadow: 0px 1px 10px #888888;
      border-radius: 0px 0px 10px 10px;
      background-color: #fff;
-     padding: 10px 0 80px 0">
+     padding: 0 100px 80px 100px">
     <br/>
-    <div class="col-md-12" style="text-align: center; font-size: 36pt; font-weight: 300">
+    <div class="col-md-12" style="text-align: center; font-size: 36pt; font-weight: 300; padding: 10px 25px;">
         Sign up for a bible study
     </div>
     <br/>
     <img src="../assets/img/dropshadowup2.png" style="width:100%; height:25px;"/>
+    <br/>
+    <br/>
+    <br/>
     <div class="row text-center">
         <!-- Button trigger modal -->
-        <div class="container" style="width: 40%">
-            <a data-toggle="modal" href="#myModal" class="btn btn-warning btn-lg btn-block" style="padding: 20px">Sign up!</a>
+        <div class="container" style="width: 80%; font-size: 18pt; text-align: justify; font-weight: 300;">
+            Slo cru believes that  bible studies are one of the most effective ways 
+            to get involved and integrated in the community of believers here in San Luis Obispo. 
+            In order to foster a comfortable and open environment, students are grouped with their 
+            peers and organized based on gender, year, dorm, and interests. Click the button below 
+            to get involved with a cru bible study that will meet your needs.
         </div>
-
+        <br/><br/>
+        <div class="container" style="width: 40%">
+            <a data-toggle="modal" href="#myModal" class="btn btn-warning btn-lg btn-block" style="padding: 20px; font-size: 25pt;"><i>SIGN UP</i></a>
+        </div>
+    <br/>
         <!-- Modal -->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Sign up for a bible study!</h4>
+                        <h4 class="modal-title">Sign up for a bible study</h4>
                     </div>
                     <form action="<?php echo base_url() . 'studies/mail/'; ?>" class="form-horizontal" role="form" method="post">
                         <div class="modal-body">
@@ -147,14 +158,6 @@
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
-    </div>
-    <br/>
-    <div class="col-md-12" style="text-align: center; font-size: 36pt; font-weight: 300">
-        Ministry Team information coming soon
-    </div>
-    <br/>
-    <img src="../assets/img/dropshadowup2.png" style="width:100%; height:25px;"/>
-    <div class="row text-center">
     </div>
 </div>
 <?php $this->load->view('javascript');?>
