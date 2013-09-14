@@ -11,7 +11,7 @@
     <div class="row text-center">
         <!-- Button trigger modal -->
         <div class="container" style="width: 40%">
-            <a data-toggle="modal" href="#myModal" class="btn btn-warning btn-lg btn-block" style="padding: 20px">Click here to sign up!</a>
+            <a data-toggle="modal" href="#myModal" class="btn btn-warning btn-lg btn-block" style="padding: 20px">Sign up!</a>
         </div>
 
         <!-- Modal -->
@@ -141,17 +141,33 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            <input type="submit" class="btn btn-primary" value="Submit"/>
+                            <button type="submit" id="submit_button" class="btn btn-primary" data-loading-text="Sending...">Submit</button>
                         </div>
                     </form>
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
     </div>
+    <br/>
+    <div class="col-md-12" style="text-align: center; font-size: 36pt; font-weight: 300">
+        Ministry Team information coming soon
+    </div>
+    <br/>
+    <img src="../assets/img/dropshadowup2.png" style="width:100%; height:25px;"/>
+    <div class="row text-center">
+    </div>
 </div>
 
 <script>
     $(document).ready(function() {
+        $('#submit_button')
+                .click(function() {
+            var btn = $(this);
+            btn.button('loading');
+            setTimeout(function() {
+                btn.button('reset');
+            }, 3000);
+        });
         $("#inputYear").change(function() {
             var value = $('#inputYear :selected').text();
             var college = $('#inputCollege :selected').text();
