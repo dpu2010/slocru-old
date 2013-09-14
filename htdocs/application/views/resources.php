@@ -55,7 +55,7 @@ $downloads = array(
 
     <div style="margin: 10px 0 10px 0">
         <div class="container col-md-6" style="border-right: 1px dashed #CCC; padding-bottom: 20px">
-            <div class="text-center" style="font-size: 24pt; margin-bottom: 20px;">
+            <div class="text-center" style="font-size: 24pt; font-weight: 300; margin-bottom: 20px;">
                 Links
             </div>
             <ul class="list-unstyled" style="margin-left: 6em">
@@ -72,7 +72,7 @@ $downloads = array(
         </div>
 
         <div class="container col-md-6">
-            <div class="text-center" style="font-size: 24pt; margin-bottom: 20px;">
+            <div class="text-center" style="font-size: 24pt; font-weight: 300; margin-bottom: 20px;">
                 Downloads
             </div>
             <ul class="list-unstyled" style="margin-left: 6em">
