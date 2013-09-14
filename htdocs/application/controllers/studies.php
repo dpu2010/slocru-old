@@ -24,58 +24,58 @@ class Studies extends CI_Controller {
         $interests = $this->input->post('interests');
         $notes = $this->input->post('notes');
         $interestArr = array(
-            'Asian Americans' => 'dpu2010+interestsAA@gmail.com',
-            'Athletes' => 'dpu2010+interestsA@gmail.com',
-            'Greeks' => 'dpu2010+interestsG@gmail.com',
-            'Latino/Hispanic' => 'dpu2010+interestsLH@gmail.com',
-            'Transfers' => 'dpu2010+interestsT@gmail.com'
+            'Asian Americans' => 'tyler.mendoza@cru.org',
+            'Athletes' => 'matt.williams@cru.org',
+            'Greeks' => 'melanie.hanlon@cru.org',
+            'Latino/Hispanic' => 'reid.zeller@cru.org',
+            'Transfers' => 'kathryn.edmiston@cru.org'
         );
         $emails = array(
             'Male' => array(
                 'Cal Poly SLO' => array(
                     'Freshmen' => array(
-                        'Yosemite' => array('dpu2010+menyosemite@gmail.com'),
-                        'Sierra Madre' => array('dpu2010+mensierramadre@gmail.com'),
-                        'Tenaya' => array('dpu2010+mentenaya@gmail.com'),
-                        'Trinity' => array('dpu2010+mentrinity@gmail.com'),
-                        'Santa Lucia' => array('dpu2010+mensantalucia@gmail.com'),
-                        'North Mountain' => array('dpu2010+mennorthmountain@gmail.com'),
-                        'Muir' => array('dpu2010+menmuir@gmail.com'),
-                        'Fremont' => array('dpu2010+menfremont@gmail.com'),
-                        'Sequoia' => array('dpu2010+mensequoia@gmail.com'),
-                        'Cerro Vista' => array('dpu2010+mencerrovista@gmail.com'),
-                        'PCV' => array('dpu2010+menpcv@gmail.com'),
-                        'Other' => array('dpu2010+menother@gmail.com')
+                        'Yosemite' => array('kyle.fletcher@cru.org'),
+                        'Sierra Madre' => array('kyle.fletcher@cru.org'),
+                        'Tenaya' => array('kyle.fletcher@cru.org'),
+                        'Trinity' => array('kyle.fletcher@cru.org'),
+                        'Santa Lucia' => array('kyle.fletcher@cru.org'),
+                        'North Mountain' => array('kyle.fletcher@cru.org'),
+                        'Muir' => array('kyle.fletcher@cru.org'),
+                        'Fremont' => array('kyle.fletcher@cru.org'),
+                        'Sequoia' => array('kyle.fletcher@cru.org'),
+                        'Cerro Vista' => array('kyle.fletcher@cru.org'),
+                        'PCV' => array('kyle.fletcher@cru.org'),
+                        'Other' => array('kyle.fletcher@cru.org')
                     ),
-                    'Sophomore' => 'dpu2010+CPMenPlus@gmail.com',
-                    'Junior' => 'dpu2010+CPMenPlus@gmail.com',
-                    'Senior' => 'dpu2010+CPMenPlus@gmail.com',
-                    'Senior plus' => 'dpu2010+CPMenPlus@gmail.com'
+                    'Sophomore' => 'kyle.fletcher@cru.org',
+                    'Junior' => 'kyle.fletcher@cru.org',
+                    'Senior' => 'kyle.fletcher@cru.org',
+                    'Senior plus' => 'kyle.fletcher@cru.org'
                 ),
-                'Cuesta' => 'dpu2010+CuestaMen@gmail.com'
+                'Cuesta' => 'adam.nixon@cru.org'
             ),
             'Female' => array(
                 'Cal Poly SLO' => array(
                     'Freshmen' => array(
-                        'Yosemite' => array('dpu2010+womenyosemite1@gmail.com'),
-                        'Sierra Madre' => array('dpu2010+womensierramadre@gmail.com'),
-                        'Tenaya' => array('dpu2010+womentenaya@gmail.com'),
-                        'Trinity' => array('dpu2010+womentrinity@gmail.com'),
-                        'Santa Lucia' => array('dpu2010+womensantalucia@gmail.com'),
-                        'North Mountain' => array('dpu2010+womennorthmountain@gmail.com'),
-                        'Muir' => array('dpu2010+womenmuir@gmail.com'),
-                        'Fremont' => array('dpu2010+womenfremont@gmail.com'),
-                        'Sequoia' => array('dpu2010+womensequoia@gmail.com'),
-                        'Cerro Vista' => array('dpu2010+womencerrovista@gmail.com'),
-                        'PCV' => array('dpu2010+womenpcv@gmail.com'),
-                        'Other' => array('dpu2010+womenother@gmail.com')
+                        'Yosemite' => array('gretchen.pappas@cru.org'),
+                        'Sierra Madre' => array('gretchen.pappas@cru.org'),
+                        'Tenaya' => array('gretchen.pappas@cru.org'),
+                        'Trinity' => array('gretchen.pappas@cru.org'),
+                        'Santa Lucia' => array('gretchen.pappas@cru.org'),
+                        'North Mountain' => array('gretchen.pappas@cru.org'),
+                        'Muir' => array('gretchen.pappas@cru.org'),
+                        'Fremont' => array('gretchen.pappas@cru.org'),
+                        'Sequoia' => array('gretchen.pappas@cru.org'),
+                        'Cerro Vista' => array('gretchen.pappas@cru.org'),
+                        'PCV' => array('gretchen.pappas@cru.org'),
+                        'Other' => array('gretchen.pappas@cru.org')
                     ),
-                    'Sophomore' => 'dpu2010+CPWomenSophomore@gmail.com',
-                    'Junior' => 'dpu2010+CPWomenPlus@gmail.com',
-                    'Senior' => 'dpu2010+CPWomenPlus@gmail.com',
-                    'Senior plus' => 'dpu2010+CPWomenPlus@gmail.com'
+                    'Sophomore' => 'gretchen.pappas@cru.org',
+                    'Junior' => 'jenny.davis@cru.org',
+                    'Senior' => 'jenny.davis@cru.org',
+                    'Senior plus' => 'jenny.davis@cru.org'
                 ),
-                'Cuesta' => 'dpu2010+CuestaWomen@gmail.com'
+                'Cuesta' => 'kelly.phillips@cru.org'
             )
         );
         if (gettype($emails[$gender][$college]) === 'string')
@@ -91,7 +91,9 @@ class Studies extends CI_Controller {
         {
             foreach ($interests as $value)
             {
-                array_push($use_email, $interestArr[$value]);
+                if(($value === 'Greeks' && $gender === 'Male')||($value === 'Transfers' && $gender === 'Male')){}
+                else
+                    array_push($use_email, $interestArr[$value]);
             }
         }
          $config = Array(
