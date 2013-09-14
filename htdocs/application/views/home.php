@@ -1,6 +1,3 @@
-<?php
-$this->load->helper('url');
-?>
 <div class="container" style="box-shadow: 0px 1px 10px #888888; border-radius:0 0 10px 10px; background-color: #fff">
     <div class="slider-wrapper theme-light hidden-xs">
         <div id="slider" class="nivoSlider">

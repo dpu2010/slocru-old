@@ -1,6 +1,3 @@
-<?php
-$this->load->helper('url');
-?>
 <!--<a href="<?php echo base_url() . 'studies/mail'; ?>">Test</a>-->
 <div class="container" style="box-shadow: 0px 1px 10px #888888;
      border-radius: 0px 0px 10px 10px;
