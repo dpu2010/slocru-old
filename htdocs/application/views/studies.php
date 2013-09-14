@@ -2,18 +2,21 @@
 $this->load->helper('url');
 ?>
 <!--<a href="<?php echo base_url() . 'studies/mail'; ?>">Test</a>-->
-<div class="container">
+<div class="container" style="box-shadow: 0px 1px 10px #888888;
+     border-radius: 0px 0px 10px 10px;
+     background-color: #fff;
+     padding: 10px 0 80px 0">
     <br/>
-    <div class="col-md-12" style="text-align: center; font-size: 36pt;">
+    <div class="col-md-12" style="text-align: center; font-size: 36pt; font-weight: 300">
         Sign up for a bible study
     </div>
     <br/>
     <img src="../assets/img/dropshadowup2.png" style="width:100%; height:25px;"/>
-    <div class="col-md-12" style="text-align: center;">
-    </div>
-    <div class="row pull-right">
+    <div class="row text-center">
         <!-- Button trigger modal -->
-        <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Click here to sign up!</a>
+        <div class="container" style="width: 40%">
+            <a data-toggle="modal" href="#myModal" class="btn btn-warning btn-lg btn-block" style="padding: 20px">Click here to sign up!</a>
+        </div>
 
         <!-- Modal -->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
