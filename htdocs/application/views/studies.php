@@ -1,4 +1,3 @@
-<!--<a href="<?php echo base_url() . 'studies/mail'; ?>">Test</a>-->
 <div class="container" style="box-shadow: 0px 1px 10px #888888;
      border-radius: 0px 0px 10px 10px;
      background-color: #fff;
@@ -41,10 +40,18 @@
                                 </div>
                             </div>
                             <div class="form-group">
+                                <label for="inputCollege" class="col-lg-2 control-label">College</label>
+                                <div class="col-lg-10">
+                                    <select name="college" class="form-control" id="inputCollege">
+                                        <option value="Cal Poly SLO">Cal Poly SLO</option>
+                                        <option value="Cuesta">Cuesta</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
                                 <label for="inputYear" class="col-lg-2 control-label">Year</label>
                                 <div class="col-lg-10">
                                     <select name="year" class="form-control" id="inputYear">
-                                        <option value="none"></option>
                                         <option value="Freshmen">Freshmen</option>
                                         <option value="Sophomore">Sophomore</option>
                                         <option value="Junior">Junior</option>
@@ -53,12 +60,12 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="form-group" id="dorm" style="display: none;">
+                            <div class="form-group" id="dorm">
                                 <label for="inputDorm" class="col-lg-2 control-label">Dorm</label>
                                 <div class="col-lg-10">
                                     <select name="dorm" class="form-control" id="inputDorm">
                                         <option value="Yosemite">Yosemite</option>
-                                        <option value="Sierra_madre">Sierra Madre</option>
+                                        <option value="Sierra Madre">Sierra Madre</option>
                                         <option value="Tenaya">Tenaya</option>
                                         <option value="Trinity">Trinity</option>
                                         <option value="Santa Lucia">Santa Lucia</option>
@@ -67,11 +74,12 @@
                                         <option value="Fremont">Fremont</option>
                                         <option value="Sequoia">Sequoia</option>
                                         <option value="Cerro Vista">Cerro Vista</option>
+                                        <option value="PCV">PCV</option>
                                         <option value="Other">Other</option>
                                     </select>
                                 </div>
                             </div>
-                            <div class="form-group" id="room" style="display: none;">
+                            <div class="form-group" id="room">
                                 <label for="inputRoom" class="col-lg-2 control-label">Room</label>
                                 <div class="col-lg-10">
                                     <input type="text" name="room" class="form-control" id="inputRoom" placeholder="Room"/>
@@ -90,9 +98,44 @@
                                 </div>
                             </div>
                             <div class="form-group">
+                                <label for="inputInterest" class="col-lg-2 control-label">Interests</label>
+                                <div class="col-lg-10">
+                                    <div class="checkbox" id="inputInterest">
+                                        <label class="pull-left">
+                                            <input type="checkbox" name="interests[]" value="Asian Americans">
+                                            Asian Americans
+                                        </label>
+                                    </div>
+                                    <div class="checkbox" id="inputInterest">
+                                        <label class="pull-left">
+                                            <input type="checkbox" name="interests[]" value="Athletes">
+                                            Athletes
+                                        </label>
+                                    </div>
+                                    <div class="checkbox" id="inputInterest">
+                                        <label class="pull-left">
+                                            <input type="checkbox" name="interests[]" value="Greeks">
+                                            Greeks
+                                        </label>
+                                    </div>
+                                    <div class="checkbox" id="inputInterest">
+                                        <label class="pull-left">
+                                            <input type="checkbox" name="interests[]" value="Latino/Hispanic">
+                                            Latino / Hispanic
+                                        </label>
+                                    </div>
+                                    <div class="checkbox" id="inputInterest">
+                                        <label class="pull-left">
+                                            <input type="checkbox" name="interests[]" value="Transfers">
+                                            Transfers
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
                                 <label for="inputNotes" class="col-lg-2 control-label">Notes</label>
                                 <div class="col-lg-10">
-                                    <textarea name="notes" class="form-control" id="inputNotes" rows="5" placeholder="Any information..."></textarea>
+                                    <textarea name="notes" class="form-control" id="inputNotes" rows="5" placeholder="Type in any information you would like us to know..."></textarea>
                                 </div>
                             </div>
                         </div>
@@ -111,12 +154,27 @@
     $(document).ready(function() {
         $("#inputYear").change(function() {
             var value = $('#inputYear :selected').text();
-            if (value !== "Freshmen")
+            var college = $('#inputCollege :selected').text();
+            if (value !== "Freshmen" || college === "Cuesta")
             {
                 $("#dorm").hide();
                 $("#room").hide();
             }
             else
+            {
+                $("#dorm").show();
+                $("#room").show();
+            }
+        });
+        $("#inputCollege").change(function() {
+            var value = $('#inputYear :selected').text();
+            var college = $('#inputCollege :selected').text();
+            if (college === "Cuesta")
+            {
+                $("#dorm").hide();
+                $("#room").hide();
+            }
+            else if (value === "Freshmen" && college !== "Cuesta")
             {
                 $("#dorm").show();
                 $("#room").show();
