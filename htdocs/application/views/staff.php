@@ -90,7 +90,7 @@
                 Matt Melendrez
             </div>
             Outreach + Greek<br/>
-            <a href="mailto:matthewjmelendrez@gmail.co" target="_blank">matthewjmelendrez@gmail.co</a>
+            <a href="mailto:matthewjmelendrez@gmail.com" target="_blank">matthewjmelendrez@gmail.com</a>
         </div>
     </div>
     <div class="row" style="padding: 10px 0 30px 0;">
