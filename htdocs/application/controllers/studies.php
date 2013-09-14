@@ -34,18 +34,18 @@ class Studies extends CI_Controller {
             'Male' => array(
                 'Cal Poly SLO' => array(
                     'Freshmen' => array(
-                        'Yosemite' => 'dpu2010+menyosemite@gmail.com',
-                        'Sierra Madre' => 'dpu2010+mensierramadre@gmail.com',
-                        'Tenaya' => 'dpu2010+mentenaya@gmail.com',
-                        'Trinity' => 'dpu2010+mentrinity@gmail.com',
-                        'Santa Lucia' => 'dpu2010+mensantalucia@gmail.com',
-                        'North Mountain' => 'dpu2010+mennorthmountain@gmail.com',
-                        'Muir' => 'dpu2010+menmuir@gmail.com',
-                        'Fremont' => 'dpu2010+menfremont@gmail.com',
-                        'Sequoia' => 'dpu2010+mensequoia@gmail.com',
-                        'Cerro Vista' => 'dpu2010+mencerrovista@gmail.com',
-                        'PCV' => 'dpu2010+menpcv@gmail.com',
-                        'Other' => 'dpu2010+menother@gmail.com',
+                        'Yosemite' => array('dpu2010+menyosemite@gmail.com'),
+                        'Sierra Madre' => array('dpu2010+mensierramadre@gmail.com'),
+                        'Tenaya' => array('dpu2010+mentenaya@gmail.com'),
+                        'Trinity' => array('dpu2010+mentrinity@gmail.com'),
+                        'Santa Lucia' => array('dpu2010+mensantalucia@gmail.com'),
+                        'North Mountain' => array('dpu2010+mennorthmountain@gmail.com'),
+                        'Muir' => array('dpu2010+menmuir@gmail.com'),
+                        'Fremont' => array('dpu2010+menfremont@gmail.com'),
+                        'Sequoia' => array('dpu2010+mensequoia@gmail.com'),
+                        'Cerro Vista' => array('dpu2010+mencerrovista@gmail.com'),
+                        'PCV' => array('dpu2010+menpcv@gmail.com'),
+                        'Other' => array('dpu2010+menother@gmail.com')
                     ),
                     'Sophomore' => 'dpu2010+CPMenPlus@gmail.com',
                     'Junior' => 'dpu2010+CPMenPlus@gmail.com',
@@ -57,18 +57,18 @@ class Studies extends CI_Controller {
             'Female' => array(
                 'Cal Poly SLO' => array(
                     'Freshmen' => array(
-                        'Yosemite' => 'dpu2010+womenyosemite@gmail.com',
-                        'Sierra Madre' => 'dpu2010+womensierramadre@gmail.com',
-                        'Tenaya' => 'dpu2010+womentenaya@gmail.com',
-                        'Trinity' => 'dpu2010+womentrinity@gmail.com',
-                        'Santa Lucia' => 'dpu2010+womensantalucia@gmail.com',
-                        'North Mountain' => 'dpu2010+womennorthmountain@gmail.com',
-                        'Muir' => 'dpu2010+womenmuir@gmail.com',
-                        'Fremont' => 'dpu2010+womenfremont@gmail.com',
-                        'Sequoia' => 'dpu2010+womensequoia@gmail.com',
-                        'Cerro Vista' => 'dpu2010+womencerrovista@gmail.com',
-                        'PCV' => 'dpu2010+womenpcv@gmail.com',
-                        'Other' => 'dpu2010+womenother@gmail.com',
+                        'Yosemite' => array('dpu2010+womenyosemite1@gmail.com'),
+                        'Sierra Madre' => array('dpu2010+womensierramadre@gmail.com'),
+                        'Tenaya' => array('dpu2010+womentenaya@gmail.com'),
+                        'Trinity' => array('dpu2010+womentrinity@gmail.com'),
+                        'Santa Lucia' => array('dpu2010+womensantalucia@gmail.com'),
+                        'North Mountain' => array('dpu2010+womennorthmountain@gmail.com'),
+                        'Muir' => array('dpu2010+womenmuir@gmail.com'),
+                        'Fremont' => array('dpu2010+womenfremont@gmail.com'),
+                        'Sequoia' => array('dpu2010+womensequoia@gmail.com'),
+                        'Cerro Vista' => array('dpu2010+womencerrovista@gmail.com'),
+                        'PCV' => array('dpu2010+womenpcv@gmail.com'),
+                        'Other' => array('dpu2010+womenother@gmail.com')
                     ),
                     'Sophomore' => 'dpu2010+CPWomenSophomore@gmail.com',
                     'Junior' => 'dpu2010+CPWomenPlus@gmail.com',
@@ -84,7 +84,7 @@ class Studies extends CI_Controller {
             if (gettype($emails[$gender][$college][$year]) === 'string')
                 $use_email = array($emails[$gender][$college][$year]);
             else
-                $use_email = array($emails[$gender][$college][$year][$dorm]);
+                $use_email = $emails[$gender][$college][$year][$dorm];
         }
 
         if (!empty($interests))
