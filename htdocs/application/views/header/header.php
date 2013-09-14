@@ -4,16 +4,16 @@ $this->load->helper('url');
 
 function print_navbar_links($use_image) {
     $left_links = array(
-        'Bible Studies' => base_url() . 'studies',
-        'Events' => base_url() . 'events',
-        'Resources' => base_url() . 'resources',
-        'Staff' => base_url() . 'staff'
+        'BIBLE STUDIES' => base_url() . 'studies',
+        'EVENTS' => base_url() . 'events',
+        'RESOURCES' => base_url() . 'resources',
+        'STAFF' => base_url() . 'staff'
     );
     $right_links = array(
-        'About' => base_url() . 'about',
-        'Housing' => 'http://www.slocrusade.com/housing/',
-        'Rides' => 'http://www.slocru.com/rides/login/',
-        'Give' => 'https://give.cru.org/2281756'
+        'ABOUT' => base_url() . 'about',
+        'HOUSING' => 'http://www.slocrusade.com/housing/',
+        'RIDES' => 'http://www.slocru.com/rides/login/',
+        'GIVE' => 'https://give.cru.org/2281756'
     );
     foreach ($left_links as $name => $href) {
         echo '<li>';
