@@ -1,24 +1,25 @@
 <div class="container" style="box-shadow: 0px 1px 10px #888888;
      border-radius: 0px 0px 10px 10px;
      background-color: #fff;
-     padding: 10px 0 80px 0">
+     padding: 0 100px 80px 100px">
+    
     <br/>
-    <div class="col-md-12 text-center" style="font-size: 36pt; font-weight: 300; margin-bottom: 30px">
+    <div class="col-md-12 text-center" style="font-size: 36pt; font-weight: 300; padding: 10px 25px;">
         About
     </div>
+    <br/>
 
-    <div style="margin: 10px 0 30px 0">
-        <img src="../assets/img/dropshadowup2.png" style="width:100%; height:25px;"/>
-    </div>
+    <img src="../assets/img/dropshadowup2.png" style="width:100%; height:25px;"/>
+    <br/><br/><br/>
 
-    <div class="container" style="width: 60%">
-        <p style="text-indent: 20px">
+    <div class="container" style="width: 80%; font-size: 18pt; font-weight: 300">
+        <p>
             Cru (formerly Campus Crusade for Christ) is an interdenominational
             worldwide Christian ministry. It's our goal to give every student
             the opportunity to hear the good news of Jesus Christ.                      
         </p>
-        <br/><br/>
-        <p style="text-indent: 20px">
+        <br/>
+        <p>
             With over a thousand students involved in our ministry, we have many
             opportunities to make friends and share Jesus through bible studies,
             social events, discipleship relationships, short-term missions
@@ -26,14 +27,14 @@
             <a href="<?php echo base_url() ?>events">events</a>.
             
         </p>
-        <br/><br/>
-        <p style="text-indent: 20px">
+        <br/>
+        <p>
             Slo Cru is active on the Cal Poly and Cuesta CC campuses. We have
             weekly bible studies in all of the dorm and on-campus apartments, as
             well as in several locations throughout the town.
         </p>
-        <br/><br/>
-        <p style="text-indent: 20px">
+        <br/>
+        <p>
             We gather every Tuesday at 7:30p at Mountainbrook Community Churc
             for praise, fellowship, and a message from our campus director Jamey
             Pappas (Rides are available, 
