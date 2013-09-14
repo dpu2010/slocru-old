@@ -5,7 +5,7 @@ $links = array(
         'desc' => 'Get resources for Bible studies, discipleship, new believers, and more.'
     ),
     'National Cru Resources' => array(
-        'href' => 'https://www.cru.org/training-and-growth/index.htm',
+        'href' => 'http://www.cru.org/training-and-growth/index.htm',
         'desc' => 'Resources for training & growth from the main Cru site.'
     ),
     'MeetTheProf' => array(
@@ -23,35 +23,20 @@ $links = array(
 );
 
 $pdf_path = '../assets/resources/pdf/';
-$doc_path = '../assets/resources/doc/';
 $downloads = array(
     'Articles' => array(
         'Annotated Send Model' => $pdf_path . 'Annotated_Send_Model.pdf',
+        'Biblical Career Principals' => $pdf_path . 'Biblical_Career_Principals_By_Navigator.pdf',
         'Discerning God\'s Will' => $pdf_path . 'Discerning_Gods_Will_by_Youth_Specialties.pdf',
-        'Biblical Career Principals' => $pdf_path . 'Biblical_Career_Principals_By_Navigator.pdf'
+        'Discipleship "How To"' => $pdf_path . 'Discipleship_Howto.pdf',
+        'Keith Davy\'s Guidance Letter' => $pdf_path . 'Keith_Davy_Guidance_Letter.pdf',
+        'Live Life on a Mission: The 5 Things' => $pdf_path . '5_Things_College.pdf',
+        'Practical Steps to Guidance' => $pdf_path . 'Practical_Steps_to_Guidance.pdf'
     ),
     'Studies' => array(
-        'Prayer' => $pdf_path . 'Bible_Study_On_Prayer.pdf',
-        'Discerning God\'s Will' => $pdf_path . 'Discerning_Gods_Will_Bible_Study.pdf'
-    ),
-    'Letters' => array(
-        'Keith Davy\'s Guidance Letter' => $pdf_path . 'Keith_Davy_Guidance_Letter.pdf',
-        'NS Intern Intro Letter' => $pdf_path . 'Intro_Letter_To_NS_Intern.pdf'
-    ),
-    '5 Things for...' => array(
-        'New Believers' => $pdf_path . '5_Things_New_Believer.pdf',
-        'Freshmen' => $pdf_path . '5_Things_Freshman.pdf',
-        'Juniors & Seniors' => $pdf_path . '5_Things_JrSr.pdf',
-        'Alumni' => $pdf_path . '5_Things_Alumni.pdf',
-        'Summer' => $pdf_path . '5_Things_Summer.pdf'
+        'Discerning God\'s Will' => $pdf_path . 'Discerning_Gods_Will_Bible_Study.pdf',
+        'Prayer' => $pdf_path . 'Bible_Study_On_Prayer.pdf'
     )
-);
-
-$maybe = array(
-    'overflow.com/episodes.html',
-    'everystudent.com',
-    'crusade app on iTunes?',
-    'InTransition book',
 );
 ?>
 
@@ -96,7 +81,7 @@ $maybe = array(
                     echo '<div style="margin-bottom: 1em;">';
                     echo '<li>' . $title . '</li>';
                     foreach ($files as $name => $path) {
-                        echo '<li style="margin: .1em 0 0 1em">';
+                        echo '<li style="margin: .2em 0 0 1em">';
                         echo '<a href="' . $path . '">' . $name . '</a>';
                         echo '</li>';
                     }
@@ -107,3 +92,4 @@ $maybe = array(
         </div>
     </div>
 </div>
+<?php $this->load->view('javascript');?>
