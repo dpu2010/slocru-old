@@ -44,15 +44,6 @@ function print_navbar_links($use_image) {
         <link href="../assets/css/bootstrap.css" rel="stylesheet" media="screen"/>
         <link href="../assets/css/nivo-slider.css" rel="stylesheet" media="screen"/>
         <link href="../assets/themes/light/light.css" rel="stylesheet" media="screen"/>
-        <script src="http://code.jquery.com/jquery.js"></script>
-        <script src="../assets/js/bootstrap.js"></script>
-        <script>
-            $(document).ready(function() {
-                $("#home-button").click(function() {
-                    window.location.href = "<?php echo base_url() ?>";
-                });
-            });
-        </script>
         <style type="text/css">
             * {
                 margin: 0;

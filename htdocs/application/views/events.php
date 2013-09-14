@@ -10,3 +10,4 @@
     <img src="../assets/img/dropshadowup2.png" style="width:100%; height:25px;"/>
     <iframe src="https://www.google.com/calendar/embed?src=slocrusade%40gmail.com&ctz=America/Los_Angeles" style="border: 0; display: block; margin: 0 auto;" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 </div>
+<?php $this->load->view('javascript');?>

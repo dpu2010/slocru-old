@@ -226,6 +226,7 @@
         <div class="col-md-4" style="text-align: center;">
         </div>
     </div>
+<?php $this->load->view('javascript');?>
     <!--<div class="row" style="padding: 10px 0 30px 0;">
         <div class="col-md-4" style="text-align: center;">
             <img src="../assets/img/anixon.jpg" class="img-circle" style="box-shadow: 0px 1px 10px #bbb; padding: 7px; border: 1px solid #ccc; background-color: white;" />

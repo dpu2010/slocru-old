@@ -157,7 +157,7 @@
     <div class="row text-center">
     </div>
 </div>
-
+<?php $this->load->view('javascript');?>
 <script>
     $(document).ready(function() {
         $('#submit_button')

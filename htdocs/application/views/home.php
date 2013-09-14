@@ -3,6 +3,7 @@
         <div id="slider" class="nivoSlider">
             <img src="../assets/img/slides/Banner1_SLOCRU.png"/>
             <img src="../assets/img/slides/Fall-Kickoff-Banner.png"/>
+            <img src="../assets/img/slides/First-Meeting-Banner.png"/>
             <img src="../assets/img/slides/Barn_Dance_Banner.png"/>
         </div>
     </div>
@@ -154,6 +155,7 @@
         </div>
     </div>
 </div>
+<?php $this->load->view('javascript');?>
 <script>
     $(document).ready(function() {
 
