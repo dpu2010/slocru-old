@@ -5,7 +5,7 @@ $this->load->helper('url');
 function print_navbar_links($use_image) {
     $left_links = array(
         'Bible Studies' => base_url() . 'studies',
-        'Get Involved' => base_url() . 'studies',
+        'Events' => base_url() . 'events',
         'Resources' => base_url() . 'resources',
         'Staff' => base_url() . 'staff'
     );
