@@ -134,7 +134,7 @@
         Cru Mission Statement
     </div>
     <div class="row" style="padding: 0 70px 10px 70px; font-style: italic; font-size: 30pt; text-align: center; font-weight: 300; padding-bottom: 35px">
-        We seek to be a transformational community, that seeks to give 
+        To be a transformational community that seeks to give 
         everyone an opportunity to hear about the Good News
         of Jesus Christ by living out our Gospel identity as a 
         member of the body of Christ.
