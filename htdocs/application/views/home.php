@@ -203,7 +203,7 @@
         7:30pm. Rides are also available to those who live off campus!</div>';
             str += '<div class="container">\n\
                         <div class="row" style="padding: 10px 15px 10px 15px">\n\
-                            <a href="" class="btn btn-primary"><i>GET A RIDE</i></a>\n\
+                            <a href="<?php echo base_url() . 'rides/login'; ?>" class="btn btn-primary"><i>GET A RIDE</i></a>\n\
                         </div>\n\
                     </div>';
             $("#three").html(str);
