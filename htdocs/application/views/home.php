@@ -140,7 +140,7 @@
         member of the body of Christ.
     </div>
     <img src="../assets/img/dropshadowup2.png" style="width:100%; height:25px;"/>
-    <div class="container" style="padding: 10px 100px 40px 100px;">
+    <div class="container" style="padding: 10px 10px 40px 10px;">
         <div class="col-md-3" style="text-align: center;">
             <a href="http://www.cru.org/"><img src="../assets/img/Cru-Logo-gray-justcru.png" style="height:43px"/></a>
         </div>
