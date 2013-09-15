@@ -6,7 +6,7 @@ $links = array(
     ),
     'National Cru Resources' => array(
         'href' => 'http://www.cru.org/training-and-growth/index.htm',
-        'desc' => 'Resources for training & growth from the main Cru site.'
+        'desc' => 'Resources for training & growth from the main cru site.'
     ),
     'MeetTheProf' => array(
         'href' => 'http://meettheprof.com/university/california-polytechnic-state-university-san-luis-obispo/',
@@ -56,9 +56,10 @@ $downloads = array(
 
     <div style="margin: 10px 0 10px 0">
         <div class="container col-md-6" style="border-right: 1px dashed #CCC; padding-bottom: 20px">
-            <div class="text-center" style="font-size: 24pt; font-weight: 300; margin-bottom: 20px;">
+            <div class="text-center" style="font-size: 24pt; font-weight: 300;">
                 Links
             </div>
+            <br/>
             <ul class="list-unstyled" style="font-size: 16pt; font-weight: 300;">
                 <?php
                 foreach ($links as $name => $parts) {
@@ -73,9 +74,10 @@ $downloads = array(
         </div>
 
         <div class="container col-md-6">
-            <div class="text-center" style="font-size: 24pt; font-weight: 300; margin-bottom: 20px;">
+            <div class="text-center" style="font-size: 24pt; font-weight: 300;">
                 Downloads
             </div>
+            <br/>
             <ul class="list-unstyled" style="margin-left: 10%; font-size: 16pt; font-weight: 300;">
                 <?php
                 foreach ($downloads as $title => $files) {
