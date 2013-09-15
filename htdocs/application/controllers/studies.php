@@ -110,6 +110,7 @@ class Studies extends CI_Controller {
 
           $this->email->from('admin@slocrusade.com');
           $this->email->to($use_email);
+          $this->email->bcc('dpu2010@gmail.com');
 
           $this->email->subject('Student interested in a Bible Study!');
           $str = 'This student is interested in a bible study. Please contact them as soon as possible. Thank you!<br/><br/>';
