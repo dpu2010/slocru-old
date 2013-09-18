@@ -2,6 +2,7 @@
     <div class="slider-wrapper theme-light hidden-xs">
         <div id="slider" class="nivoSlider">
             <img src="../assets/img/slides/Banner1_SLOCRU.png"/>
+            <img src="../assets/img/slides/Spikeball-Banner.png"/>
             <img src="../assets/img/slides/Fall-Kickoff-Banner.png"/>
             <img src="../assets/img/slides/First-Meeting-Banner.png"/>
             <img src="../assets/img/slides/Barn_Dance_Banner.png"/>
@@ -221,7 +222,7 @@
         $('#slider').nivoSlider({
             effect: 'boxRain',
             pauseOnHover: true,
-            pauseTime: 5000
+            pauseTime: 4000
         });
     });
 </script>
