@@ -75,7 +75,7 @@
             <div style="font-size: 20pt; font-weight: 300;">
                 Gretchen Pappas
             </div>
-            Swanson<br/>
+             Discipleship Trainer + The Well<br/>
             <a href="mailto:gretchen.pappas@cru.org" target="_blank">gretchen.pappas@cru.org</a>
         </div>
         <div class="col-md-4" style="text-align: center;">
