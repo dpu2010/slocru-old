@@ -26,7 +26,7 @@
         </div>
         <div class="col-md-3" style="text-align: center;">
             <strong>Calender</strong><br/>
-            <a href="<?php echo base_url().'about';?>">Upcoming events</a>
+            <a href="<?php echo base_url().'events';?>">Upcoming events</a>
         </div>
     </div>
 </body>
