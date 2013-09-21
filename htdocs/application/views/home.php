@@ -3,7 +3,7 @@
         <div id="slider" class="nivoSlider">
             <img src="../assets/img/slides/Banner1_SLOCRU.png"/>
             <img src="../assets/img/slides/Spikeball-Banner.png"/>
-            <img src="../assets/img/slides/Fall-Kickoff-Banner.png"/>
+            <!--<img src="../assets/img/slides/Fall-Kickoff-Banner.png"/>-->
             <img src="../assets/img/slides/First-Meeting-Banner.png"/>
             <img src="../assets/img/slides/Barn_Dance_Banner.png"/>
         </div>
@@ -100,7 +100,16 @@
                             </i></div>
                     </div>
                     <div class="row" style="font-size: 13pt; color: #5e5e5e">
-                        <?php echo $value['content']['$t']; ?>
+                        <?php
+                        //Thanks to css-tricks.com for url-parsing script
+                        $reg_exUrl = "/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/";
+                        $text = $value['content']['$t'];
+                        if (preg_match($reg_exUrl, $text, $url)) {
+                            echo preg_replace($reg_exUrl, "<a href=" . $url[0] . ">$url[0]</a> ", $text);
+                        }
+                        else
+                            echo $text;
+                        ?>
                     </div>
                     <br/>
                     <hr/>
@@ -121,7 +130,17 @@
                     echo '  </div>';
                     echo '  <div class="pull-right">' . $tw_date[1] . ' ' . $tw_date[2] . '</div>';
                     echo '</div>';
-                    echo $value['text'];
+
+                    //Thanks to css-tricks.com for url-parsing script
+                    $reg_exUrl = "/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/";
+                    $text = $value['text'];
+                    if (preg_match($reg_exUrl, $text, $url)) {
+                        echo preg_replace($reg_exUrl, "<a href=" . $url[0] . ">$url[0]</a> ", $text);
+                    }
+                    else
+                        echo $text;
+                    //echo $value['text'];
+
                     echo '<hr/>';
                 }
                 ?>
@@ -156,7 +175,7 @@
         </div>
     </div>
 </div>
-<?php $this->load->view('javascript');?>
+<?php $this->load->view('javascript'); ?>
 <script>
     $(document).ready(function() {
 
