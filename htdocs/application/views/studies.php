@@ -120,7 +120,7 @@
                                     <div class="checkbox" id="inputInterest">
                                         <label class="pull-left">
                                             <input type="checkbox" name="interests[]" value="Athletes">
-                                            Athletes
+                                            Collegiate / Club Athletes
                                         </label>
                                     </div>
                                     <div class="checkbox" id="inputInterest">
