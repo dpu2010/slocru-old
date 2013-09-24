@@ -24,7 +24,85 @@
         </div>
         <div class="col-md-3"></div>
     </div>
+
     <div class="row" style="padding: 10px 0 30px 0;">
+        <div class="col-md-4" style="text-align: center;">
+            <div style="font-size: 20pt; font-weight: 300;">
+                Kyle Fletcher
+            </div>
+            Ops Director + the Well<br/>
+            <a href="mailto:kyle.fletcher@cru.org" target="_blank">kyle.fletcher@cru.org</a>
+        </div>
+        <div class="col-md-4" style="text-align: center;">
+            <div style="font-size: 20pt; font-weight: 300;">
+                Adam Nixon
+            </div>
+            Cuesta<br/>
+            <a href="mailto:adam.nixon@cru.org" target="_blank">adam.nixon@cru.org</a>
+        </div>
+        <div class="col-md-4" style="text-align: center;">
+            <div style="font-size: 20pt; font-weight: 300;">
+                Casey Patrick
+            </div>
+            Weekly Meeting<br/>
+            <a href="mailto:casey.patrick@cru.org" target="_blank">casey.patrick@cru.org</a>
+        </div>
+    </div>
+
+    <div class="row" style="padding: 10px 0 30px 0;">
+        <div class="col-md-4" style="text-align: center;">
+            <div style="font-size: 20pt; font-weight: 300;">
+                Reid Zeller
+            </div>
+            Destino + EPIC + Intern Coordinator<br/>
+            <a href="mailto:reid.zeller@cru.org" target="_blank">reid.zeller@cru.org</a>
+        </div>
+        <div class="col-md-4" style="text-align: center;">
+            <div style="font-size: 20pt; font-weight: 300;">
+                Matt Williams
+            </div>
+            AIA + MPD champ + web comm<br/>
+            <a href="mailto:matt.williams@cru.org" target="_blank">matt.williams@cru.org</a>
+        </div>
+        <div class="col-md-4" style="text-align: center;">
+            <div style="font-size: 20pt; font-weight: 300;">
+                David ZagRodny
+            </div>
+            Faculty Commons + Veritas<br/>
+            <a href="mailto:david.zagrodny@cru.org" target="_blank">david.zagrodny@cru.org</a>
+        </div>
+    </div>
+    <div class="row" style="padding: 10px 0 30px 0;">
+        <div class="col-md-4" style="text-align: center;">
+            <div style="font-size: 20pt; font-weight: 300;">
+                Gretchen Pappas
+            </div>
+            Discipleship Trainer + The Well<br/>
+            <a href="mailto:gretchen.pappas@cru.org" target="_blank">gretchen.pappas@cru.org</a>
+        </div>
+        <div class="col-md-4" style="text-align: center;">
+            <div style="font-size: 20pt; font-weight: 300;">
+                Matt Melendrez
+            </div>
+            Outreach + Greek<br/>
+            <a href="mailto:matthewjmelendrez@gmail.com" target="_blank">matthewjmelendrez@gmail.com</a>
+        </div>
+        <div class="col-md-4" style="text-align: center;">
+            <div style="font-size: 20pt; font-weight: 300;">
+                Misty Zeller
+            </div>
+            STINTernship Dinner<br/>
+            <a href="mailto:misty.zeller@cru.org" target="_blank">misty.zeller@cru.org</a>
+        </div>
+    </div>
+    <div class="row" style="padding: 10px 0 30px 0;">
+        <div class="col-md-4" style="text-align: center;">
+            <div style="font-size: 20pt; font-weight: 300;">
+                Molly ZagRodny
+            </div>
+            Faculty Commons<br/>
+            <a href="mailto:molly.zagrodny@gmail.com" target="_blank">molly.zagrodny@gmail.com</a>
+        </div>
         <div class="col-md-4" style="text-align: center;">
             <div style="font-size: 20pt; font-weight: 300;">
                 Alistair Bradley
@@ -38,13 +116,6 @@
             </div>
             Bridges<br/>
             <a href="mailto:aabradley64@gmail.com" target="_blank">aabradley64@gmail.com</a>
-        </div>
-        <div class="col-md-4" style="text-align: center;">
-            <div style="font-size: 20pt; font-weight: 300;">
-                Casey Patrick
-            </div>
-            Weekly Meeting<br/>
-            <a href="mailto:casey.patrick@cru.org" target="_blank">casey.patrick@cru.org</a>
         </div>
     </div>
     <div class="row" style="padding: 10px 0 30px 0;">
@@ -64,82 +135,13 @@
         </div>
         <div class="col-md-4" style="text-align: center;">
             <div style="font-size: 20pt; font-weight: 300;">
-                David ZagRodny
-            </div>
-            Faculty Commons + Veritas<br/>
-            <a href="mailto:david.zagrodny@cru.org" target="_blank">david.zagrodny@cru.org</a>
-        </div>
-    </div>
-    <div class="row" style="padding: 10px 0 30px 0;">
-        <div class="col-md-4" style="text-align: center;">
-            <div style="font-size: 20pt; font-weight: 300;">
-                Gretchen Pappas
-            </div>
-             Discipleship Trainer + The Well<br/>
-            <a href="mailto:gretchen.pappas@cru.org" target="_blank">gretchen.pappas@cru.org</a>
-        </div>
-        <div class="col-md-4" style="text-align: center;">
-            <div style="font-size: 20pt; font-weight: 300;">
-                Kyle Fletcher
-            </div>
-            Ops Director + the Well<br/>
-            <a href="mailto:kyle.fletcher@cru.org" target="_blank">kyle.fletcher@cru.org</a>
-        </div>
-        <div class="col-md-4" style="text-align: center;">
-            <div style="font-size: 20pt; font-weight: 300;">
-                Matt Melendrez
-            </div>
-            Outreach + Greek<br/>
-            <a href="mailto:matthewjmelendrez@gmail.com" target="_blank">matthewjmelendrez@gmail.com</a>
-        </div>
-    </div>
-    <div class="row" style="padding: 10px 0 30px 0;">
-        <div class="col-md-4" style="text-align: center;">
-            <div style="font-size: 20pt; font-weight: 300;">
-                Matt Williams
-            </div>
-            AIA + MPD champ + web comm<br/>
-            <a href="mailto:matt.williams@cru.org" target="_blank">matt.williams@cru.org</a>
-        </div>
-        <div class="col-md-4" style="text-align: center;">
-            <div style="font-size: 20pt; font-weight: 300;">
-                Misty Zeller
-            </div>
-            STINTernship Dinner<br/>
-            <a href="mailto:misty.zeller@cru.org" target="_blank">misty.zeller@cru.org</a>
-        </div>
-        <div class="col-md-4" style="text-align: center;">
-            <div style="font-size: 20pt; font-weight: 300;">
-                Molly ZagRodny
-            </div>
-            Faculty Commons<br/>
-            <a href="mailto:molly.zagrodny@gmail.com" target="_blank">molly.zagrodny@gmail.com</a>
-        </div>
-    </div>
-    <div class="row" style="padding: 10px 0 30px 0;">
-        <div class="col-md-4" style="text-align: center;">
-            <div style="font-size: 20pt; font-weight: 300;">
-                Adam Nixon
-            </div>
-            Cuesta<br/>
-            <a href="mailto:adam.nixon@cru.org" target="_blank">adam.nixon@cru.org</a>
-        </div>
-        <div class="col-md-4" style="text-align: center;">
-            <div style="font-size: 20pt; font-weight: 300;">
-                Reid Zeller
-            </div>
-            Destino + EPIC + Intern Coordinator<br/>
-            <a href="mailto:reid.zeller@cru.org" target="_blank">reid.zeller@cru.org</a>
-        </div>
-        <div class="col-md-4" style="text-align: center;">
-            <div style="font-size: 20pt; font-weight: 300;">
                 Sara Fulham
             </div>
             Women's Team<br/>
             <a href="mailto:sara.fulham@cru.org" target="_blank">sara.fulham@cru.org</a>
         </div>
     </div>
-        <div class="row" style="padding: 10px 0 30px 0;">
+    <div class="row" style="padding: 10px 0 30px 0;">
         <div class="col-md-4" style="text-align: center;">
             <div style="font-size: 20pt; font-weight: 300;">
                 Becky Joyce
@@ -162,7 +164,7 @@
             <a href="mailto:daniel.ballard@cru.org" target="_blank">daniel.ballard@cru.org</a>
         </div>
     </div>
-            <div class="row" style="padding: 10px 0 30px 0;">
+    <div class="row" style="padding: 10px 0 30px 0;">
         <div class="col-md-4" style="text-align: center;">
             <div style="font-size: 20pt; font-weight: 300;">
                 Jennifer Stangland
@@ -185,7 +187,7 @@
             <a href="mailto:melanie.hanlon@cru.org" target="_blank">melanie.hanlon@cru.org</a>
         </div>
     </div>
-                <div class="row" style="padding: 10px 0 30px 0;">
+    <div class="row" style="padding: 10px 0 30px 0;">
         <div class="col-md-4" style="text-align: center;">
             <div style="font-size: 20pt; font-weight: 300;">
                 Adam Griffin
@@ -208,7 +210,7 @@
             <a href="mailto:jonathan.newman@cru.org" target="_blank">jonathan.newman@cru.org</a>
         </div>
     </div>
-                    <div class="row" style="padding: 10px 0 30px 0;">
+    <div class="row" style="padding: 10px 0 30px 0;">
         <div class="col-md-4" style="text-align: center;">
             <div style="font-size: 20pt; font-weight: 300;">
                 Jenny Davis
@@ -226,7 +228,7 @@
         <div class="col-md-4" style="text-align: center;">
         </div>
     </div>
-<?php $this->load->view('javascript');?>
+    <?php $this->load->view('javascript'); ?>
     <!--<div class="row" style="padding: 10px 0 30px 0;">
         <div class="col-md-4" style="text-align: center;">
             <img src="../assets/img/anixon.jpg" class="img-circle" style="box-shadow: 0px 1px 10px #bbb; padding: 7px; border: 1px solid #ccc; background-color: white;" />
