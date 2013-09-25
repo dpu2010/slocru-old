@@ -19,7 +19,7 @@
         <!-- Button trigger modal -->
         <div class="container" style="width: 80%; font-size: 18pt; text-align: justify; font-weight: 300;">
             Fall Retreat is an awesome time to get away from the rush of school for a weekend and refocus on God. 
-            Slo cru will be traveling to the Ventura Beach Marriot from October 18th to the 23rd for a time of 
+            Slo cru will be traveling to the Ventura Beach Marriot from October 18th to the 20th for a time of 
             fun, fellowship, learning from God's Word, and much more. There will be small groups, recreation at the beach, 
             and a HUGE dance party that you do not want to miss! Click the button below to sign up today!
         </div>
