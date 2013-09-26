@@ -61,7 +61,7 @@
             <div style="font-size: 20pt; font-weight: 300;">
                 Matt Williams
             </div>
-            AIA + MPD champ + web comm<br/>
+            Athletes in Action<br/>
             <a href="mailto:matt.williams@cru.org" target="_blank">matt.williams@cru.org</a>
         </div>
         <div class="col-md-4" style="text-align: center;">
@@ -121,27 +121,11 @@
     <div class="row" style="padding: 10px 0 30px 0;">
         <div class="col-md-4" style="text-align: center;">
             <div style="font-size: 20pt; font-weight: 300;">
-                Dan Krull
-            </div>
-            PACT Director<br/>
-            <a href="mailto:ddkrull@securenym.net" target="_blank">ddkrull@securenym.net</a>
-        </div>
-        <div class="col-md-4" style="text-align: center;">
-            <div style="font-size: 20pt; font-weight: 300;">
-                Dina Krull
-            </div>
-            PACT Director<br/>
-            <a href="mailto:ddkrull@securenym.net" target="_blank">ddkrull@securenym.net</a>
-        </div>
-        <div class="col-md-4" style="text-align: center;">
-            <div style="font-size: 20pt; font-weight: 300;">
                 Sara Fulham
             </div>
             Women's Team<br/>
             <a href="mailto:sara.fulham@cru.org" target="_blank">sara.fulham@cru.org</a>
         </div>
-    </div>
-    <div class="row" style="padding: 10px 0 30px 0;">
         <div class="col-md-4" style="text-align: center;">
             <div style="font-size: 20pt; font-weight: 300;">
                 Becky Joyce
@@ -156,6 +140,8 @@
             Community team<br/>
             <a href="mailto:kathryn.edmiston@cru.org" target="_blank">kathryn.edmiston@cru.org</a>
         </div>
+    </div>
+    <div class="row" style="padding: 10px 0 30px 0;">
         <div class="col-md-4" style="text-align: center;">
             <div style="font-size: 20pt; font-weight: 300;">
                 Daniel Ballard
@@ -163,8 +149,6 @@
             Finances<br/>
             <a href="mailto:daniel.ballard@cru.org" target="_blank">daniel.ballard@cru.org</a>
         </div>
-    </div>
-    <div class="row" style="padding: 10px 0 30px 0;">
         <div class="col-md-4" style="text-align: center;">
             <div style="font-size: 20pt; font-weight: 300;">
                 Jennifer Stangland
@@ -179,6 +163,8 @@
             Cuesta<br/>
             <a href="mailto:kelly.phillips@cru.org" target="_blank">kelly.phillips@cru.org</a>
         </div>
+    </div>
+    <div class="row" style="padding: 10px 0 30px 0;">
         <div class="col-md-4" style="text-align: center;">
             <div style="font-size: 20pt; font-weight: 300;">
                 Melanie Hanlon
@@ -186,8 +172,6 @@
             Greek Row<br/>
             <a href="mailto:melanie.hanlon@cru.org" target="_blank">melanie.hanlon@cru.org</a>
         </div>
-    </div>
-    <div class="row" style="padding: 10px 0 30px 0;">
         <div class="col-md-4" style="text-align: center;">
             <div style="font-size: 20pt; font-weight: 300;">
                 Adam Griffin
@@ -202,6 +186,8 @@
             Global Connect<br/>
             <a href="mailto:megan.sexton@cru.org" target="_blank">megan.sexton@cru.org</a>
         </div>
+    </div>
+    <div class="row" style="padding: 10px 0 30px 0;">
         <div class="col-md-4" style="text-align: center;">
             <div style="font-size: 20pt; font-weight: 300;">
                 Jonathan Newman
@@ -209,8 +195,6 @@
             Men's Team + Men's Coordinator<br/>
             <a href="mailto:jonathan.newman@cru.org" target="_blank">jonathan.newman@cru.org</a>
         </div>
-    </div>
-    <div class="row" style="padding: 10px 0 30px 0;">
         <div class="col-md-4" style="text-align: center;">
             <div style="font-size: 20pt; font-weight: 300;">
                 Jenny Davis
@@ -224,8 +208,6 @@
             </div>
             Epic<br/>
             <a href="mailto:tyler.mendoza@cru.org" target="_blank">tyler.mendoza@cru.org</a>
-        </div>
-        <div class="col-md-4" style="text-align: center;">
         </div>
     </div>
     <?php $this->load->view('javascript'); ?>
