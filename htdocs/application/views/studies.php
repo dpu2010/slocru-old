@@ -3,6 +3,14 @@
      background-color: #fff;
      padding: 0 100px 80px 100px">
     <br/>
+    <?php
+     if($this->session->flashdata('email_response')) { ?>
+    <div class="alert alert-success alert-dismissable" style="text-align: center;">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <strong>Success!</strong> Someone will be in contact with you soon about joining a bible study.<br/>
+        If you do not hear from someone soon, please let us know at <a href="mailto:admin@slocru.com">admin@slocru.com</a>
+    </div>
+    <?php } ?>
     <div class="col-md-12" style="text-align: center; font-size: 36pt; font-weight: 300; padding: 10px 25px;">
         Sign up for a bible study
     </div>
@@ -24,7 +32,7 @@
         <div class="container" style="width: 40%">
             <a data-toggle="modal" href="#myModal" class="btn btn-warning btn-lg btn-block" style="padding: 20px; font-size: 25pt;"><i>SIGN UP</i></a>
         </div>
-    <br/>
+        <br/>
         <!-- Modal -->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -160,7 +168,7 @@
         </div><!-- /.modal -->
     </div>
 </div>
-<?php $this->load->view('javascript');?>
+<?php $this->load->view('javascript'); ?>
 <script>
     $(document).ready(function() {
         $('#submit_button')

@@ -1,11 +1,11 @@
 <div class="container" style="box-shadow: 0px 1px 10px #888888; border-radius:0 0 10px 10px; background-color: #fff">
     <div class="slider-wrapper theme-light hidden-xs">
         <div id="slider" class="nivoSlider">
-            <img src="../assets/img/slides/Banner1_SLOCRU.png"/>
-            <img src="../assets/img/slides/Spikeball-Banner.png"/>
-            <!--<img src="../assets/img/slides/Fall-Kickoff-Banner.png"/>-->
+            <a href="<?php echo base_url();?>"><img src="../assets/img/slides/Banner1_SLOCRU.png"/></a>
+            <!--<img src="../assets/img/slides/Spikeball-Banner.png"/>
+            <img src="../assets/img/slides/Fall-Kickoff-Banner.png"/>
             <img src="../assets/img/slides/First-Meeting-Banner.png"/>
-            <img src="../assets/img/slides/Barn_Dance_Banner.png"/>
+            <img src="../assets/img/slides/Barn_Dance_Banner.png"/>-->
         </div>
     </div>
 
@@ -154,10 +154,7 @@
         Cru Mission Statement
     </div>
     <div class="row" style="padding: 0 70px 10px 70px; font-style: italic; font-size: 30pt; text-align: center; font-weight: 300; padding-bottom: 35px">
-        To be a transformational community that seeks to give 
-        everyone an opportunity to hear about the Good News
-        of Jesus Christ by living out our Gospel identity as a 
-        member of the body of Christ.
+        To give every student at Cal Poly and Cuesta the opportunity to hear the good news of Jesus Christ
     </div>
     <img src="../assets/img/dropshadowup2.png" style="width:100%; height:25px;"/>
     <div class="container" style="padding: 10px 10px 40px 10px;">

@@ -113,9 +113,9 @@ class Studies extends CI_Controller {
         $this->load->library('email', $config);
         $this->email->set_newline("\r\n");
 
-        $this->email->from('admin@slocrusade.com');
+        $this->email->from('admin@slocru.com');
         $this->email->to($use_email);
-        $this->email->bcc('dpu2010@gmail.com');
+        $this->email->bcc('admin@slocru.com');
 
         $this->email->subject('Student interested in a Bible Study!');
         $str = 'This student is interested in a bible study. Please contact them as soon as possible. Thank you!<br/><br/>';
@@ -139,6 +139,7 @@ class Studies extends CI_Controller {
         $str .= '<br/>--Admin';
         $this->email->message($str);
         $this->email->send();
+        $this->session->set_flashdata('email_response',true);
         redirect('/studies', 'refresh');
     }
 
