@@ -52,7 +52,7 @@ class Studies extends CI_Controller {
                     'Senior' => 'jonathan.newman@cru.org',
                     'Senior plus' => 'kyle.fletcher@cru.org'
                 ),
-                'Cuesta' => 'jonathan.newman@cru.org'
+                'Cuesta' => 'adam.nixon@cru.org'
             ),
             'Female' => array(
                 'Cal Poly SLO' => array(
