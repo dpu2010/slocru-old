@@ -2,10 +2,7 @@
     <div class="slider-wrapper theme-light hidden-xs">
         <div id="slider" class="nivoSlider">
             <a href="<?php echo base_url();?>"><img src="../assets/img/slides/Banner1_SLOCRU.png"/></a>
-            <!--<img src="../assets/img/slides/Spikeball-Banner.png"/>
-            <img src="../assets/img/slides/Fall-Kickoff-Banner.png"/>
-            <img src="../assets/img/slides/First-Meeting-Banner.png"/>
-            <img src="../assets/img/slides/Barn_Dance_Banner.png"/>-->
+            <a href="<?php echo base_url();?>events"><img src="../assets/img/slides/SLO-Venture.png"/></a>
         </div>
     </div>
 

@@ -167,6 +167,15 @@
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
     </div>
+    <img src="../assets/img/dropshadowdown2.png" style="width:100%; height: 25px;"/>
+    <br/><br/><br/>
+    <div class="col-md-12" style="text-align: center; font-size: 36pt; font-weight: 300; padding: 10px 25px;">
+        Ministry Teams
+    </div>
+    <div class="row">
+        <div class="col-md-3">TEst</div>
+        <div class="col-md-9">Tester</div>
+    </div>
 </div>
 <?php $this->load->view('javascript'); ?>
 <script>
