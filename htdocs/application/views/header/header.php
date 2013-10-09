@@ -5,12 +5,13 @@ $this->load->helper('url');
 function print_navbar_links($use_image) {
     $left_links = array(
         'BIBLE STUDIES' => base_url() . 'studies',
+        'GET INVOLVED' => base_url() . 'ministry',
         'FALL RETREAT' => base_url() . 'fallretreat',
         'EVENTS' => base_url() . 'events',
-        'RESOURCES' => base_url() . 'resources',
-        'STAFF' => base_url() . 'staff'
+        'RESOURCES' => base_url() . 'resources'
     );
     $right_links = array(
+        'STAFF' => base_url() . 'staff',
         'ABOUT' => base_url() . 'about',
         'HOUSING' => 'http://www.slocrusade.com/housing/',
         'RIDES' => 'http://www.slocru.com/rides/login/',
@@ -97,7 +98,7 @@ function print_navbar_links($use_image) {
         </style>
     </head>
     <body>
-        <div class="navbar navbar-default" role="navigation">
+        <div id="header" class="navbar navbar-default" role="navigation">
             <div class="navbar-header">
                 <button type="button" class="visible-xs visible-sm navbar-toggle" data-toggle="collapse" data-target="#navbar-div">
                     <img src="assets/img/top_link.png">
