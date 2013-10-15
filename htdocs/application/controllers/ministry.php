@@ -41,8 +41,11 @@ class Ministry extends CI_Controller {
             redirect('/ministry', 'refresh');
         }
 
+        $data = array();
+        if($info == 'prayer')
+            $data['prayer'] = true;
         $this->load->view('header/header');
-        $this->load->view('ministry');
+        $this->load->view('ministry',$data);
         $this->load->view('footer/footer');
     }
 
