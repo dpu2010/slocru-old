@@ -8,7 +8,7 @@
         <strong>Success!</strong> Someone will be in contact with you soon about joining a bible study.
     </div>-->
     <div class="col-md-12" style="text-align: center; font-size: 36pt; font-weight: 300; padding: 10px 25px;">
-        Sign up for Fall Retreat
+        Fall Retreat
     </div>
     <br/>
     <img src="../assets/img/dropshadowup2.png" style="width:100%; height:25px;"/>
@@ -18,14 +18,19 @@
     <div class="row text-center">
         <!-- Button trigger modal -->
         <div class="container" style="width: 80%; font-size: 18pt; text-align: justify; font-weight: 300;">
-            Fall Retreat is an awesome time to get away from the rush of school for a weekend and refocus on God. 
-            Slo cru will be traveling to the Ventura Beach Marriot from October 18th to the 20th for a time of 
-            fun, fellowship, learning from God's Word, and much more. There will be small groups, recreation at the beach, 
-            and a HUGE dance party that you do not want to miss! Click the button below to sign up today!
-        </div>
-        <br/><br/>
-        <div class="container" style="width: 40%">
-            <a href="https://www.conferenceregistrationtool.com/conferenceInfo.seam?conferenceId=2239" class="btn btn-warning btn-lg btn-block" style="padding: 20px; font-size: 25pt;"><i>SIGN UP</i></a>
+            Here are some FINAL DEETS for Fall Retreat!<br/>
+            1) We are staying at the Ventura Beach Marriot: 2055 East Harbor Boulevard<br/>
+            2) It is THIS weekend!!! Registration is 4-7 at the Marriott, 1st meeting starts at 7.<br/>
+            3) Bring a bible, journal, and clothes & toiletries for 3 days.<br/>
+            4) Don't forget your costume for the Dance!<br/>
+            - Freshman - Current Country<br/>
+            - Sophomores - 2000's Hip-Hop<br/>
+            - Juniors - 80's Rock&Roll<br/>
+            - Seniors - 20's Jazz<br/>
+            - Super Seniors - 90's Pop<br/>
+            - Staff - Timeless Reggae<br/>
+            5) We are right on the beach so bring beach games and beach wear for free time. <br/>
+            Get ready for a great Family Reunion<br/>
         </div>
     </div>
 </div>
