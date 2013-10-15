@@ -25,7 +25,7 @@ function print_navbar_links($use_image) {
     }
     if ($use_image) {
         echo '<li>';
-        echo '<img id="home-button" src="assets/img/top_link.png">';
+        echo '<img id="home-button" src="../assets/img/top_link.png">';
         echo '</li>';
     }
 

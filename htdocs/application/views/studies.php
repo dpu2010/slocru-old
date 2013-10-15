@@ -3,13 +3,12 @@
      background-color: #fff;
      padding: 0 100px 80px 100px">
     <br/>
-    <?php
-     if($this->session->flashdata('email_response')) { ?>
-    <div class="alert alert-success alert-dismissable" style="text-align: center;">
-        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-        <strong>Success!</strong> Someone will be in contact with you soon about joining a bible study.<br/>
-        If you do not hear from someone soon, please let us know at <a href="mailto:admin@slocru.com">admin@slocru.com</a>
-    </div>
+    <?php if ($this->session->flashdata('email_response')) { ?>
+        <div class="alert alert-success alert-dismissable" style="text-align: center;">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            <strong>Success!</strong> Someone will be in contact with you soon about joining a bible study.<br/>
+            If you do not hear from someone soon, please let us know at <a href="mailto:admin@slocru.com">admin@slocru.com</a>
+        </div>
     <?php } ?>
     <div class="col-md-12" style="text-align: center; font-size: 36pt; font-weight: 300; padding: 10px 25px;">
         Sign up for a bible study
@@ -167,27 +166,18 @@
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
     </div>
-    <img src="../assets/img/dropshadowdown2.png" style="width:100%; height: 25px;"/>
-    <br/><br/><br/>
-    <div class="col-md-12" style="text-align: center; font-size: 36pt; font-weight: 300; padding: 10px 25px;">
-        Ministry Teams
-    </div>
-    <div class="row">
-        <div class="col-md-3">TEst</div>
-        <div class="col-md-9">Tester</div>
-    </div>
 </div>
 <?php $this->load->view('javascript'); ?>
 <script>
     $(document).ready(function() {
         $('#submit_button')
                 .click(function() {
-            var btn = $(this);
-            btn.button('loading');
-            setTimeout(function() {
-                btn.button('reset');
-            }, 3000);
-        });
+                    var btn = $(this);
+                    btn.button('loading');
+                    setTimeout(function() {
+                        btn.button('reset');
+                    }, 3000);
+                });
         $("#inputYear").change(function() {
             var value = $('#inputYear :selected').text();
             var college = $('#inputCollege :selected').text();

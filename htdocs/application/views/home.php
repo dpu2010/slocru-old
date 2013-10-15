@@ -2,7 +2,8 @@
     <div class="slider-wrapper theme-light hidden-xs">
         <div id="slider" class="nivoSlider">
             <a href="<?php echo base_url();?>"><img src="../assets/img/slides/Banner1_SLOCRU.png"/></a>
-            <a href="<?php echo base_url();?>events"><img src="../assets/img/slides/SLO-Venture.png"/></a>
+            <a href="<?php echo base_url();?>fallretreat"><img src="../assets/img/slides/FallRetreat.png"/></a>
+            <a href="<?php echo base_url();?>ministry/prayer"><img src="../assets/img/slides/HouseofPrayer_banner.png"/></a>
         </div>
     </div>
 

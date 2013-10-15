@@ -164,7 +164,7 @@
                 </div><!-- /.modal-dialog -->
             </div><!-- /.modal -->
         </div>
-        <div class="tab-pane fade in active" id="community" style="text-align: center;">
+        <div class="tab-pane fade<?php if(!isset($prayer)){ echo 'in active';}?>" id="community" style="text-align: center;">
             <img src="../assets/img/ministry/community.jpg" style="border-radius: 10px; padding: 7px; border: 1px solid #ccc; background-color: white;"/>
             <h2>Community Team</h2>
             We create and cultivate community for Jesus here at SLO Cru. We plan NATO and other community building events while bonding as a team. 
@@ -478,7 +478,7 @@
                 </div><!-- /.modal-dialog -->
             </div><!-- /.modal -->
         </div>
-        <div class="tab-pane fade" id="prayer" style="text-align: center">
+        <div class="tab-pane fade<?php if(isset($prayer)){ echo 'in active';}?>" id="prayer" style="text-align: center">
             <img src="http://placehold.it/400x300&text=%20" style="border-radius: 10px; padding: 7px; border: 1px solid #ccc; background-color: white;"/>
             <h2>Prayer Team</h2>
             Join us in prayer for revival in our campuses, our community and the world. 
