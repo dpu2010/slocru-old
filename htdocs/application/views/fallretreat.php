@@ -23,6 +23,10 @@
             2) It is THIS weekend!!! Registration is 4-7 at the Marriott, 1st meeting starts at 7.<br/>
             3) Bring a bible, journal, and clothes & toiletries for 3 days.<br/>
             4) Don't forget your costume for the Dance!<br/>
+            5) Gas reimbursement for is coordinated with the people in each respective car to their respective drivers.<br/>
+            6) Everyone is responsible for getting their own dinner on Friday night. In-n-Out, Denny's, etc.<br/>
+            7) All breakfasts and the dinner on Saturday will be provided.  Everything else is up to the individual.<br/>
+            8) Food and gas are the only external expenses.
             - Freshman - Current Country<br/>
             - Sophomores - 2000's Hip-Hop<br/>
             - Juniors - 80's Rock&Roll<br/>
