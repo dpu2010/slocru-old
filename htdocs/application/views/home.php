@@ -88,7 +88,10 @@
         <div class="col-md-8">
             <img src="../assets/img/dropshadowup2.png" style="width:100%; height:25px;"/>
             <div style="height: 300px;padding: 10px 25px 10px 25px; overflow-y: scroll;">
-                <?php foreach ($events as $value) { ?>
+                <?php
+                if(isset($events)) {
+                    foreach ($events as $value) { 
+                    ?>
                     <div class="row">
                         <div class="pull-left" style="font-size: 20pt; font-weight: 300;"><i><?php echo $value['title']['$t']; ?></i></div>
                         <div class="pull-right" style="font-size: 16pt;"><i>
@@ -111,7 +114,8 @@
                     </div>
                     <br/>
                     <hr/>
-                <?php } ?>
+                <?php } 
+                }?>
             </div>
             <img src="../assets/img/dropshadowdown2.png" style="width:100%; height: 25px;"/>
         </div>

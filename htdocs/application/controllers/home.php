@@ -25,7 +25,8 @@ class Home extends CI_Controller {
         $str = curl_exec($ch);
         curl_close($ch);
         $str = json_decode($str, true);
-        $data['events'] = $str['feed']['entry'];
+        if(isset($str['feed']['entry']))
+            $data['events'] = $str['feed']['entry'];
 
         $this->load->view('header/header');
         $this->load->view('home', $data);
