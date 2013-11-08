@@ -507,7 +507,7 @@ Matt Mendoza: (916)365-3196
 <br/>
 Monday:
 <br/>
-Location: 1460 Madonna Rd Unit 2 at 8:30pm -Park on El Pidre Ct 
+Location: 1460 Madonna Rd Unit 2 at 7:30pm - Park on El Tigre Ct 
 <br/>
 Dana Williamson: (707)344-7912
 <br/>
