@@ -3,7 +3,7 @@
         <div id="slider" class="nivoSlider">
             <a href="<?php echo base_url();?>"><img src="../assets/img/slides/Banner1_SLOCRU.png"/></a>
             <a href="http://pswcrossroads.com/"><img src="../assets/img/slides/crossroads.jpg"/></a>
-            <a href="https://www.facebook.com/events/578404838905057/?ref=22"><img src="../assets/img/slides/realtalk.jpg"/></a>
+            <a href="https://www.facebook.com/events/714581501903867"><img src="../assets/img/slides/realtalk.jpg"/></a>
             <!--<a href="<?php echo base_url();?>"><img src="../assets/img/slides/studentventures.jpg"/></a>-->
             <a href="https://sites.google.com/site/worldprayermonth/"><img src="../assets/img/slides/wpm.jpg"/></a>
             <a href="<?php echo base_url();?>ministry/prayer"><img src="../assets/img/slides/HouseofPrayer_banner.png"/></a>
