@@ -6,7 +6,7 @@
             <a href="https://www.facebook.com/events/714581501903867"><img src="../assets/img/slides/realtalk.jpg"/></a>
             <!--<a href="<?php echo base_url();?>"><img src="../assets/img/slides/studentventures.jpg"/></a>-->
             <a href="https://sites.google.com/site/worldprayermonth/"><img src="../assets/img/slides/wpm.jpg"/></a>
-            <a href="<?php echo base_url();?>ministry/prayer"><img src="../assets/img/slides/HouseofPrayer_banner.png"/></a>
+            <a href="<?php echo base_url();?>ministry/prayer"><img src="../assets/img/slides/HouseofPrayer_banner.jpg"/></a>
         </div>
     </div>
 
