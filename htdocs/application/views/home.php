@@ -2,13 +2,8 @@
     <div class="slider-wrapper theme-light hidden-xs">
         <div id="slider" class="nivoSlider">
             <a href="<?php echo base_url();?>"><img src="../assets/img/slides/Banner1_SLOCRU.png"/></a>
-            <a href="https://www.facebook.com/events/703971576287529/"><img src="../assets/img/slides/Cruville_Banner.jpg"/></a>
             <a href="https://www.conferenceregistrationtool.com/conferenceInfo.seam?conferenceId=2047"><img src="../assets/img/slides/WinterConference_banner.jpg"/></a>
-            <!--<a href="http://pswcrossroads.com/"><img src="../assets/img/slides/crossroads.jpg"/></a>-->
-            <!--<a href="https://www.facebook.com/events/714581501903867"><img src="../assets/img/slides/realtalk.jpg"/></a>-->
-            <!--<a href="<?php echo base_url();?>"><img src="../assets/img/slides/studentventures.jpg"/></a>-->
-            <!--<a href="https://sites.google.com/site/worldprayermonth/"><img src="../assets/img/slides/wpm.jpg"/></a>-->
-            <a href="<?php echo base_url();?>ministry/prayer"><img src="../assets/img/slides/HouseofPrayer_banner.jpg"/></a>
+            <!--<a href="<?php echo base_url();?>ministry/prayer"><img src="../assets/img/slides/HouseofPrayer_banner.jpg"/></a>-->
         </div>
     </div>
 
