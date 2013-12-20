@@ -48,14 +48,14 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'mysql3.000webhost.com';
-$db['default']['username'] = 'a7253567_admin';
-$db['default']['password'] = 'romans125';
-$db['default']['database'] = 'a7253567_slocru';
+$db['default']['hostname'] = 'localhost';//localhost';//mysql3.000webhost.com';
+$db['default']['username'] = 'slocrus1_all';//a7253567_admin';
+$db['default']['password'] = '2cor129';//romans125';
+$db['default']['database'] = 'slocrus1_main';//a7253567_slocru';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
-$db['default']['db_debug'] = TRUE;
+$db['default']['db_debug'] = FALSE;
 $db['default']['cache_on'] = FALSE;
 $db['default']['cachedir'] = '';
 $db['default']['char_set'] = 'utf8';
