@@ -5,6 +5,11 @@ if (!defined('BASEPATH'))
 
 class Ministry extends CI_Controller {
 
+    public function __construct() {
+        parent::__construct();
+        $this->load->model('ministry_model', '', true);
+    }
+
     public function _remap($info) {
         if ($info == 'mail') {
             $this->load->helper('url');
@@ -42,10 +47,12 @@ class Ministry extends CI_Controller {
         }
 
         $data = array();
-        if($info == 'prayer')
+        if ($info == 'prayer')
             $data['prayer'] = true;
+        $result = $this->ministry_model->getMinistryTeams();
+        $data['ministry'] = $result;
         $this->load->view('header/header');
-        $this->load->view('ministry',$data);
+        $this->load->view('ministry', $data);
         $this->load->view('footer/footer');
     }
 
