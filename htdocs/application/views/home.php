@@ -2,8 +2,6 @@
     <div class="slider-wrapper theme-light hidden-xs">
         <div id="slider" class="nivoSlider">
             <a href="<?php echo base_url();?>"><img src="../assets/img/slides/Banner1_SLOCRU.png"/></a>
-            <a href="https://www.facebook.com/events/1426149407621173/"><img src="../assets/img/slides/WorshipPrayer_banner.png"/></a>
-            <a href="https://class.perspectives.org/Visitor/Public.aspx?ClassId=422005"><img src="../assets/img/slides/Perspectives_banner.png"/></a>
             <a href="<?php echo base_url();?>"><img src="../assets/img/slides/VeritasForum_banner.png"/></a>
         </div>
     </div>
