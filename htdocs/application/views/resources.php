@@ -38,23 +38,28 @@ $downloads = array(
         'Prayer' => $pdf_path . 'Bible_Study_On_Prayer.pdf'
     )
 );
+
+$prayer = array(
+    'Lectio Divina' => $pdf_path . 'Lectio_Divina.pdf',
+    'Prayer of Examen' => $pdf_path . 'Prayer_of_Examen.pdf'
+);
 ?>
 
 <div class="container" style="box-shadow: 0px 1px 10px #888888;
      border-radius: 0px 0px 10px 10px;
      background-color: #fff;
      padding: 0 100px 80px 100px">
-    
+
     <br/>
     <div class="col-md-12 text-center" style="font-size: 36pt; font-weight: 300; padding: 10px 25px">
         Resources
     </div>
     <br/>
-    
+
     <img src="../assets/img/dropshadowup2.png" style="width:100%; height:25px;"/>
     <br/><br/><br/>    
 
-    <div style="margin: 10px 0 10px 0">
+    <div class="container" style="margin: 10px 0 10px 0">
         <div class="container col-md-6" style="border-right: 1px dashed #CCC; padding-bottom: 20px">
             <div class="text-center" style="font-size: 24pt; font-weight: 300;">
                 Links
@@ -91,6 +96,32 @@ $downloads = array(
                     echo '</div>';
                 }
                 ?>
+            </ul>
+        </div>
+    </div>
+    <hr/>
+    <div class="container" style="margin: 10px 0 10px 0">
+        <div class="container col-md-6" style="border-right: 1px dashed #CCC; padding-bottom: 20px">
+            <div class="text-center" style="font-size: 24pt; font-weight: 300;">
+                Prayer
+            </div>
+            <br/>
+            <ul class="list-unstyled" style="font-size: 16pt; font-weight: 300;">
+                <?php
+                foreach ($prayer as $title => $files) {
+                    echo '<div style="margin-bottom: 1em;">';
+                    echo '<li><a href="' . $files . '">' . $title . '</a></li>';
+                    echo '</div>';
+                }
+                ?>
+            </ul>
+        </div>
+        <div class="container col-md-6">
+            <div class="text-center" style="font-size: 24pt; font-weight: 300;">
+                Fasting
+            </div>
+            <br/>
+            <ul class="list-unstyled" style="font-size: 16pt; font-weight: 300;">
             </ul>
         </div>
     </div>
