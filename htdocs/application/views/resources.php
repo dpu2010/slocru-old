@@ -41,8 +41,19 @@ $downloads = array(
 
 $prayer = array(
     'Lectio Divina' => $pdf_path . 'Lectio_Divina.pdf',
-    'Prayer of Examen' => $pdf_path . 'Prayer_of_Examen.pdf'
+    'Prayer of Examen' => $pdf_path . 'Prayer_of_Examen.pdf',
+    '6 Vital Questions about Prayer' => 'http://www.cru.org/training-and-growth/devotional-life/7-steps-to-fasting/07-six-vital-questions-prayer.htm',
+    'The Purpose of Prayer' => 'http://www.cru.org/training-and-growth/classics/10-basic-steps/4-prayer/index.htm'
 );
+$fasting = array(
+    'Abiding Through Fasting' => $pdf_path . 'Abiding_Through_Fasting.pdf',
+    'Prayer and Fasting' => $pdf_path . 'Prayer_and_Fasting.pdf',
+    'Your Guide to Fasting and Prayer' => 'http://www.cru.org/training-and-growth/devotional-life/7-steps-to-fasting/01-personal-guide.htm',
+    '7 Basic Steps to Fasting and Prayer' => 'http://www.cru.org/training-and-growth/devotional-life/personal-guide-to-fasting/01-message-from-bill-bright.htm',
+    'What is the Purpose of Fasting?' => 'http://www.desiringgod.org/interviews/what-is-the-purpose-of-fasting',
+    'Hunger for God' => 'http://www.desiringgod.org/seminars/hunger-for-god-session-3',
+    'Book: Celebration of Discipline by Richard J Foster' => 'http://www.amazon.com/Celebration-Discipline-Path-Spiritual-Growth/dp/0060628391'
+)
 ?>
 
 <div class="container" style="box-shadow: 0px 1px 10px #888888;
@@ -101,7 +112,7 @@ $prayer = array(
     </div>
     <hr/>
     <div class="container" style="margin: 10px 0 10px 0">
-        <div class="container col-md-6" style="border-right: 1px dashed #CCC; padding-bottom: 20px">
+        <div class="container col-md-6">
             <div class="text-center" style="font-size: 24pt; font-weight: 300;">
                 Prayer
             </div>
@@ -116,12 +127,19 @@ $prayer = array(
                 ?>
             </ul>
         </div>
-        <div class="container col-md-6">
+        <div class="container col-md-6" style="border-left: 1px dashed #CCC; padding-bottom: 20px">
             <div class="text-center" style="font-size: 24pt; font-weight: 300;">
                 Fasting
             </div>
             <br/>
             <ul class="list-unstyled" style="font-size: 16pt; font-weight: 300;">
+                <?php
+                foreach ($fasting as $title => $files) {
+                    echo '<div style="margin-bottom: 1em;">';
+                    echo '<li><a href="' . $files . '">' . $title . '</a></li>';
+                    echo '</div>';
+                }
+                ?>
             </ul>
         </div>
     </div>
