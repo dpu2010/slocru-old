@@ -6,7 +6,6 @@ function print_navbar_links($use_image) {
     $left_links = array(
         'BIBLE STUDIES' => base_url() . 'studies',
         'GET INVOLVED' => base_url() . 'ministry',
-        //'FALL RETREAT' => base_url() . 'fallretreat',
         'EVENTS' => base_url() . 'events',
         'RESOURCES' => base_url() . 'resources',
         'STAFF' => base_url() . 'staff'
@@ -48,6 +47,7 @@ function print_navbar_links($use_image) {
         <link href="../assets/css/bootstrap.css" rel="stylesheet" media="screen"/>
         <link href="../assets/css/nivo-slider.css" rel="stylesheet" media="screen"/>
         <link href="../assets/themes/light/light.css" rel="stylesheet" media="screen"/>
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
         <style type="text/css">
             * {
                 margin: 0;

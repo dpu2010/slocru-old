@@ -7,6 +7,7 @@ class Home extends CI_Controller {
 
     public function index() {
         $this->load->library('twitterapiexchange');
+        $this->load->model('event_model', '', true);
 
         $url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
         $getfield = '?screen_name=slocru&count=10';
@@ -18,7 +19,7 @@ class Home extends CI_Controller {
                 ->performRequest();
         $data['tweets'] = json_decode($json, true);
 
-        $ch = curl_init();
+        /*$ch = curl_init();
         $url = 'www.google.com/calendar/feeds/slocrusade@gmail.com/public/full?alt=json&orderby=starttime&max-results=10&singleevents=true&sortorder=ascending&futureevents=true';
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
@@ -27,6 +28,9 @@ class Home extends CI_Controller {
         $str = json_decode($str, true);
         if(isset($str['feed']['entry']))
             $data['events'] = $str['feed']['entry'];
+        */
+        $result = $this->event_model->getEvents();
+        $data['events'] = $result;
 
         $this->load->view('header/header');
         $this->load->view('home', $data);

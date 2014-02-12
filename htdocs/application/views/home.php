@@ -1,8 +1,14 @@
 <div class="container" style="box-shadow: 0px 1px 10px #888888; border-radius:0 0 10px 10px; background-color: #fff">
     <div class="slider-wrapper theme-light hidden-xs">
         <div id="slider" class="nivoSlider">
-            <a href="<?php echo base_url();?>"><img src="../assets/img/slides/Banner1_SLOCRU.png"/></a>
-            <a href="<?php echo base_url();?>"><img src="../assets/img/slides/VeritasForum_banner.png"/></a>
+            <a href="<?php echo base_url(); ?>"><img src="../assets/img/slides/Banner1_SLOCRU.png"/></a>
+            <?php
+            for ($i = 0; $i < count($events); $i++) {
+                if ($events[$i]->ShowSlide != 0) {
+                    echo '<a href="' . base_url() . '"><img src="' . $events[$i]->Image . '"/></a>';
+                }
+            }
+            ?>
         </div>
     </div>
 
@@ -87,64 +93,58 @@
         <div class="col-md-8">
             <img src="../assets/img/dropshadowup2.png" style="width:100%; height:25px;"/>
             <div style="height: 300px;padding: 10px 25px 10px 25px; overflow-y: scroll;">
-                <?php
-                if(isset($events)) {
-                    foreach ($events as $value) { 
-                    ?>
-                    <div class="row">
-                        <div class="pull-left" style="font-size: 20pt; font-weight: 300;"><i><?php echo $value['title']['$t']; ?></i></div>
-                        <div class="pull-right" style="font-size: 16pt;"><i>
-                                <?php
-                                echo date('F d, Y', strtotime(substr($value['gd$when'][0]['startTime'], 0, 10)));
-                                ?>
-                            </i></div>
-                    </div>
-                    <div class="row" style="font-size: 13pt; color: #5e5e5e">
-                        <?php
-                        //Thanks to css-tricks.com for url-parsing script
-                        $reg_exUrl = "/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/";
-                        $text = $value['content']['$t'];
-                        if (preg_match($reg_exUrl, $text, $url)) {
-                            echo preg_replace($reg_exUrl, "<a href=" . $url[0] . ">$url[0]</a> ", $text);
+<?php
+if (isset($events)) {
+    foreach ($events as $value) {
+        ?>
+                        <div class="row">
+                            <div class="pull-left" style="font-size: 20pt; font-weight: 300;"><i>
+                                    <a href="<?php echo base_url() . 'events/' .$value->DirectLink ?>"><?php echo $value->Name; ?></a>
+                                </i></div>
+                            <div class="pull-right" style="font-size: 16pt;"><i>
+                                    <?php
+                                    echo date('l, F j, Y', strtotime($value->Date));
+                                    ?>
+                                </i></div>
+                        </div>
+                        <div class="row" style="font-size: 13pt; color: #5e5e5e">
+                                    <?php echo $value->Description; ?>
+                        </div>
+                        <br/>
+                        <hr/>
+                            <?php
                         }
-                        else
-                            echo $text;
-                        ?>
-                    </div>
-                    <br/>
-                    <hr/>
-                <?php } 
-                }?>
+                    }
+                    ?>
             </div>
             <img src="../assets/img/dropshadowdown2.png" style="width:100%; height: 25px;"/>
         </div>
         <div class="col-md-4">
             <img src="../assets/img/dropshadowup2.png" style="width:100%; height:25px;"/>
             <div style="height: 300px; overflow-y: scroll">
-                <?php
-                foreach ($tweets as $value) {
-                    //$test = $tweets[0];
-                    $tw_date = explode(' ', $value['created_at']);
-                    echo '<div class="row" style="margin:0px">';
-                    echo '  <div class="pull-left" style="font-size:14pt;">';
-                    echo $value['user']['name'] . ' @' . $value['user']['screen_name'] . '<br/>';
-                    echo '  </div>';
-                    echo '  <div class="pull-right">' . $tw_date[1] . ' ' . $tw_date[2] . '</div>';
-                    echo '</div>';
+<?php
+foreach ($tweets as $value) {
+    //$test = $tweets[0];
+    $tw_date = explode(' ', $value['created_at']);
+    echo '<div class="row" style="margin:0px">';
+    echo '  <div class="pull-left" style="font-size:14pt;">';
+    echo $value['user']['name'] . ' @' . $value['user']['screen_name'] . '<br/>';
+    echo '  </div>';
+    echo '  <div class="pull-right">' . $tw_date[1] . ' ' . $tw_date[2] . '</div>';
+    echo '</div>';
 
-                    //Thanks to css-tricks.com for url-parsing script
-                    $reg_exUrl = "/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/";
-                    $text = $value['text'];
-                    if (preg_match($reg_exUrl, $text, $url)) {
-                        echo preg_replace($reg_exUrl, "<a href=" . $url[0] . ">$url[0]</a> ", $text);
-                    }
-                    else
-                        echo $text;
-                    //echo $value['text'];
+    //Thanks to css-tricks.com for url-parsing script
+    $reg_exUrl = "/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/";
+    $text = $value['text'];
+    if (preg_match($reg_exUrl, $text, $url)) {
+        echo preg_replace($reg_exUrl, "<a href=" . $url[0] . ">$url[0]</a> ", $text);
+    } else
+        echo $text;
+    //echo $value['text'];
 
-                    echo '<hr/>';
-                }
-                ?>
+    echo '<hr/>';
+}
+?>
             </div>
             <img src="../assets/img/dropshadowdown2.png" style="width:100%; height: 25px;"/>
         </div>

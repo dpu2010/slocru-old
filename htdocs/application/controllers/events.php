@@ -2,12 +2,31 @@
 
 class Events extends CI_Controller
 {
-	public function index()
-	{
-            $this->load->view('header/header');
-            $this->load->view('events');
-            $this->load->view('footer/footer');
-	}
+    public function __construct() {
+        parent::__construct();
+        $this->load->model('event_model', '', true);
+    }
+    
+    /*public function index()
+    {
+        $result = $this->event_model->getEvents();
+        $data['events'] = $result;
+        $this->load->view('header/header');
+        $this->load->view('events', $data);
+        $this->load->view('footer/footer');
+    }*/
+    public function _remap($method)
+    {
+        $result = $this->event_model->getEvents();
+        $data['events'] = $result;
+        if($method !== 'empty')
+        {
+            $data['directlink'] = $method;
+        }
+        $this->load->view('header/header');
+        $this->load->view('events', $data);
+        $this->load->view('footer/footer');
+    }
 }
 
 /* End of file welcome.php */
