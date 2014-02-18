@@ -5,7 +5,7 @@
             <?php
             for ($i = 0; $i < count($events); $i++) {
                 if ($events[$i]->ShowSlide != 0) {
-                    echo '<a href="' . base_url() . '"><img src="' . $events[$i]->Image . '"/></a>';
+                    echo '<a href="' . base_url() . 'events/' . $events[$i]->DirectLink .'"><img src="' . $events[$i]->Image . '"/></a>';
                 }
             }
             ?>
