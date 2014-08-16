@@ -80,13 +80,6 @@
                             echo '<br/>';
                             echo '<a href="'. $events[$i]->Link .'" class="btn btn-primary" style="padding: 10px; font-size: 15pt;"><i>More Information</i></a>';
                         echo '</td>';
-                        if($events[$i]->Name === 'Night at the Oscars')
-                        {
-                            echo '<td>';
-                                echo '<br/>';
-                                echo '<a href="" disabled="disabled" class="btn btn-success" style="padding: 10px; font-size: 15pt;"><i>Upload a Video</i></a>';
-                            echo '</td>';
-                        }
                     echo '</tr>';
                 echo '</table>';
             echo '</div>';
