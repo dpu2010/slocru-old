@@ -45,7 +45,7 @@
                 echo str_replace("\n",'<br/>',$ministry[$i]->Description);
                 echo '<br/><br/>';
                 echo '<div class="container" style="width: 40%">';
-                    echo '<a data-toggle="modal" href="#'.$id.'modal" class="btn btn-warning btn-lg btn-block" style="padding: 20px; font-size: 25pt;"><i>SIGN UP</i></a>';
+                    echo '<a data-toggle="modal" href="#'.$id.'modal" class="btn btn-warning btn-lg btn-block"  disabled="true" style="padding: 20px; font-size: 25pt;"><i>SIGN UP</i></a>';
                 echo '</div>';
                 
                 echo '<div class="modal fade" id="'.$id.'modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">';
@@ -85,7 +85,7 @@
                             echo '</div>';
                             echo '<div class="modal-footer">';
                                 echo '<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>';
-                                echo '<button type="submit" id="submit_button" class="btn btn-primary" data-loading-text="Sending...">Submit</button>';
+                                echo '<button type="submit" disabled="true" id="submit_button" class="btn btn-primary" data-loading-text="Sending...">Submit</button>';
                             echo '</div>';
                         echo '</form>';
                     echo '</div>';

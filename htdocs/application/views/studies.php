@@ -29,7 +29,7 @@
         </div>
         <br/><br/>
         <div class="container" style="width: 40%">
-            <a data-toggle="modal" href="#myModal" class="btn btn-warning btn-lg btn-block" style="padding: 20px; font-size: 25pt;"><i>SIGN UP</i></a>
+            <a data-toggle="modal" href="#myModal" class="btn btn-warning btn-lg btn-block" disabled = "true" style="padding: 20px; font-size: 25pt;"><i>SIGN UP</i></a>
         </div>
         <br/>
         <!-- Modal -->
@@ -159,7 +159,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            <button type="submit" id="submit_button" class="btn btn-primary" data-loading-text="Sending...">Submit</button>
+                            <button type="submit" id="submit_button" disabled="true" class="btn btn-primary" data-loading-text="Sending...">Submit</button>
                         </div>
                     </form>
                 </div><!-- /.modal-content -->
