@@ -25,49 +25,49 @@ class Studies extends CI_Controller {
         $notes = $this->input->post('notes');
         $interestArr = array(
             'Asian Americans' => 'tyler.mendoza@cru.org',
-            'Athletes' => 'matt.williams@cru.org',
+            'Athletes' => 'cardennis000@yahoo.com',
             'Greeks' => array('Female' => 'melanie.hanlon@cru.org', 'Male' => 'reid.zeller@cru.org'),
             'Latino/Hispanic' => 'reid.zeller@cru.org',
-            'Transfers' => 'kathryn.edmiston@cru.org'
+            'Transfers' => array('rbaca@calpoly.edu','adavis748@yahoo.com')
         );
         $emails = array(
             'Male' => array(
                 'Cal Poly SLO' => array(
                     'Freshmen' => array(
-                        'Yosemite' => array('dwagstaf@calpoly.edu', 'lundquis@calpoly.edu', 'rcarey@calpoly.edu', 'rtpate@calpoly.edu'),
-                        'Sierra Madre' => array('ebodenbach@gmail.com', 'celind@calpoly.edu', 'mhamada@calpoly.edu', 'alek.thelinquist@gmail.com'),
-                        'Tenaya' => array('jdavis45@calpoly.edu', 'ljschroe@calpoly.edu'),
-                        'Trinity' => array('bgreller@calpoly.edu', 'cmhennin@calpoly.edu'),
-                        'Santa Lucia' => array('thoekstr@calpoly.edu', 'john.simeroth@gmail.com'),
-                        'North Mountain' => array('darren12_11@yahoo.com.tw', 'jtbarkhimer@gmail.com'),
-                        'Muir' => array('samuelxlui@gmail.com', 'awsnyder21@gmail.com'),
-                        'Fremont' => array('craigcary@ymail.com', 'angelsfan1@gmail.com'),
-                        'Sequoia' => array('kportis@calpoly.edu', 'tsevern@calpoly.edu'),
-                        'Cerro Vista' => array('aalvar28@calpoly.edu'),
-                        'PCV' => array('jonathan.newman@cru.org'),
-                        'Other' => array('jonathan.newman@cru.org')
+                        'Yosemite' => array('wesleyfinkemeier@yahoo.com', 'Thelander.paul@gmail.com', 'jmolnar12@gmail.com', 'naltabet@gmail.com'),
+                        'Sierra Madre' => array('jthrew2012@gmail.com', 'cbatch@calpoly.edu', 'lukehannemann2@yahoo.com', 'dvanwork@calpoly.edu'),
+                        'Tenaya' => array('arbutruc@calpoly.edu', 'smkmak@sbcglobal.net'),
+                        'Trinity' => array('cscheiwe@calpoly.edu', 'savedbytheking7@gmail.com'),
+                        'Santa Lucia' => array('Charlie4franklin@gmail.com', 'garrisonjoel8@gmail.com'),
+                        'North Mountain' => array('rorystothers@gmail.com'),
+                        'Muir' => array('nwilli14@calpoly.edu', 'jon.oyan@gmail.com'),
+                        'Fremont' => array('oschwaeg@calpoly.edu', 'jhamilton1510@yahoo.com'),
+                        'Sequoia' => array('Bobbyjs33@yahoo.com', 'bradleylubich@gmail.com'),
+                        'Cerro Vista' => array('Tannersmar@gmail.com'),
+                        'PCV' => array('mnordmann40036@gmail.com','tjcanales57@gmail.com'),
+                        'Other' => array('kyle.fletcher@cru.org')
                     ),
-                    'Sophomore' => 'jonathan.newman@cru.org',
-                    'Junior' => 'jonathan.newman@cru.org',
-                    'Senior' => 'jonathan.newman@cru.org',
+                    'Sophomore' => 'kyle.fletcher@cru.org',
+                    'Junior' => 'kyle.fletcher@cru.org',
+                    'Senior' => 'kyle.fletcher@cru.org',
                     'Senior plus' => 'kyle.fletcher@cru.org'
                 ),
-                'Cuesta' => 'adam.nixon@cru.org'
+                'Cuesta' => 'kyle.fletcher@cru.org'
             ),
             'Female' => array(
                 'Cal Poly SLO' => array(
                     'Freshmen' => array(
-                        'Yosemite' => array('sjmay@calpoly.edu', 'ericaandris@yahoo.com', 'klbriggs@calpoly.edu', 'kwalke10@calpoly.edu'),
-                        'Sierra Madre' => array('scdean92@gmail.com', 'ceshanno@calpoly.edu', 'h.kirtland@comcast.net', 'regan.kate8@gmail.com'),
-                        'Tenaya' => array('paigekeating@yahoo.com', 'prystrom@gmail.com'),
-                        'Trinity' => array('aarimura@calpoly.edu', 'pvase@calpoly.edu', 'rebekkahtuck@aol.com', 'mmstewar@calpoly.edu'),
-                        'Santa Lucia' => array('pporche@calpoly.edu', 'bri_sny@sbcglobal.net'),
-                        'North Mountain' => array('pporche@calpoly.edu', 'bri_sny@sbcglobal.net'),
-                        'Muir' => array('yourleftshoe@comcast.net', 'cgwalter@calpoly.edu'),
-                        'Fremont' => array('mnbarnet@calpoly.edu', 'krbriggs26@yahoo.com'),
-                        'Sequoia' => array('krodabau@calpoly.edu', 'ccollom@calpoly.edu'),
-                        'Cerro Vista' => array('kbjrkman@calpoly.edu', 'kathleengrigsby@yahoo.com', 'kierstendemmond@yahoo.com', 'tawalker@calpoly.edu'),
-                        'PCV' => array('bkamp33@gmail.com', 'shwhite@calpoly.edu'),
+                        'Yosemite' => array('jonihillebrecht@yahoo.com', 'msulli19@calpoly.edu', 'lorenjackson16@yahoo.com'),
+                        'Sierra Madre' => array('abbyeelsing@aol.com'),
+                        'Tenaya' => array('Jessica.walter22@yahoo.com', 'katherineperilloux@gmail.com'),
+                        'Trinity' => array('gpappas@calpoly.edu', 'mfernald@calpoly.edu', 'eridenho@calpoly.edu', 'amclagga@calpoly.edu'),
+                        'Santa Lucia' => array('khicks03@calpoly.edu', 'awong76@calpoly.edu'),
+                        'North Mountain' => array('nicholeg3@yahoo.com'),
+                        'Muir' => array('amidoriwong@gmail.com', 'eringriffin003@gmail.com'),
+                        'Fremont' => array('sziegler@calpoly.edu', 'mmerseth@calpoly.edu'),
+                        'Sequoia' => array('mjreis@calpoly.edu', 'katiejo@gmail.com'),
+                        'Cerro Vista' => array('matisoonyz@yahoo.com', 'annamcc94@att.net', 'aparke04@calpoly.edu', 'blairemcc@att.net'),
+                        'PCV' => array('mblundel@calpoly.edu', 'eflickne@calpoly.edu','scsampson11@gmail.com','mpstickles08@gmail.com','amandamccaulley@ymail.com'),
                         'Other' => array('gretchen.pappas@cru.org')
                     ),
                     'Sophomore' => 'gretchen.pappas@cru.org',
@@ -75,7 +75,7 @@ class Studies extends CI_Controller {
                     'Senior' => 'jenny.davis@cru.org',
                     'Senior plus' => 'jenny.davis@cru.org'
                 ),
-                'Cuesta' => 'kelly.phillips@cru.org'
+                'Cuesta' => array('samlndsy@charter.net','cdhodges33@yahoo.com','emilywiller@gmail.com','hjanenoll@cox.net')
             )
         );
         if (gettype($emails[$gender][$college]) === 'string')

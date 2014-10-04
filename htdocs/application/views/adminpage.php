@@ -25,10 +25,12 @@ if (!$this->session->userdata('admin')) {
 
     <div class="tab-content">
         <div class="tab-pane active" id="home">1</div>
-        <div class="tab-pane" id="bstud">2</div>
+        <div class="tab-pane" id="bstud">
+            <?php $this->load->view('admin/adminstudies'); ?>
+        </div>
         <div class="tab-pane" id="involved">3</div>
         <div class="tab-pane" id="events">
-            <?php $this->load->view('adminevents'); ?>
+            <?php $this->load->view('admin/adminevents'); ?>
         </div>
         <div class="tab-pane" id="resources">5</div>
         <div class="tab-pane" id="staff">6</div>
