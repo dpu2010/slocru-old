@@ -26,8 +26,8 @@ class Studies extends CI_Controller {
         $interestArr = array(
             'Asian Americans' => 'tyler.mendoza@cru.org',
             'Athletes' => 'cardennis000@yahoo.com',
-            'Greeks' => array('Female' => 'melanie.hanlon@cru.org', 'Male' => 'reid.zeller@cru.org'),
-            'Latino/Hispanic' => 'reid.zeller@cru.org',
+            'Greeks' => array('Female' => 'melanie.hanlon@cru.org', 'Male' => 'melanie.hanlon@cru.org'),
+            'Latino/Hispanic' => 'esolteroflores@gmail.com',
             'Transfers' => array('rbaca@calpoly.edu','adavis748@yahoo.com')
         );
         $emails = array(
@@ -45,14 +45,14 @@ class Studies extends CI_Controller {
                         'Sequoia' => array('Bobbyjs33@yahoo.com', 'bradleylubich@gmail.com'),
                         'Cerro Vista' => array('Tannersmar@gmail.com'),
                         'PCV' => array('mnordmann40036@gmail.com','tjcanales57@gmail.com'),
-                        'Other' => array('kyle.fletcher@cru.org')
+                        'Other' => array('jacobkissack@gmail.com')
                     ),
-                    'Sophomore' => 'kyle.fletcher@cru.org',
-                    'Junior' => 'kyle.fletcher@cru.org',
-                    'Senior' => 'kyle.fletcher@cru.org',
-                    'Senior plus' => 'kyle.fletcher@cru.org'
+                    'Sophomore' => 'jacobkissack@gmail.com',
+                    'Junior' => 'jacobkissack@gmail.com',
+                    'Senior' => 'jacobkissack@gmail.com',
+                    'Senior plus' => 'jacobkissack@gmail.com'
                 ),
-                'Cuesta' => 'kyle.fletcher@cru.org'
+                'Cuesta' => 'jacobkissack@gmail.com'
             ),
             'Female' => array(
                 'Cal Poly SLO' => array(
@@ -68,12 +68,12 @@ class Studies extends CI_Controller {
                         'Sequoia' => array('mjreis@calpoly.edu', 'katiejo@gmail.com'),
                         'Cerro Vista' => array('matisoonyz@yahoo.com', 'annamcc94@att.net', 'aparke04@calpoly.edu', 'blairemcc@att.net'),
                         'PCV' => array('mblundel@calpoly.edu', 'eflickne@calpoly.edu','scsampson11@gmail.com','mpstickles08@gmail.com','amandamccaulley@ymail.com'),
-                        'Other' => array('gretchen.pappas@cru.org')
+                        'Other' => array('dana.williamson@cru.org')
                     ),
-                    'Sophomore' => 'gretchen.pappas@cru.org',
-                    'Junior' => 'jenny.davis@cru.org',
-                    'Senior' => 'jenny.davis@cru.org',
-                    'Senior plus' => 'jenny.davis@cru.org'
+                    'Sophomore' => 'dana.williamson@cru.org',
+                    'Junior' => 'dana.williamson@cru.org',
+                    'Senior' => 'dana.williamson@cru.org',
+                    'Senior plus' => 'dana.williamson@cru.org'
                 ),
                 'Cuesta' => array('samlndsy@charter.net','cdhodges33@yahoo.com','emilywiller@gmail.com','hjanenoll@cox.net')
             )

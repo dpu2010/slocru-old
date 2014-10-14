@@ -11,7 +11,7 @@
         //Since we have 2 Mission Team Leaders, we center those up top
         echo '<div class="row" style="padding: 10px 0 30px 0;">';
         echo '<div class="col-md-3"></div>';
-        for($i = 0; $i < 2; $i++) {
+       /* for($i = 0; $i < 2; $i++) {
             echo '<div class="col-md-3" style="text-align: center;">';
             echo '<div style="font-size: 20pt; font-weight: 300;">';
             echo $staff[$i]->Name;
@@ -21,10 +21,10 @@
             echo '</div>';
         }
         echo '<div class="col-md-3"></div>';
-        echo '</div>';
+        echo '</div>';*/
         
         //Loop through the rest of staff
-        for($i = 2; $i < count($staff); $i) {
+        for($i = 0; $i < count($staff); $i) {
             echo '<div class="row" style="padding: 10px 0 30px 0;">';
             
             for($j = 0; $j < 3; $j++) {

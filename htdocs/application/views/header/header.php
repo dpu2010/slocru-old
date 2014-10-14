@@ -11,10 +11,10 @@ function print_navbar_links($use_image) {
         'STAFF' => base_url() . 'staff'
     );
     $right_links = array(
-        //'STAFF' => base_url() . 'staff',
+        'STAFF' => base_url() . 'staff',
         'ABOUT' => base_url() . 'about',
         'HOUSING' => 'http://www.slocrusade.com/housing/',
-        'RIDES' => 'http://www.slocru.com/rides/login/',
+        //'RIDES' => 'http://www.slocru.com/rides/login/',
         'GIVE' => 'https://give.cru.org/2281756',
         '' => ''
     );

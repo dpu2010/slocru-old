@@ -23,7 +23,7 @@
                 meeting starts at 8pm
             </div>
             <style>
-                #directions a {
+                /*#directions a {
                     background-image: url('../assets/img/slocru_button_primary.png');
                     -webkit-transition: background-image 0.2s ease-in-out;
                     -moz-transition: background-image 0.2s ease-in-out;
@@ -33,11 +33,15 @@
                 }
                 #directions a:hover{
                     background-image: url('../assets/img/slocru_button.png');
-                }
+                }*/
             </style>
-            <div id="directions" class="col-md-4" style="position: relative; top: 15px; padding-right: 0px">
+            <div id="directions" class="col-md-4" style="position: relative; top: 0px; padding-right: 0px">
                 <a href="http://maps.google.com/maps?f=q&hl=en&geocode=&q=1775+Calle+Joaquin,+San+Luis+Obispo+CA,+93405" class="btn btn-default col-md-12" style="font-size: 20pt; font-weight: 300;" target='_blank'>
                     <i>GET DIRECTIONS</i>
+                </a>
+                <br/><br/>
+                <a href="https://www.youtube.com/user/slocrusade/videos" class="btn btn-default col-md-12" style="font-size: 20pt; font-weight: 300;" target='_blank'>
+                    <i>WATCH THE MEETING LIVE</i>
                 </a>
             </div>
             <img src="../assets/img/dropshadowdown2.png" style="width:100%; height: 25px;"/>
