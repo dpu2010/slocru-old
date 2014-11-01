@@ -16,7 +16,7 @@
         <p>
             Cru (formerly Campus Crusade for Christ) is an interdenominational
             worldwide Christian ministry. It's our goal to give every student
-            the opportunity to hear the good news of Jesus Christ.                      
+            the opportunity to hear the good news of Jesus Christ.                     
         </p>
         <br/>
         <p>
