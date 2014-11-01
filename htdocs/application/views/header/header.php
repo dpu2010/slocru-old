@@ -13,7 +13,7 @@ function print_navbar_links($use_image) {
     $right_links = array(
         'STAFF' => base_url() . 'staff',
         'ABOUT' => base_url() . 'about',
-        'HOUSING' => 'http://www.slocrusade.com/housing/',
+        'HOUSING' => 'http://www.slocru.com/housing/',
         //'RIDES' => 'http://www.slocru.com/rides/login/',
         'GIVE' => 'https://give.cru.org/2281756',
         '' => ''
