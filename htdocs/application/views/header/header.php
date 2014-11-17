@@ -7,8 +7,7 @@ function print_navbar_links($use_image) {
         'BIBLE STUDIES' => base_url() . 'studies',
         'GET INVOLVED' => base_url() . 'ministry',
         'EVENTS' => base_url() . 'events',
-        'RESOURCES' => base_url() . 'resources',
-        //'STAFF' => base_url() . 'staff'
+        'RESOURCES' => base_url() . 'resources'
     );
     $right_links = array(
         'STAFF' => base_url() . 'staff',
@@ -48,7 +47,8 @@ function print_navbar_links($use_image) {
         <link href="../assets/css/nivo-slider.css" rel="stylesheet" media="screen"/>
         <link href="../assets/themes/light/light.css" rel="stylesheet" media="screen"/>
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-        <style type="text/css">
+        <link href="../assets/css/header.css" rel="stylesheet">
+        <!--<style type="text/css">
             * {
                 margin: 0;
                 padding: 0;
@@ -97,25 +97,19 @@ function print_navbar_links($use_image) {
                 border:0;
                 display:block;
             }
-        </style>
+        </style>-->
     </head>
     <body>
         <div id="header" class="navbar navbar-default" role="navigation">
-            <div class="navbar-header">
-                <button type="button" class="visible-xs visible-sm navbar-toggle" data-toggle="collapse" data-target="#navbar-div">
-                    <img src="assets/img/top_link.png">
-                </button>
-            </div>
-            <div id="navbar-div" class="collapse navbar-collapse navbar-inner">
-                <ul id="desktop-navbar" class="nav navbar-nav text-center hidden-xs hidden-sm">
-                    <?php
-                    print_navbar_links(/* use_image= */true);
-                    ?>
-                </ul>       
-                <ul id="mobile-navbar" class="nav navbar-nav visible-xs visible-sm">
-                    <?php
-                    print_navbar_links(/* use_image= */false);
-                    ?>
-                </ul>
-            </div>
+            <img src="../assets/img/logo.png" class="logo" />
+            <img src="../assets/img/facebook.png" class="social" />
+            <img src="../assets/img/instagram.png" class="social" />
+            <img src="../assets/img/twitter.png" class="social" />
+            
+            <ul class="menu">
+                <li> ABOUT </li>
+                <li> GET INVOLVED </li>
+                <li> RESOURCES </li>
+                <li> MEDIA </li>
+            </ul>
         </div>
