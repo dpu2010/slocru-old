@@ -8,7 +8,7 @@ function print_navbar_links($use_image) {
         'GET INVOLVED' => base_url() . 'ministry',
         'EVENTS' => base_url() . 'events',
         'RESOURCES' => base_url() . 'resources',
-        'STAFF' => base_url() . 'staff'
+        //'STAFF' => base_url() . 'staff'
     );
     $right_links = array(
         'STAFF' => base_url() . 'staff',
