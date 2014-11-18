@@ -25,6 +25,7 @@ and open the template in the editor.
 
 .middle {
     height: 175pt;
+    background-color: #f7f8f8;
 }
 
 .column {
@@ -91,7 +92,7 @@ p.button {
 
 .bottom {
     height: 215pt;
-    background-color: #666;
+    background-color: #e4e5e4;
 }
 
 img.holder {
