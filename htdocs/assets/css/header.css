@@ -7,13 +7,39 @@ and open the template in the editor.
     Created on : Nov 17, 2014, 12:58:13 AM
     Author     : kylereis
 */
+@font-face {
+    font-family: "FreightSansProLight";
+    src: url('../fonts/FreigSanProLig.otf') format('opentype');
+}
 
 img.logo {
+    margin-left: 40px;
+    margin-top: 25px;
     width: 95pt;
     height: 75pt;
 }
 
 img.social {
+    float: right;
     width: 20pt;
     height: 20pt;
+    margin-right: 6px;
+    margin-top: 30px;
+}
+
+li {
+    font-family: "FreightSansProLight";
+    font-size: 12pt;
+    display: inline;
+    padding: .5em;
+}
+
+.menu {
+    float: right;
+    margin-right: 64pt;
+    margin-bottom: 26pt;
+}
+
+#twitter {
+    margin-right: 64pt;
 }

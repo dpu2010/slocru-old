@@ -47,7 +47,9 @@ function print_navbar_links($use_image) {
         <link href="../assets/css/nivo-slider.css" rel="stylesheet" media="screen"/>
         <link href="../assets/themes/light/light.css" rel="stylesheet" media="screen"/>
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-        <link href="../assets/css/header.css" rel="stylesheet">
+        <link href="../assets/css/header.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/home.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/footer.css" rel="stylesheet" type="text/css">
         <!--<style type="text/css">
             * {
                 margin: 0;
@@ -100,16 +102,20 @@ function print_navbar_links($use_image) {
         </style>-->
     </head>
     <body>
-        <div id="header" class="navbar navbar-default" role="navigation">
-            <img src="../assets/img/logo.png" class="logo" />
-            <img src="../assets/img/facebook.png" class="social" />
-            <img src="../assets/img/instagram.png" class="social" />
-            <img src="../assets/img/twitter.png" class="social" />
+        <div id="header" role="navigation">
+            <div class="container">
+                <img src="../assets/img/logo.png" class="logo"/>
+                <img src="../assets/img/twitter.png" class="social" id="twitter"/>
+                <img src="../assets/img/instagram.png" class="social"/>
+                <img src="../assets/img/facebook.png" class="social"/>
+            </div>
             
-            <ul class="menu">
-                <li> ABOUT </li>
-                <li> GET INVOLVED </li>
-                <li> RESOURCES </li>
-                <li> MEDIA </li>
-            </ul>
+            <div class="container">
+                <ul class="menu">
+                    <li> ABOUT </li>
+                    <li> GET INVOLVED </li>
+                    <li> RESOURCES </li>
+                    <li> MEDIA </li>
+                </ul>
+            </div>
         </div>
