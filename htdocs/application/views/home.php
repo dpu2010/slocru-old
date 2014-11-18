@@ -12,8 +12,28 @@
         </div>
     </div>
 </div>
-<div class="container">
-    
+<div class="container middle">
+    <div class="column">
+        <div class="text">
+            <p class="about">WHAT IS CRU CENTRAL COAST?</p>
+            <p class="mission" id="line1">A caring community passionate about</p>
+            <p class="mission" id="line2">connecting people to Jesus Christ.</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="text">
+            <p class="meeting">WEEKLY MEETING</p>
+            <p class="meeting-info"></p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="directions-button">
+            <p class="button">GET DIRECTIONS</p>
+        </div>
+        <div class="livestream-button">
+            <p class="button">WATCH THE MEETING</p>
+        </div>
+    </div>
 </div>
 <div class="container bottom">
     <div class="wrap">

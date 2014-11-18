@@ -8,6 +8,87 @@ and open the template in the editor.
     Author     : kylereis
 */
 
+@font-face {
+    font-family: "FreightSansProBold";
+    src: url('../fonts/FreigSanProBold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "FreightSansProSemiBold";
+    src: url('../fonts/FreigSanProSem.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "FreightSansProSemiItalic";
+    src: url('../fonts/FreigSanProLigIt.otf') format('opentype');
+}
+
+.middle {
+    height: 175pt;
+}
+
+.column {
+    float: left;
+    width: 33.3%;
+}
+
+p.about {
+    margin-top: 30pt;
+    text-align: center;
+    font-size: 14pt;
+    font-family: "FreightSansProSemiBold";
+    color: #666062;
+}
+
+p.mission {
+    font-family: "FreightSansProSemiItalic";
+    font-size: 13pt;
+    text-align: center;
+    color: #dd7d1b;
+}
+
+#line1 {
+    margin-top: -4pt;
+}
+
+#line2 {
+    margin-top: -8pt;
+}
+
+p.meeting {
+    margin-top: 30pt;
+    text-align: center;
+    font-size: 14pt;
+    font-family: "FreightSansProSemiBold";
+    color: #007398;
+}
+
+.directions-button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30pt;
+    height: 30pt;
+    width: 208pt;
+    background-color: #3eb1c8;
+}
+
+.livestream-button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10pt;
+    height: 30pt;
+    width: 208pt;
+    background-color: #007398;
+}
+
+p.button {
+    text-align: center;
+    padding-top: 5pt;
+    font-family: "FreightSansProBold";
+    font-size: 14pt;
+    color: #ffffff;
+}
+
 .bottom {
     height: 215pt;
     background-color: #666;
@@ -32,16 +113,4 @@ img.holder {
     width: 250pt;
     height: 164pt;
     background-color: #ffffff;
-}
-
-#holder1 {
-    
-}
-
-#holder2 {
-    
-}
-
-#holder3 {
-    
 }
