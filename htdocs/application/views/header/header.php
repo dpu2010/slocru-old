@@ -39,7 +39,7 @@ function print_navbar_links($use_image) {
 ?>
 <html>
     <head>
-        <title>Slo cru | Campus Crusade for Christ at Cal Poly and Cuesta</title>
+        <title>Cru Central Coast | Campus Crusade for Christ on the Central Coast</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Bootstrap -->
         <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,400italic' rel='stylesheet' type='text/css'/>
@@ -104,7 +104,9 @@ function print_navbar_links($use_image) {
     <body>
         <div id="header" role="navigation">
             <div class="container">
-                <img src="../assets/img/logo.png" class="logo"/>
+                <a href="http://www.slocru.com">
+                    <img src="../assets/img/logo.png" class="logo"/>
+                </a>
                 <img src="../assets/img/twitter.png" class="social" id="twitter"/>
                 <img src="../assets/img/instagram.png" class="social"/>
                 <img src="../assets/img/facebook.png" class="social"/>

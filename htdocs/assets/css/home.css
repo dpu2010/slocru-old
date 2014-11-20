@@ -19,8 +19,18 @@ and open the template in the editor.
 }
 
 @font-face {
-    font-family: "FreightSansProSemiItalic";
+    font-family: "FreightSansProItalic";
     src: url('../fonts/FreigSanProLigIt.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "FreightSansProLight";
+    src: url('../fonts/FreigSanProLig.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "FreightSansProMedium";
+    src: url('../fonts/FreigSanProMed.otf') format('opentype');
 }
 
 .middle {
@@ -42,7 +52,7 @@ p.about {
 }
 
 p.mission {
-    font-family: "FreightSansProSemiItalic";
+    font-family: "FreightSansProItalic";
     font-size: 13pt;
     text-align: center;
     color: #dd7d1b;
@@ -62,6 +72,28 @@ p.meeting {
     font-size: 14pt;
     font-family: "FreightSansProSemiBold";
     color: #007398;
+}
+
+.meeting-info {
+    font-family: "FreightSansProLight";
+    font-size: 12pt;
+    text-align: center;
+}
+
+span {
+    font-family: "FreightSansProMedium";
+    font-size: 12pt;
+    text-align: center;
+    color: #3eb1c8;
+}
+
+.address {
+    font-family: "FreightSansProLight";
+    font-size: 10pt;
+    text-align: center;
+    border-top-width: 1pt;
+    border-top-style: solid;
+    border-top-color: #e4e5e4;
 }
 
 .directions-button {
