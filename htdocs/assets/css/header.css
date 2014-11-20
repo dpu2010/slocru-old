@@ -43,3 +43,7 @@ li {
 #twitter {
     margin-right: 64pt;
 }
+
+.subcatagories {
+    display: none;
+}

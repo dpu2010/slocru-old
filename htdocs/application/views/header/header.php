@@ -1,41 +1,6 @@
 <?php
 $this->load->helper('html');
 $this->load->helper('url');
-
-function print_navbar_links($use_image) {
-    $left_links = array(
-        'BIBLE STUDIES' => base_url() . 'studies',
-        'GET INVOLVED' => base_url() . 'ministry',
-        'EVENTS' => base_url() . 'events',
-        'RESOURCES' => base_url() . 'resources'
-    );
-    $right_links = array(
-        'STAFF' => base_url() . 'staff',
-        'ABOUT' => base_url() . 'about',
-        'HOUSING' => 'http://www.slocru.com/housing/',
-        //'RIDES' => 'http://www.slocru.com/rides/login/',
-        'GIVE' => 'https://give.cru.org/2281756',
-        '' => ''
-    );
-    foreach ($left_links as $name => $href) {
-        echo '<li>';
-        echo '<a href="' . $href . '">';
-        echo $name;
-        echo '</a></li>';
-    }
-    if ($use_image) {
-        echo '<li>';
-        echo '<img id="home-button" src="../assets/img/top_link.png">';
-        echo '</li>';
-    }
-
-    foreach ($right_links as $name => $href) {
-        echo '<li>';
-        echo '<a href="' . $href . '">';
-        echo $name;
-        echo '</a></li>';
-    }
-}
 ?>
 <html>
     <head>
@@ -50,56 +15,6 @@ function print_navbar_links($use_image) {
         <link href="../assets/css/header.css" rel="stylesheet" type="text/css">
         <link href="../assets/css/home.css" rel="stylesheet" type="text/css">
         <link href="../assets/css/footer.css" rel="stylesheet" type="text/css">
-        <!--<style type="text/css">
-            * {
-                margin: 0;
-                padding: 0;
-
-                -webkit-font-smoothing: antialiased;
-                /*-webkit-box-sizing: border-box;
-                -moz-box-sizing: border-box;
-                box-sizing: border-box;*/
-            }
-            #desktop-navbar {
-                width: 100%;
-            }
-            #desktop-navbar > li {
-                float: none;
-                display: inline-block;
-                width: 9%;
-            }
-            #home-button:hover {
-                cursor: pointer;
-            }
-            #navbar-div {
-                box-shadow: 1px 5px 5px -4px #888888;
-                overflow: hidden;
-            }
-            #mobile-navbar {
-                padding-left: 10px;
-            }
-            .navbar-collapse {               
-                max-height: none; /* The default 340px cuts off links. */
-            }
-            .navbar-header button {
-                float: left;
-                margin-left: 15px;
-            }
-            .nivoSlider {
-                position:relative;
-                background:url(../assets/themes/light/loading.gif) no-repeat 50% 50%;
-            }
-            .nivoSlider img {
-                position:absolute;
-                top:0px;
-                left:0px;
-                display:none;
-            }
-            .nivoSlider a {
-                border:0;
-                display:block;
-            }
-        </style>-->
     </head>
     <body>
         <div id="header" role="navigation">
@@ -107,9 +22,15 @@ function print_navbar_links($use_image) {
                 <a href="http://www.slocru.com">
                     <img src="../assets/img/logo.png" class="logo"/>
                 </a>
-                <img src="../assets/img/twitter.png" class="social" id="twitter"/>
-                <img src="../assets/img/instagram.png" class="social"/>
-                <img src="../assets/img/facebook.png" class="social"/>
+                <a href="https://twitter.com/SLOcru">
+                    <img src="../assets/img/twitter.png" class="social" id="twitter"/>
+                </a>
+                <a href="http://instagram.com/slo_cru/">
+                    <img src="../assets/img/instagram.png" class="social"/>
+                </a>
+                <a href="https://www.facebook.com/SloCrusade">
+                    <img src="../assets/img/facebook.png" class="social"/>
+                </a>
             </div>
             
             <div class="container">
@@ -119,5 +40,43 @@ function print_navbar_links($use_image) {
                     <li> RESOURCES </li>
                     <li> MEDIA </li>
                 </ul>
+            </div>
+            <div class="subcatagories">
+                <div class="about">
+                    <a href="staff">STAFF</a>
+                       /   
+                    <a href="https://give.cru.org/2281756">GIVE</a>
+                       /   
+                    <a href="">HISTORY</a>
+                       /   
+                    <a href="http://http://www.cru.org/">CRU.ORG</a>
+                </div>
+                <div class="get-involved">
+                    <a href="">COMMUNITY GROUPS</a>
+                       /   
+                    <a href="ministry">MINISTRY TEAMS</a>
+                       /   
+                    <a href="events">EVENTS</a>
+                       /   
+                    <a href="">CONTEXTUALIZED MINISTRIES</a>
+                       /   
+                    <a href="">SUMMER MISSIONS</a>
+                </div>
+                <div class="resources">
+                    <a href="housing">HOUSING</a>
+                       /   
+                    <a href="">LITERATURE</a>
+                </div>
+                <div class="media">
+                    <a href="https://www.youtube.com/user/slocrusade/videos">YOUTUBE</a>
+                       /   
+                    <a href="https://www.facebook.com/SloCrusade">FACEBOOK</a>
+                       /   
+                    <a href="https://twitter.com/SLOcru">TWITTER</a>
+                       /   
+                    <a href="http://instagram.com/slo_cru/">INSTAGRAM</a>
+                       /   
+                    <a href="">PHOTO GALLERY</a>
+                </div>
             </div>
         </div>

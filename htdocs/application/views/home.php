@@ -18,6 +18,9 @@
             <p class="about">WHAT IS CRU CENTRAL COAST?</p>
             <p class="mission" id="line1">A caring community passionate about</p>
             <p class="mission" id="line2">connecting people to Jesus Christ.</p>
+            <div class="learn-more-button">
+                <p class="learn-more">You can learn more here</p>
+            </div>
         </div>
     </div>
     <div class="column">
@@ -32,11 +35,17 @@
         <div class="directions-button">
             <p class="button">GET DIRECTIONS</p>
         </div>
+        <!-- The Watch meetings button is currently buggy, Fix Later. -->
         <div class="livestream-button">
-            <p class="button">WATCH THE MEETING</p>
+            <a href="https://www.youtube.com/user/slocrusade/videos">
+                <p class="button">WATCH THE MEETING</p>
+            </a>
         </div>
     </div>
 </div>
+
+<!-- This will possibly have to be rewritten in php as the images are not going
+     to always be the same three, but will change throughout the year. -->
 <div class="container bottom">
     <div class="wrap">
         <div class="matting">
