@@ -58,8 +58,26 @@ p.mission {
     color: #dd7d1b;
 }
 
+.learn-more-button {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p.learn-more {
+    text-align: center;
+    font-family: "FreightSansProLight";
+    font-size: 9pt;
+    color: #666062;
+    border: 1pt solid #666062;
+}
+
 #line1 {
     margin-top: -4pt;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 #line2 {
@@ -131,19 +149,12 @@ img.holder {
     float: left;
     width: 232pt;
     height: 148pt;
-    margin-top: 8pt;
-    margin-left: 8pt;
+    margin-top: 26pt;
+    margin-left: 25pt;
+    border: 8pt solid #ffffff;
 }
 
 .wrap {
     float: left;
     width: 33.3%;
-}
-
-.matting {
-    margin-top: 26pt;
-    margin-left: 25pt;
-    width: 250pt;
-    height: 164pt;
-    background-color: #ffffff;
 }

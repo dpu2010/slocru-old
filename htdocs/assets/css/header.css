@@ -12,6 +12,11 @@ and open the template in the editor.
     src: url('../fonts/FreigSanProLig.otf') format('opentype');
 }
 
+@font-face {
+    font-family: "FreightSansProSemiBold";
+    src: url('../fonts/FreigSanProSem.otf') format('opentype');
+}
+
 img.logo {
     margin-left: 40px;
     margin-top: 25px;
@@ -45,5 +50,14 @@ li {
 }
 
 .subcatagories {
+    float: right;
+    margin-right: 64pt;
     display: none;
 }
+
+/*.about:active {
+    display: inline;
+    background: #dd7d1b;
+    font-family: "FreightSansProSemiBold";
+    color: #ffffff;
+}*/

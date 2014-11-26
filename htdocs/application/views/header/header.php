@@ -35,10 +35,10 @@ $this->load->helper('url');
             
             <div class="container">
                 <ul class="menu">
-                    <li> ABOUT </li>
-                    <li> GET INVOLVED </li>
-                    <li> RESOURCES </li>
-                    <li> MEDIA </li>
+                    <li class="about"> ABOUT </li>
+                    <li class="get-involved"> GET INVOLVED </li>
+                    <li class="resources"> RESOURCES </li>
+                    <li class="media"> MEDIA </li>
                 </ul>
             </div>
             <div class="subcatagories">
