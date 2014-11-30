@@ -9,7 +9,10 @@ var main = function() {
         $('.menu-about').css({
             "background-color": "#f9b625"
         });
-        $('a.menu-about').show();
+        $('#about-links').toggle();
+        $('.subcatagories').css({
+            "background-color": "#f9b625"
+        });
     });
 };
 

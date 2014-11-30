@@ -53,6 +53,9 @@ li {
 .subcatagories {
     float: right;
     margin-right: 64pt;
+}
+
+#about-links, #involvement-links, #media-links, #resources-links {
     display: none;
 }
 

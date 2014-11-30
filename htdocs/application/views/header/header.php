@@ -45,7 +45,7 @@ $this->load->helper('url');
                 </ul>
             </div>
             <div class="subcatagories">
-                <div class="menu-about">
+                <div id="about-links" class="menu-about">
                     <a href="staff">STAFF</a>
                        /   
                     <a href="https://give.cru.org/2281756">GIVE</a>
@@ -54,7 +54,7 @@ $this->load->helper('url');
                        /   
                     <a href="http://http://www.cru.org/">CRU.ORG</a>
                 </div>
-                <div class="menu-get-involved">
+                <div id="involvement-links" class="menu-get-involved">
                     <a href="">COMMUNITY GROUPS</a>
                        /   
                     <a href="ministry">MINISTRY TEAMS</a>
@@ -65,12 +65,12 @@ $this->load->helper('url');
                        /   
                     <a href="">SUMMER MISSIONS</a>
                 </div>
-                <div class="menu-resources">
+                <div id="resources-links" class="menu-resources">
                     <a href="housing">HOUSING</a>
                        /   
                     <a href="">LITERATURE</a>
                 </div>
-                <div class="menu-media">
+                <div id="media-links" class="menu-media">
                     <a href="https://www.youtube.com/user/slocrusade/videos">YOUTUBE</a>
                        /   
                     <a href="https://www.facebook.com/SloCrusade">FACEBOOK</a>
