@@ -74,7 +74,8 @@
             pauseTime: 5000,
             controlNav: false,
             prevText: '<',
-            nextText: '>'
+            nextText: '>',
+            directionNav: false
         });
     });
 </script>

@@ -29,10 +29,10 @@ $this->load->helper('url');
                     <img src="../assets/img/twitter.png" class="social" id="twitter"/>
                 </a>
                 <a href="http://instagram.com/slo_cru/">
-                    <img src="../assets/img/instagram.png" class="social"/>
+                    <img src="../assets/img/instagram.png" class="social" id="instagram"/>
                 </a>
                 <a href="https://www.facebook.com/SloCrusade">
-                    <img src="../assets/img/facebook.png" class="social"/>
+                    <img src="../assets/img/facebook.png" class="social" id="facebook"/>
                 </a>
             </div>
             

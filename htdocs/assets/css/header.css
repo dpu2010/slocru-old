@@ -59,6 +59,10 @@ li {
     display: none;
 }
 
+#twitter:hover, #facebook:hover, #instagram:hover {
+    opacity: .5;
+}
+
 /*.about:active {
     display: inline;
     background: #dd7d1b;
