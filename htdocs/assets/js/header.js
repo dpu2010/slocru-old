@@ -5,14 +5,44 @@
  */
 
 var main = function() {
-    $('li.menu-about').click(function() {
-        $('.menu-about').css({
+    $('.menu-about').click(function() {
+        $(this).css({
             "background-color": "#f9b625"
         });
-        $('#about-links').toggle();
-        $('.subcatagories').css({
+        jQuery('#about-links, .subcatagories').toggleClass('hidden');
+        /*$('.subcatagories').css({
+            "background-color": "#f9b625"
+        });*/
+    });
+    
+    $('.menu-get-involved').click(function() {
+        $(this).css({
             "background-color": "#f9b625"
         });
+        jQuery('#involvement-links, .subcatagories').toggleClass('hidden');
+        /*$('.subcatagories').css({
+            "background-color": "#f9b625"
+        });*/
+    });
+    
+    $('.menu-resources').click(function() {
+        $(this).css({
+            "background-color": "#f9b625"
+        });
+        jQuery('#resources-links, .subcatagories').toggleClass('hidden');
+        /*$('.subcatagories').css({
+            "background-color": "#f9b625"
+        });*/
+    });
+    
+    $('.menu-media').click(function() {
+        $(this).css({
+            "background-color": "#f9b625"
+        });
+        jQuery('#media-links, .subcatagories').toggleClass('hidden');
+        /*$('.subcatagories').css({
+            "background-color": "#f9b625"
+        });*/
     });
 };
 

@@ -44,42 +44,44 @@ $this->load->helper('url');
                     <li class="menu-media"> MEDIA </li>
                 </ul>
             </div>
-            <div class="subcatagories">
-                <div id="about-links" class="menu-about">
-                    <a href="staff">STAFF</a>
-                       /   
-                    <a href="https://give.cru.org/2281756">GIVE</a>
-                       /   
-                    <a href="">HISTORY</a>
-                       /   
-                    <a href="http://http://www.cru.org/">CRU.ORG</a>
-                </div>
-                <div id="involvement-links" class="menu-get-involved">
-                    <a href="">COMMUNITY GROUPS</a>
-                       /   
-                    <a href="ministry">MINISTRY TEAMS</a>
-                       /   
-                    <a href="events">EVENTS</a>
-                       /   
-                    <a href="">CONTEXTUALIZED MINISTRIES</a>
-                       /   
-                    <a href="">SUMMER MISSIONS</a>
-                </div>
-                <div id="resources-links" class="menu-resources">
-                    <a href="housing">HOUSING</a>
-                       /   
-                    <a href="">LITERATURE</a>
-                </div>
-                <div id="media-links" class="menu-media">
-                    <a href="https://www.youtube.com/user/slocrusade/videos">YOUTUBE</a>
-                       /   
-                    <a href="https://www.facebook.com/SloCrusade">FACEBOOK</a>
-                       /   
-                    <a href="https://twitter.com/SLOcru">TWITTER</a>
-                       /   
-                    <a href="http://instagram.com/slo_cru/">INSTAGRAM</a>
-                       /   
-                    <a href="">PHOTO GALLERY</a>
+            <div class="container">
+                <div class="subcatagories hidden">
+                    <div id="about-links" class="menu-about hidden">
+                        <a href="staff">STAFF</a>
+                           /   
+                        <a href="https://give.cru.org/2281756">GIVE</a>
+                           /   
+                        <a href="">HISTORY</a>
+                           /   
+                        <a href="http://http://www.cru.org/">CRU.ORG</a>
+                    </div>
+                    <div id="involvement-links" class="menu-get-involved hidden">
+                        <a href="">COMMUNITY GROUPS</a>
+                           /   
+                        <a href="ministry">MINISTRY TEAMS</a>
+                           /   
+                        <a href="events">EVENTS</a>
+                           /   
+                        <a href="">CONTEXTUALIZED MINISTRIES</a>
+                           /   
+                        <a href="">SUMMER MISSIONS</a>
+                    </div>
+                    <div id="resources-links" class="menu-resources hidden">
+                        <a href="housing">HOUSING</a>
+                           /   
+                        <a href="">LITERATURE</a>
+                    </div>
+                    <div id="media-links" class="menu-media hidden">
+                        <a href="https://www.youtube.com/user/slocrusade/videos">YOUTUBE</a>
+                           /   
+                        <a href="https://www.facebook.com/SloCrusade">FACEBOOK</a>
+                           /   
+                        <a href="https://twitter.com/SLOcru">TWITTER</a>
+                           /   
+                        <a href="http://instagram.com/slo_cru/">INSTAGRAM</a>
+                           /   
+                        <a href="">PHOTO GALLERY</a>
+                    </div>
                 </div>
             </div>
         </div>
