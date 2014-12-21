@@ -5,75 +5,115 @@
  */
 
 var checker = function(item1, item2, item3) {
+    if (item1 || item2 || item3) {
+        jQuery('.subcatagories').toggleClass('hidden');
+    }
     if (item1) {
-        $('menu-' + item1).css({
-            "background-color": "#ffffff"
-        });
         //window.alert(item1);
-        jQuery(item1 + '-links' + ', .subcatagories').toggleClass('hidden');
-    }
-    if ('menu-' + item2) {
-        $(item2).css({
+        temp = '.menu-' + item1;
+        $(temp).css({
             "background-color": "#ffffff"
         });
-        //window.alert(item2);
-        jQuery(item2 + '-links' + ', .subcatagories').toggleClass('hidden');
+        temp = '#' + item1 + '-links';
+        jQuery( temp).toggleClass('hidden');
     }
-    if ('menu-' + item3) {
-        $(item3).css({
+    if (item2) {
+        temp = '.menu-' + item2;
+        $(temp).css({
             "background-color": "#ffffff"
         });
-        //window.alert(item3);
-        jQuery(item1 + '-links' + ', .subcatagories').toggleClass('hidden');
+        temp = '#' + item2 + '-links';
+        jQuery( temp).toggleClass('hidden');
+    }
+    if (item3) {
+        temp = '.menu-' + item3;
+        $(temp).css({
+            "background-color": "#ffffff"
+        });
+        temp = '#' + item3 + '-links';
+        jQuery( temp).toggleClass('hidden');
     }
 };
 
 var main = function() {
     var about, involvement, resources, media;
     $('.menu-about').click(function() {
-        about = 'about';
-        //window.alert(about);
-        $(this).css({
-            "background-color": "#f9b625"
-        });
-        jQuery('#about-links, .subcatagories').toggleClass('hidden');
+        if (about) {
+            about = "";
+            //window.alert(about);
+            $(this).css({
+                "background-color": "#ffffff"
+            });
+        } else {
+            about = 'about';
+            //window.alert(about);
+            $(this).css({
+                "background-color": "#f9b625"
+            });
+        }
         /*$('.subcatagories').css({
             "background-color": "#f9b625"
         });*/
         checker(involvement, resources, media);
+        involvement = resources = media = "";
+        jQuery('#about-links, .subcatagories').toggleClass('hidden');
     });
     
     $('.menu-involvement').click(function() {
-        involvement = 'involvement';
-        $(this).css({
-            "background-color": "#f9b625"
-        });
+        if (involvement) {
+            involvement = "";
+            //window.alert(about);
+            $(this).css({
+                "background-color": "#ffffff"
+            });
+        } else {
+            involvement = 'involvement';
+            //window.alert(about);
+            $(this).css({
+                "background-color": "#f9b625"
+            });
+        }
+        checker(about, resources, media);
+        about = resources = media = "";
         jQuery('#involvement-links, .subcatagories').toggleClass('hidden');
-        /*$('.subcatagories').css({
-            "background-color": "#f9b625"
-        });*/
     });
     
     $('.menu-resources').click(function() {
-        resources = 'resources';
-        $(this).css({
-            "background-color": "#f9b625"
-        });
+        if (resources) {
+            resources = "";
+            //window.alert(about);
+            $(this).css({
+                "background-color": "#ffffff"
+            });
+        } else {
+            resources = 'resources';
+            //window.alert(about);
+            $(this).css({
+                "background-color": "#f9b625"
+            });
+        }
+        checker(involvement, about, media);
+        involvement = about = media = "";
         jQuery('#resources-links, .subcatagories').toggleClass('hidden');
-        /*$('.subcatagories').css({
-            "background-color": "#f9b625"
-        });*/
     });
     
     $('.menu-media').click(function() {
-        media = 'media';
-        $(this).css({
-            "background-color": "#f9b625"
-        });
+        if (media) {
+            media = "";
+            //window.alert(about);
+            $(this).css({
+                "background-color": "#ffffff"
+            });
+        } else {
+            media = 'media';
+            //window.alert(about);
+            $(this).css({
+                "background-color": "#f9b625"
+            });
+        }
+        checker(involvement, resources, about);
+        involvement = resources = about = "";
         jQuery('#media-links, .subcatagories').toggleClass('hidden');
-        /*$('.subcatagories').css({
-            "background-color": "#f9b625"
-        });*/
     });
 };
 

@@ -47,41 +47,49 @@ $this->load->helper('url');
             </div>
             <div class="container">
                 <div class="subcatagories hidden">
-                    <div id="about-links" class="menu-about hidden">
-                        <a href="staff">STAFF</a>
-                           /   
-                        <a href="https://give.cru.org/2281756">GIVE</a>
-                           /   
-                        <a href="">HISTORY</a>
-                           /   
-                        <a href="http://http://www.cru.org/">CRU.ORG</a>
+                    <div id="about-links" class="subs hidden">
+                        <p class="subs">
+                            <a href="staff" class="subs">STAFF</a>
+                            /   
+                            <a href="https://give.cru.org/2281756" class="subs">GIVE</a>
+                            /   
+                            <a href="" class="subs">HISTORY</a>
+                            /   
+                            <a href="http://http://www.cru.org/" class="subs">CRU.ORG</a>
+                        </p>
                     </div>
-                    <div id="involvement-links" class="menu-get-involved hidden">
-                        <a href="">COMMUNITY GROUPS</a>
-                           /   
-                        <a href="ministry">MINISTRY TEAMS</a>
-                           /   
-                        <a href="events">EVENTS</a>
-                           /   
-                        <a href="">CONTEXTUALIZED MINISTRIES</a>
-                           /   
-                        <a href="">SUMMER MISSIONS</a>
+                    <div id="involvement-links" class="subs hidden">
+                        <p class="subs">
+                            <a href="" class="subs">COMMUNITY GROUPS</a>
+                            /   
+                            <a href="ministry" class="subs">MINISTRY TEAMS</a>
+                            /   
+                            <a href="events" class="subs">EVENTS</a>
+                            /   
+                            <a href="" class="subs">CONTEXTUALIZED MINISTRIES</a>
+                            /   
+                            <a href="" class="subs">SUMMER MISSIONS</a>
+                        </p>
                     </div>
-                    <div id="resources-links" class="menu-resources hidden">
-                        <a href="housing">HOUSING</a>
-                           /   
-                        <a href="">LITERATURE</a>
+                    <div id="resources-links" class="subs hidden">
+                        <p class="subs">
+                            <a href="housing" class="subs">HOUSING</a>
+                            /   
+                            <a href="" class="subs">LITERATURE</a>
+                        </p>
                     </div>
-                    <div id="media-links" class="menu-media hidden">
-                        <a href="https://www.youtube.com/user/slocrusade/videos">YOUTUBE</a>
-                           /   
-                        <a href="https://www.facebook.com/SloCrusade">FACEBOOK</a>
-                           /   
-                        <a href="https://twitter.com/SLOcru">TWITTER</a>
-                           /   
-                        <a href="http://instagram.com/slo_cru/">INSTAGRAM</a>
-                           /   
-                        <a href="">PHOTO GALLERY</a>
+                    <div id="media-links" class="subs hidden">
+                        <p class="subs">
+                            <a href="https://www.youtube.com/user/slocrusade/videos" class="subs">YOUTUBE</a>
+                            /   
+                            <a href="https://www.facebook.com/SloCrusade" class="subs">FACEBOOK</a>
+                            /   
+                            <a href="https://twitter.com/SLOcru" class="subs">TWITTER</a>
+                            /   
+                            <a href="http://instagram.com/slo_cru/" class="subs">INSTAGRAM</a>
+                            /   
+                            <a href="" class="subs">PHOTO GALLERY</a>
+                        </p>
                     </div>
                 </div>
             </div>

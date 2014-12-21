@@ -53,7 +53,8 @@ li {
 .subcatagories {
     width: 100%;
     height: 26pt;
-    margin-top: -5pt;
+    float: right;
+    margin-top: -12pt;
     background-color: #f9b625;
 }
 
@@ -63,6 +64,17 @@ li {
 
 #twitter:hover, #facebook:hover, #instagram:hover {
     opacity: .5;
+}
+
+p.subs{
+    float: right;
+    margin-top: .5%;
+    margin-right: 64pt;
+    color: #ffffff;
+}
+
+a.subs {
+    color: #ffffff;
 }
 
 /*.about:active {
