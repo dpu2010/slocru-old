@@ -4,8 +4,35 @@
  * and open the template in the editor.
  */
 
+var checker = function(item1, item2, item3) {
+    if (item1) {
+        $('menu-' + item1).css({
+            "background-color": "#ffffff"
+        });
+        //window.alert(item1);
+        jQuery(item1 + '-links' + ', .subcatagories').toggleClass('hidden');
+    }
+    if ('menu-' + item2) {
+        $(item2).css({
+            "background-color": "#ffffff"
+        });
+        //window.alert(item2);
+        jQuery(item2 + '-links' + ', .subcatagories').toggleClass('hidden');
+    }
+    if ('menu-' + item3) {
+        $(item3).css({
+            "background-color": "#ffffff"
+        });
+        //window.alert(item3);
+        jQuery(item1 + '-links' + ', .subcatagories').toggleClass('hidden');
+    }
+};
+
 var main = function() {
+    var about, involvement, resources, media;
     $('.menu-about').click(function() {
+        about = 'about';
+        //window.alert(about);
         $(this).css({
             "background-color": "#f9b625"
         });
@@ -13,9 +40,11 @@ var main = function() {
         /*$('.subcatagories').css({
             "background-color": "#f9b625"
         });*/
+        checker(involvement, resources, media);
     });
     
-    $('.menu-get-involved').click(function() {
+    $('.menu-involvement').click(function() {
+        involvement = 'involvement';
         $(this).css({
             "background-color": "#f9b625"
         });
@@ -26,6 +55,7 @@ var main = function() {
     });
     
     $('.menu-resources').click(function() {
+        resources = 'resources';
         $(this).css({
             "background-color": "#f9b625"
         });
@@ -36,6 +66,7 @@ var main = function() {
     });
     
     $('.menu-media').click(function() {
+        media = 'media';
         $(this).css({
             "background-color": "#f9b625"
         });

@@ -6,6 +6,7 @@ $this->load->helper('url');
     <head>
         <title>Cru Central Coast | Campus Crusade for Christ on the Central Coast</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="../../../assets/img/shortcut_icon.png">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="../assets/js/header.js"></script>
         <!-- Bootstrap -->
@@ -39,7 +40,7 @@ $this->load->helper('url');
             <div class="container">
                 <ul class="menu">
                     <li class="menu-about"> ABOUT </li>
-                    <li class="menu-get-involved"> GET INVOLVED </li>
+                    <li class="menu-involvement"> GET INVOLVED </li>
                     <li class="menu-resources"> RESOURCES </li>
                     <li class="menu-media"> MEDIA </li>
                 </ul>
