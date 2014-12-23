@@ -71,10 +71,16 @@ p.subs{
     margin-top: .5%;
     margin-right: 64pt;
     color: #ffffff;
+    font-family: "FreightSansProLight";
+    font-size: 10pt;
 }
 
 a.subs {
     color: #ffffff;
+}
+
+a.subs:hover {
+    font-family: "FreightSansProSemiBold";
 }
 
 /*.about:active {

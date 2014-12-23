@@ -98,7 +98,7 @@ p.meeting {
     text-align: center;
 }
 
-span {
+span.time {
     font-family: "FreightSansProMedium";
     font-size: 12pt;
     text-align: center;

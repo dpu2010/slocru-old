@@ -12,7 +12,9 @@ var checker = function(item1, item2, item3) {
         //window.alert(item1);
         temp = '.menu-' + item1;
         $(temp).css({
-            "background-color": "#ffffff"
+                "background-color" : "#ffffff",
+                "font-family" : "FreightSansProLight",
+                "color" : "black"
         });
         temp = '#' + item1 + '-links';
         jQuery( temp).toggleClass('hidden');
@@ -20,7 +22,9 @@ var checker = function(item1, item2, item3) {
     if (item2) {
         temp = '.menu-' + item2;
         $(temp).css({
-            "background-color": "#ffffff"
+                "background-color" : "#ffffff",
+                "font-family" : "FreightSansProLight",
+                "color" : "black"
         });
         temp = '#' + item2 + '-links';
         jQuery( temp).toggleClass('hidden');
@@ -28,7 +32,9 @@ var checker = function(item1, item2, item3) {
     if (item3) {
         temp = '.menu-' + item3;
         $(temp).css({
-            "background-color": "#ffffff"
+                "background-color" : "#ffffff",
+                "font-family" : "FreightSansProLight",
+                "color" : "black"
         });
         temp = '#' + item3 + '-links';
         jQuery( temp).toggleClass('hidden');
@@ -42,13 +48,17 @@ var main = function() {
             about = "";
             //window.alert(about);
             $(this).css({
-                "background-color": "#ffffff"
+                "background-color" : "#ffffff",
+                "font-family" : "FreightSansProLight",
+                "color" : "black"
             });
         } else {
             about = 'about';
             //window.alert(about);
             $(this).css({
-                "background-color": "#f9b625"
+                "background-color": "#f9b625",
+                "color": "#ffffff",
+                "font-family" : "FreightSansProSemiBold"
             });
         }
         /*$('.subcatagories').css({
@@ -64,13 +74,17 @@ var main = function() {
             involvement = "";
             //window.alert(about);
             $(this).css({
-                "background-color": "#ffffff"
+                "background-color" : "#ffffff",
+                "font-family" : "FreightSansProLight",
+                "color" : "black"
             });
         } else {
             involvement = 'involvement';
             //window.alert(about);
             $(this).css({
-                "background-color": "#f9b625"
+                "background-color": "#f9b625",
+                "color": "#ffffff",
+                "font-family" : "FreightSansProSemiBold"
             });
         }
         checker(about, resources, media);
@@ -83,13 +97,17 @@ var main = function() {
             resources = "";
             //window.alert(about);
             $(this).css({
-                "background-color": "#ffffff"
+                "background-color" : "#ffffff",
+                "font-family" : "FreightSansProLight",
+                "color" : "black"
             });
         } else {
             resources = 'resources';
             //window.alert(about);
             $(this).css({
-                "background-color": "#f9b625"
+                "background-color": "#f9b625",
+                "color": "#ffffff",
+                "font-family" : "FreightSansProSemiBold"
             });
         }
         checker(involvement, about, media);
@@ -102,13 +120,17 @@ var main = function() {
             media = "";
             //window.alert(about);
             $(this).css({
-                "background-color": "#ffffff"
+                "background-color" : "#ffffff",
+                "font-family" : "FreightSansProLight",
+                "color" : "black"
             });
         } else {
             media = 'media';
             //window.alert(about);
             $(this).css({
-                "background-color": "#f9b625"
+                "background-color": "#f9b625",
+                "color": "#ffffff",
+                "font-family" : "FreightSansProSemiBold"
             });
         }
         checker(involvement, resources, about);
