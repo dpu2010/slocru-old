@@ -106,13 +106,16 @@ span.time {
     color: #3eb1c8;
 }
 
+.break {
+    border-top-width: 1pt;
+    border-top-style: solid;
+    border-top-color: #e4e5e4;
+}
+
 .address {
     font-family: "FreightSansProLight";
     font-size: 10pt;
     text-align: center;
-    border-top-width: 1pt;
-    border-top-style: solid;
-    border-top-color: #e4e5e4;
 }
 
 .directions-button {

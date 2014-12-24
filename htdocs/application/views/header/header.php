@@ -18,6 +18,7 @@ $this->load->helper('url');
         <!-- Page Formatting -->
         <link href="../assets/css/header.css" rel="stylesheet" type="text/css">
         <link href="../assets/css/home.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/resources.css" rel="stylesheet" type="text/css">
         <link href="../assets/css/footer.css" rel="stylesheet" type="text/css">
     </head>
     <body>
@@ -45,7 +46,7 @@ $this->load->helper('url');
                     <li class="menu-media state2"> MEDIA </li>
                 </ul>
             </div>
-            <div class="container">
+            <div class="container buffer">
                 <div class="subcatagories hidden">
                     <div id="about-links" class="subs hidden">
                         <p class="subs">

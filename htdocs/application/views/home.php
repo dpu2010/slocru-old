@@ -32,6 +32,7 @@
             <p class="meeting">WEEKLY MEETING</p>
             <p class="meeting-info" id="line1"><span class="time">Tuesdays at 8pm</span> (doors open at 7:30pm)</p>
             <p class="meeting-info" id="line2">Mountainbrook Community Church</p>
+            <p class="break"></p>
             <p class="address">1775 Calle Joaquin, San Luis Obispo, CA 93405</p>
         </div>
     </div>

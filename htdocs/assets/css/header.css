@@ -43,6 +43,10 @@ li {
     padding: .5em;
 }
 
+.buffer {
+    height: 14pt;
+}
+
 .menu {
     cursor: pointer;
     float: right;
