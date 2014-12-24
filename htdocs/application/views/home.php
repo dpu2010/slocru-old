@@ -43,7 +43,7 @@
         </div>
         <!-- The Watch meetings button is currently buggy, Fix Later. -->
         <div class="livestream-button">
-            <a href="https://www.youtube.com/user/slocrusade/videos">
+            <a href="https://www.youtube.com/user/slocrusade/videos" target="_blank">
                 <p class="button">WATCH THE MEETING</p>
             </a>
         </div>

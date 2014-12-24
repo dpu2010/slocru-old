@@ -17,6 +17,10 @@ and open the template in the editor.
     src: url('../fonts/FreigSanProSem.otf') format('opentype');
 }
 
+html { 
+    min-width: 1500px;
+}
+
 img.logo {
     margin-left: 40px;
     margin-top: 25px;
@@ -44,6 +48,7 @@ li {
     float: right;
     margin-right: 64pt;
     margin-bottom: 16pt;
+    color: #666062;
 }
 
 #twitter {
@@ -68,7 +73,7 @@ li {
 
 p.subs{
     float: right;
-    margin-top: .5%;
+    margin-top: 6pt;
     margin-right: 64pt;
     color: #ffffff;
     font-family: "FreightSansProLight";

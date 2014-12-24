@@ -14,7 +14,7 @@ var checker = function(item1, item2, item3) {
         $(temp).css({
                 "background-color" : "#ffffff",
                 "font-family" : "FreightSansProLight",
-                "color" : "black"
+                "color" : "#666062"
         });
         temp = '#' + item1 + '-links';
         jQuery( temp).toggleClass('hidden');
@@ -24,7 +24,7 @@ var checker = function(item1, item2, item3) {
         $(temp).css({
                 "background-color" : "#ffffff",
                 "font-family" : "FreightSansProLight",
-                "color" : "black"
+                "color" : "#666062"
         });
         temp = '#' + item2 + '-links';
         jQuery( temp).toggleClass('hidden');
@@ -34,7 +34,7 @@ var checker = function(item1, item2, item3) {
         $(temp).css({
                 "background-color" : "#ffffff",
                 "font-family" : "FreightSansProLight",
-                "color" : "black"
+                "color" : "#666062"
         });
         temp = '#' + item3 + '-links';
         jQuery( temp).toggleClass('hidden');
@@ -50,7 +50,7 @@ var main = function() {
             $(this).css({
                 "background-color" : "#ffffff",
                 "font-family" : "FreightSansProLight",
-                "color" : "black"
+                "color" : "#666062"
             });
         } else {
             about = 'about';
@@ -76,7 +76,7 @@ var main = function() {
             $(this).css({
                 "background-color" : "#ffffff",
                 "font-family" : "FreightSansProLight",
-                "color" : "black"
+                "color" : "#666062"
             });
         } else {
             involvement = 'involvement';
@@ -99,7 +99,7 @@ var main = function() {
             $(this).css({
                 "background-color" : "#ffffff",
                 "font-family" : "FreightSansProLight",
-                "color" : "black"
+                "color" : "#666062"
             });
         } else {
             resources = 'resources';
@@ -122,7 +122,7 @@ var main = function() {
             $(this).css({
                 "background-color" : "#ffffff",
                 "font-family" : "FreightSansProLight",
-                "color" : "black"
+                "color" : "#666062"
             });
         } else {
             media = 'media';

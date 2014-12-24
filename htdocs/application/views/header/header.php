@@ -26,13 +26,13 @@ $this->load->helper('url');
                 <a href="http://www.slocru.com">
                     <img src="../assets/img/logo.png" class="logo"/>
                 </a>
-                <a href="https://twitter.com/SLOcru">
+                <a href="https://twitter.com/SLOcru" target="_blank">
                     <img src="../assets/img/twitter.png" class="social" id="twitter"/>
                 </a>
-                <a href="http://instagram.com/slo_cru/">
+                <a href="http://instagram.com/slo_cru/" target="_blank">
                     <img src="../assets/img/instagram.png" class="social" id="instagram"/>
                 </a>
-                <a href="https://www.facebook.com/SloCrusade">
+                <a href="https://www.facebook.com/SloCrusade" target="_blank">
                     <img src="../assets/img/facebook.png" class="social" id="facebook"/>
                 </a>
             </div>
@@ -51,11 +51,11 @@ $this->load->helper('url');
                         <p class="subs">
                             <a href="staff" class="subs">STAFF</a>
                             /   
-                            <a href="https://give.cru.org/2281756" class="subs">GIVE</a>
+                            <a href="https://give.cru.org/2281756" class="subs" target="_blank">GIVE</a>
                             /   
                             <a href="" class="subs">HISTORY</a>
                             /   
-                            <a href="http://http://www.cru.org/" class="subs">CRU.ORG</a>
+                            <a href="http://http://www.cru.org/" class="subs" target="_blank">CRU.ORG</a>
                         </p>
                     </div>
                     <div id="involvement-links" class="subs hidden">
@@ -80,13 +80,13 @@ $this->load->helper('url');
                     </div>
                     <div id="media-links" class="subs hidden">
                         <p class="subs">
-                            <a href="https://www.youtube.com/user/slocrusade/videos" class="subs">YOUTUBE</a>
+                            <a href="https://www.youtube.com/user/slocrusade/videos" class="subs" target="_blank">YOUTUBE</a>
                             /   
-                            <a href="https://www.facebook.com/SloCrusade" class="subs">FACEBOOK</a>
+                            <a href="https://www.facebook.com/SloCrusade" class="subs" target="_blank">FACEBOOK</a>
                             /   
-                            <a href="https://twitter.com/SLOcru" class="subs">TWITTER</a>
+                            <a href="https://twitter.com/SLOcru" class="subs" target="_blank">TWITTER</a>
                             /   
-                            <a href="http://instagram.com/slo_cru/" class="subs">INSTAGRAM</a>
+                            <a href="http://instagram.com/slo_cru/" class="subs" target="_blank">INSTAGRAM</a>
                             /   
                             <a href="" class="subs">PHOTO GALLERY</a>
                         </p>
