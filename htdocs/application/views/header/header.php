@@ -17,8 +17,8 @@ $this->load->helper('url');
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
         <!-- Page Formatting -->
         <link href="../assets/css/header.css" rel="stylesheet" type="text/css">
-        <link href="../assets/css/home.css" rel="stylesheet" type="text/css">
-        <link href="../assets/css/resources.css" rel="stylesheet" type="text/css">
+        <!-- Loads the CSS for the specific page -->
+        <?php echo '<link href="../assets/css/' . basename($_SERVER['PHP_SELF']) . '.css" rel="stylesheet" type="text/css">'; ?>
         <link href="../assets/css/footer.css" rel="stylesheet" type="text/css">
     </head>
     <body>

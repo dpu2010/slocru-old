@@ -45,8 +45,16 @@ and open the template in the editor.
 }
 
 .text#housing {
-    margin-top: 70pt;
+    margin-top: 65pt;
     text-align: center;
+}
+
+.housing#line2 {
+    margin-top: 3pt;
+}
+
+.housing#line3 {
+    margin-top: -7pt;
 }
 
 p.housing {
@@ -70,4 +78,16 @@ span.housing {
 .picture {
     width: 514pt;
     float: right;
+}
+
+.title-heading {
+    margin-top: 24pt;
+    margin-left: 30pt;
+    font-family: "FreightSansProSemiBold";
+    font-size: 18pt;
+    color: #f9b625;
+}
+
+.resources {
+    margin-top: 28pt;
 }
