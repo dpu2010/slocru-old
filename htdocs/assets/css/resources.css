@@ -88,6 +88,27 @@ span.housing {
     color: #f9b625;
 }
 
-.resources {
+.bottom {
     margin-top: 28pt;
+}
+
+.shift {
+    margin-left: 30pt;
+}
+
+.resources {
+    float: left;
+    width: 33.3%;
+}
+
+.headings {
+    font-family: "FreightSansProSemiBold";
+    font-size: 14pt;
+    color: #727375;
+}
+
+.subheadings {
+    font-family: "FreightSansProBold";
+    font-size: 12pt;
+    color: #727375;
 }

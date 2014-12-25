@@ -69,15 +69,41 @@ $fasting = array(
 <div class="container title">
     <p class="title-heading">RESOURCES FOR SPIRITUAL GROWTH</p>
 </div>
-<div class="container resources">
-    <div class="column">
-        
-    </div>
-    <div class="column">
-        
-    </div>
-    <div class="column">
-        
+<div class="container bottom">
+    <div class="shift">
+        <div class="column resources">
+            <p class="headings">RECOMMENDED SITES</p>
+            <div class="sites">
+                <?php
+                foreach ($links as $name => $parts) {
+                    echo '<a href="' . $parts['href'] . '">' . $name . '</a>';
+                    echo '<p>';
+                    echo $parts['desc'];
+                    echo '</p>';
+                }
+                ?>
+            </div>
+        </div>
+        <div class="column resources">
+            <p class="headings">GUIDES</p>
+            <div class="guides">
+                <p class="subheadings">Prayer</p>
+                <p class="subheadings">Fasting</p>
+            </div>
+        </div>
+        <div class="column resources">
+            <p class="headings">DOWNLOAD NOW</p>
+            <div class="downloads">
+                <?php
+                foreach ($downloads as $title => $files) {
+                    echo '<p class="subheadings">' . $title . '</p>';
+                    foreach ($files as $name => $path) {
+                        echo '<a class="links" href="' . $path . '">' . $name . '</a>';
+                    }
+                }
+                ?>
+            </div>
+        </div>
     </div>
 </div>
 
