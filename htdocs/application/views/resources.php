@@ -61,7 +61,7 @@ $fasting = array(
         <div class="text" id="housing">
             <p class="housing" id="line1">LOOKING FOR A ROOMMATE?</p>
             <p class="housing" id="line2">You're not the only one.</p>
-            <p class="housing" id="line3">Check out the <span class="housing">HOUSING BOARD</span></p>
+            <p class="housing" id="line3">Check out the <a href="housing" class="housing" target="_blank">HOUSING BOARD</a></p>
         </div>
     </div>
     <img src="../../assets/img/computerguy.jpg" class="picture"/> 
@@ -71,34 +71,44 @@ $fasting = array(
 </div>
 <div class="container bottom">
     <div class="shift">
-        <div class="column resources">
+        <div class="column resources" id="section1">
             <p class="headings">RECOMMENDED SITES</p>
             <div class="sites">
                 <?php
                 foreach ($links as $name => $parts) {
-                    echo '<a href="' . $parts['href'] . '">' . $name . '</a>';
-                    echo '<p>';
+                    echo '<a class="site-link" href="' . $parts['href'] . '" target="_blank">' . $name . '</a>';
+                    echo '<p class="description">';
                     echo $parts['desc'];
                     echo '</p>';
                 }
                 ?>
             </div>
         </div>
-        <div class="column resources">
+        <div class="column resources" id="section2">
             <p class="headings">GUIDES</p>
             <div class="guides">
                 <p class="subheadings">Prayer</p>
+                <?php
+                foreach ($prayer as $title => $files) {
+                    echo '<p class="links"><a class="links" href="' . $files . '" target="_blank">' . $title . '</a></p>';
+                }
+                ?>
                 <p class="subheadings">Fasting</p>
+                <?php
+                foreach ($fasting as $title => $files) {
+                    echo '<p class="links"><a class="links" href="' . $files . '" target="_blank">' . $title . '</a></p>';
+                }
+                ?>
             </div>
         </div>
-        <div class="column resources">
+        <div class="column resources" id="section3">
             <p class="headings">DOWNLOAD NOW</p>
             <div class="downloads">
                 <?php
                 foreach ($downloads as $title => $files) {
                     echo '<p class="subheadings">' . $title . '</p>';
                     foreach ($files as $name => $path) {
-                        echo '<a class="links" href="' . $path . '">' . $name . '</a>';
+                        echo '<p class="links"><a class="links" href="' . $path . '" target="_blank">' . $name . '</a></p>';
                     }
                 }
                 ?>

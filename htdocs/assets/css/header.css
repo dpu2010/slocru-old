@@ -17,6 +17,10 @@ and open the template in the editor.
     src: url('../fonts/FreigSanProSem.otf') format('opentype');
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 html { 
     min-width: 1500px;
 }

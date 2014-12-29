@@ -18,7 +18,7 @@ $this->load->helper('url');
         <!-- Page Formatting -->
         <link href="../assets/css/header.css" rel="stylesheet" type="text/css">
         <!-- Loads the CSS for the specific page -->
-        <?php echo '<link href="../assets/css/' . basename($_SERVER['PHP_SELF']) . '.css" rel="stylesheet" type="text/css">'; ?>
+        <?php echo '<link href="../assets/css/' . (basename($_SERVER['PHP_SELF']) == 'index.php' ? 'home' : basename($_SERVER['PHP_SELF'])) . '.css" rel="stylesheet" type="text/css">'; ?>
         <link href="../assets/css/footer.css" rel="stylesheet" type="text/css">
     </head>
     <body>
@@ -51,44 +51,44 @@ $this->load->helper('url');
                     <div id="about-links" class="subs hidden">
                         <p class="subs">
                             <a href="staff" class="subs">STAFF</a>
-                            /   
+                            &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
                             <a href="https://give.cru.org/2281756" class="subs" target="_blank">GIVE</a>
-                            /   
+                            &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
                             <a href="" class="subs">HISTORY</a>
-                            /   
-                            <a href="http://http://www.cru.org/" class="subs" target="_blank">CRU.ORG</a>
+                            &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
+                            <a href="http://www.cru.org/" class="subs" target="_blank">CRU.ORG</a>
                         </p>
                     </div>
                     <div id="involvement-links" class="subs hidden">
                         <p class="subs">
                             <a href="" class="subs">COMMUNITY GROUPS</a>
-                            /   
+                            &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
                             <a href="ministry" class="subs">MINISTRY TEAMS</a>
-                            /   
+                            &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
                             <a href="events" class="subs">EVENTS</a>
-                            /   
+                            &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
                             <a href="" class="subs">CONTEXTUALIZED MINISTRIES</a>
-                            /   
+                            &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
                             <a href="" class="subs">SUMMER MISSIONS</a>
                         </p>
                     </div>
                     <div id="resources-links" class="subs hidden">
                         <p class="subs">
                             <a href="housing" class="subs">HOUSING</a>
-                            /   
+                            &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
                             <a href="" class="subs">LITERATURE</a>
                         </p>
                     </div>
                     <div id="media-links" class="subs hidden">
                         <p class="subs">
                             <a href="https://www.youtube.com/user/slocrusade/videos" class="subs" target="_blank">YOUTUBE</a>
-                            /   
+                            &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
                             <a href="https://www.facebook.com/SloCrusade" class="subs" target="_blank">FACEBOOK</a>
-                            /   
+                            &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
                             <a href="https://twitter.com/SLOcru" class="subs" target="_blank">TWITTER</a>
-                            /   
+                            &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
                             <a href="http://instagram.com/slo_cru/" class="subs" target="_blank">INSTAGRAM</a>
-                            /   
+                            &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
                             <a href="" class="subs">PHOTO GALLERY</a>
                         </p>
                     </div>

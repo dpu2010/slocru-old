@@ -69,7 +69,7 @@ p.housing#line1 {
     color: #727375;
 }
 
-span.housing {
+a.housing, a.housing:hover {
     font-family: "FreightSansProMedium";
     font-size: 12pt;
     color: #3eb1c8;
@@ -90,6 +90,7 @@ span.housing {
 
 .bottom {
     margin-top: 28pt;
+    margin-bottom: 28pt;
 }
 
 .shift {
@@ -101,14 +102,45 @@ span.housing {
     width: 33.3%;
 }
 
+#section1{
+    padding-right: 30pt;
+}
+
 .headings {
     font-family: "FreightSansProSemiBold";
     font-size: 14pt;
     color: #727375;
 }
 
-.subheadings {
-    font-family: "FreightSansProBold";
+.site-link, .site-link:hover {
+    font-family: "FreightSansProMedium";
+    font-size: 12pt;
+    color: #dd7d1b;
+}
+
+.description {
+    font-family: "FreightSansProLight";
     font-size: 12pt;
     color: #727375;
+}
+
+.subheadings {
+    font-family: "FreightSansProMedium";
+    font-size: 12pt;
+    color: #727375;
+    margin-bottom: 15pt;
+}
+
+.links, .links:hover {
+    font-family: "FreightSansProMedium";
+    font-size: 12pt;
+    color: #dd7d1b;
+}
+
+p.links {
+    margin-top: -8pt;
+}
+
+.links:hover, .site-link:hover {
+    opacity: .5;
 }
