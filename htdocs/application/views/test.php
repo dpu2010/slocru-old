@@ -1,11 +1,11 @@
 <?php
-set_include_path(get_include_path() . PATH_SEPARATOR . '../google-api-client');
 
 // Call set_include_path() as needed to point to your client library.
-require_once '../google-api-php-client/autoload.php';
-//require_once 'Google/Client.php';
-//require_once 'Google/Service/YouTube.php';
-//session_start();
+echo dirname(dirname(__FILE__));
+set_include_path(dirname(dirname(__FILE__)) . '/google-api-php-client/src/Google' );
+require_once dirname(dirname(__FILE__)) . '/google-api-php-client/src/Google/Client.php';
+require_once dirname(dirname(__FILE__)) . '/google-api-php-client/src/Google/Service/YouTube.php';
+session_start();
 
 /*
  * You can acquire an OAuth 2.0 client ID and client secret from the
@@ -14,12 +14,14 @@ require_once '../google-api-php-client/autoload.php';
  * <https://developers.google.com/youtube/v3/guides/authentication>
  * Please ensure that you have enabled the YouTube Data API for your project.
  */
-$OAUTH2_CLIENT_ID = '126224258300-tvt0ufs1p6sk20g3mbd3a9mg8c5jcbfh.apps.googleusercontent.com';
-$OAUTH2_CLIENT_SECRET = '126224258300-tvt0ufs1p6sk20g3mbd3a9mg8c5jcbfh@developer.gserviceaccount.com';
+$OAUTH2_CLIENT_ID = '898407093260-k3bomovu9honsgehrkto4qbauieaivq6.apps.googleusercontent.com';
+$OAUTH2_CLIENT_SECRET = '16iNUDzf3pBLAu4aZf0i_v4K';
 
 $client = new Google_Client();
 $client->setClientId($OAUTH2_CLIENT_ID);
 $client->setClientSecret($OAUTH2_CLIENT_SECRET);
+//$client->setApplicationName("Cru Central Coast Website");
+//$client->setDeveloperKey("AIzaSyDhBQdQtap8Z539l58EHnjaJxOKAcoElwQ");
 $client->setScopes('https://www.googleapis.com/auth/youtube');
 $redirect = filter_var('http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'],
     FILTER_SANITIZE_URL);
@@ -89,6 +91,7 @@ END;
 <title>My Live Broadcasts</title>
 </head>
 <body>
-  <?=$htmlBody?>
+    <?=$htmlBody?>
+    <p>test</p>
 </body>
 </html>

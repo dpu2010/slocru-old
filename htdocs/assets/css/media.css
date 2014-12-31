@@ -13,14 +13,49 @@ and open the template in the editor.
     src: url('../fonts/FreigSanProLig.otf') format('opentype');
 }
 
+.headings {
+    text-align: center;
+    font-family: "FreightSansProLight";
+    font-size: 12pt;
+    color: #666062;
+}
+
+.gallery-name {
+    margin-top: 3pt;
+    text-align: center;
+    font-family: "FreightSansProLight";
+    font-size: 10pt;
+    color: #666062;
+}
+
 .left {
     float: left;
     width: 33.3%;
 }
 
+.gallery-pain-left {
+    width: 104pt;
+    float: left;
+    margin-left: 13%;
+}
+
+.gallery-pain-right {
+    width: 104pt;
+    float: left;
+    margin-left: 18pt;
+}
+
 .top-album {
     width: 226pt;
-    margin-left: 18pt;
+    margin-left: 13%;
+}
+
+.left-albums {
+    width: 104pt;
+}
+
+.right-albums {
+    width: 104pt;
 }
 
 .right {
@@ -41,11 +76,4 @@ and open the template in the editor.
 .twitter {
     height: 200px;
     overflow-y: scroll;
-}
-
-.headings {
-    text-align: center;
-    font-family: "FreightSansProLight";
-    font-size: 12pt;
-    color: #666062;
 }
