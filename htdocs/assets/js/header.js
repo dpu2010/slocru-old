@@ -43,16 +43,8 @@ var checker = function(item1, item2, item3) {
 
 var main = function() {
     var about, involvement, resources, media;
-    $('.menu-about').click(function() {
-        if (about) {
-            about = "";
-            //window.alert(about);
-            $(this).css({
-                "background-color" : "#ffffff",
-                "font-family" : "FreightSansProLight",
-                "color" : "#666062"
-            });
-        } else {
+    $('.menu-about, #about-links').mouseover(function() {
+        if (!about) {
             about = 'about';
             //window.alert(about);
             $(this).css({
@@ -60,25 +52,37 @@ var main = function() {
                 "color": "#ffffff",
                 "font-family" : "FreightSansProSemiBold"
             });
+            jQuery('#about-links, .subcatagories').toggleClass('hidden');
         }
         /*$('.subcatagories').css({
             "background-color": "#f9b625"
         });*/
         checker(involvement, resources, media);
         involvement = resources = media = "";
-        jQuery('#about-links, .subcatagories').toggleClass('hidden');
     });
     
-    $('.menu-involvement').click(function() {
-        if (involvement) {
-            involvement = "";
+    /*$('.menu-about, #about-links').mouseout(function() {
+        //window.alert("leaving");
+        if (!$('#about-links').mouseover()) {
+            //window.alert("not entering links");
+            about = "";
             //window.alert(about);
-            $(this).css({
+            $('.menu-about').css({
                 "background-color" : "#ffffff",
                 "font-family" : "FreightSansProLight",
                 "color" : "#666062"
             });
-        } else {
+            jQuery('#about-links, .subcatagories').toggleClass('hidden');
+        }
+        /*$('.subcatagories').css({
+            "background-color": "#f9b625"
+        });*//*
+        checker(involvement, resources, media);
+        involvement = resources = media = "";
+    });*/
+    
+    $('.menu-involvement').mouseenter(function() {
+        if (!involvement) {
             involvement = 'involvement';
             //window.alert(about);
             $(this).css({
@@ -86,22 +90,15 @@ var main = function() {
                 "color": "#ffffff",
                 "font-family" : "FreightSansProSemiBold"
             });
+            jQuery('#involvement-links, .subcatagories').toggleClass('hidden');
+
         }
         checker(about, resources, media);
         about = resources = media = "";
-        jQuery('#involvement-links, .subcatagories').toggleClass('hidden');
     });
     
-    $('.menu-resources').click(function() {
-        if (resources) {
-            resources = "";
-            //window.alert(about);
-            $(this).css({
-                "background-color" : "#ffffff",
-                "font-family" : "FreightSansProLight",
-                "color" : "#666062"
-            });
-        } else {
+    $('.menu-resources').mouseenter(function() {
+        if (!resources) {
             resources = 'resources';
             //window.alert(about);
             $(this).css({
@@ -109,22 +106,14 @@ var main = function() {
                 "color": "#ffffff",
                 "font-family" : "FreightSansProSemiBold"
             });
+            jQuery('#resources-links, .subcatagories').toggleClass('hidden');
         }
         checker(involvement, about, media);
         involvement = about = media = "";
-        jQuery('#resources-links, .subcatagories').toggleClass('hidden');
     });
     
-    $('.menu-media').click(function() {
-        if (media) {
-            media = "";
-            //window.alert(about);
-            $(this).css({
-                "background-color" : "#ffffff",
-                "font-family" : "FreightSansProLight",
-                "color" : "#666062"
-            });
-        } else {
+    $('.menu-media').mouseenter(function() {
+        if (!media) {
             media = 'media';
             //window.alert(about);
             $(this).css({
@@ -132,10 +121,11 @@ var main = function() {
                 "color": "#ffffff",
                 "font-family" : "FreightSansProSemiBold"
             });
+            jQuery('#media-links, .subcatagories').toggleClass('hidden');
         }
         checker(involvement, resources, about);
         involvement = resources = about = "";
-        jQuery('#media-links, .subcatagories').toggleClass('hidden');
+        
     });
 };
 

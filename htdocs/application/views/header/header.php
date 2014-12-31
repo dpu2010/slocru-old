@@ -24,7 +24,7 @@ $this->load->helper('url');
     <body>
         <div id="header" role="navigation">
             <div class="container">
-                <a href="http://www.slocru.com">
+                <a href="home">
                     <img src="../assets/img/logo.png" class="logo"/>
                 </a>
                 <a href="https://twitter.com/SLOcru" target="_blank">
@@ -40,10 +40,18 @@ $this->load->helper('url');
             
             <div class="container">
                 <ul class="menu">
-                    <li class="menu-about state2"> ABOUT </li>
-                    <li class="menu-involvement state2"> GET INVOLVED </li>
-                    <li class="menu-resources state2"> RESOURCES </li>
-                    <li class="menu-media state2"> MEDIA </li>
+                    <li class="menu-about state2">
+                        <a href="about" class="menu-items"> ABOUT </a>
+                    </li>
+                    <li class="menu-involvement state2">
+                        <a href="involvement" class="menu-items"> GET INVOLVED </a>
+                    </li>
+                    <li class="menu-resources state2">
+                        <a href="resources" class="menu-items"> RESOURCES </a>
+                    </li>
+                    <li class="menu-media state2">
+                        <a href="media" class="menu-items"> MEDIA </a>
+                    </li>
                 </ul>
             </div>
             <div class="container buffer">
@@ -76,7 +84,7 @@ $this->load->helper('url');
                         <p class="subs">
                             <a href="housing" class="subs">HOUSING</a>
                             &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
-                            <a href="" class="subs">LITERATURE</a>
+                            <a href="literature" class="subs">LITERATURE</a>
                         </p>
                     </div>
                     <div id="media-links" class="subs hidden">

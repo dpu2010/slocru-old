@@ -45,6 +45,13 @@ li {
     font-size: 12pt;
     display: inline;
     padding: .5em;
+    color: #666062;
+}
+
+a.menu-items {
+    font-family: "FreightSansProLight";
+    font-size: 12pt;
+    color: #666062;
 }
 
 .buffer {
