@@ -1,25 +1,35 @@
 <div class="container">
     <div class="column left">
         <p class="headings">PHOTO GALLERY</p>
-        <img src="../../assets/img/placeholders/fallretreat2014.jpg" class="top-album">
+        <a href="construction">
+            <img src="../../assets/img/placeholders/fallretreat2014.jpg" class="top-album">
+        </a>
         <p class="gallery-name">Fall Retreat 2014</p>
         <div class="column gallery-pain-left">
             <div class="gallery-middle">
-                <img src="../../assets/img/placeholders/nato2014.jpg" class="left-albums">
+                <a href="construction">
+                    <img src="../../assets/img/placeholders/nato2014.jpg" class="left-albums">
+                </a>
                 <p class="gallery-name">NATO 2014</p>
             </div>
             <div class="gallery-bottom">
-                <img src="../../assets/img/placeholders/cruville2013.jpg" class="left-albums">
+                <a href="construction">
+                    <img src="../../assets/img/placeholders/cruville2013.jpg" class="left-albums">
+                </a>
                 <p class="gallery-name">Cruville 2013</p>
             </div>
         </div>
         <div class="column gallery-pain-right">
             <div class="gallery-middle">
-                <img src="../../assets/img/placeholders/dearsister2014.jpg" class="right-albums">
+                <a href="construction">
+                    <img src="../../assets/img/placeholders/dearsister2014.jpg" class="right-albums">
+                </a>
                 <p class="gallery-name">Dear Sister 2014</p>
             </div>
             <div class="gallery-bottom">
-                <img src="../../assets/img/placeholders/crunato13.jpg" class="right-albums">
+                <a href="construction">
+                    <img src="../../assets/img/placeholders/crunato13.jpg" class="right-albums">
+                </a>
                 <p class="gallery-name">CRU NATO '13</p>
             </div>
         </div>
@@ -27,6 +37,9 @@
     <div class="column right">
         <div class="column middle">
             <p class="headings">FACEBOOK</p>
+            <div class="coming">
+                <p class="coming">Facebook feed Coming Soon</p>
+            </div>
         </div>
         <div class="column far-right">
             <div class="column right-top">

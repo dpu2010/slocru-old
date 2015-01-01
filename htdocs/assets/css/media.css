@@ -77,3 +77,17 @@ and open the template in the editor.
     height: 200px;
     overflow-y: scroll;
 }
+
+div.coming {
+    background-color: #f9b625;
+    height: 305pt;
+    width: 226pt;
+}
+
+p.coming {
+    text-align: center;
+    vertical-align: middle;
+    font-family: "FreightSansProLight";
+    font-size: 14pt;
+    color: #666062;
+}

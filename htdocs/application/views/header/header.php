@@ -6,7 +6,7 @@ $this->load->helper('url');
     <head>
         <title>Cru Central Coast | Campus Crusade for Christ on the Central Coast</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/x-icon" href="../../../assets/img/shortcut_icon.png">
+        <link rel="icon" type="image/x-icon" href="../../../assets/img/logo2.png">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="../assets/js/header.js"></script>
         <!-- Bootstrap -->
@@ -62,7 +62,7 @@ $this->load->helper('url');
                             &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
                             <a href="https://give.cru.org/2281756" class="subs" target="_blank">GIVE</a>
                             &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
-                            <a href="" class="subs">HISTORY</a>
+                            <a href="construction" class="subs">HISTORY</a>
                             &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
                             <a href="http://www.cru.org/" class="subs" target="_blank">CRU.ORG</a>
                         </p>
@@ -75,9 +75,9 @@ $this->load->helper('url');
                             &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
                             <a href="events" class="subs">EVENTS</a>
                             &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
-                            <a href="" class="subs">CONTEXTUALIZED MINISTRIES</a>
+                            <a href="construction" class="subs">CONTEXTUALIZED MINISTRIES</a>
                             &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
-                            <a href="" class="subs">SUMMER MISSIONS</a>
+                            <a href="construction" class="subs">SUMMER MISSIONS</a>
                         </p>
                     </div>
                     <div id="resources-links" class="subs hidden">
@@ -97,7 +97,7 @@ $this->load->helper('url');
                             &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
                             <a href="http://instagram.com/slo_cru/" class="subs" target="_blank">INSTAGRAM</a>
                             &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
-                            <a href="" class="subs">PHOTO GALLERY</a>
+                            <a href="construction" class="subs">PHOTO GALLERY</a>
                         </p>
                     </div>
                 </div>

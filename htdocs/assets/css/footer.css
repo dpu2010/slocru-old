@@ -15,12 +15,10 @@ and open the template in the editor.
 
 #footer {
     background-color: #706f73;
-}
-
-p#footer {
     font-family: "FreightSansProLight";
     font-size: 8pt;
     color: #ffffff;
-    margin-left: 40px;
-    margin-top: 13px;
+    padding-left: 40px;
+    padding-top: 13px;
+    padding-bottom: 13px;
 }
