@@ -65,17 +65,18 @@ and open the template in the editor.
 
 .middle {
     float: left;
-    width: 50%;
+    width: 45%;
 }
 
 .far-right {
     float: left;
-    width: 50%;
+    width: 55%;
 }
 
 .twitter {
     height: 200px;
     overflow-y: scroll;
+    width: 226pt;
 }
 
 div.coming {
@@ -90,4 +91,33 @@ p.coming {
     font-family: "FreightSansProLight";
     font-size: 14pt;
     color: #666062;
+}
+
+.right-top {
+    float: left;
+    height: 155pt;
+    width: 226pt;
+}
+
+.youtube-vid {
+    width: 226pt;
+    background-color: #f9b625;
+    height: 120pt;
+}
+
+.right-middle {
+    float: left;
+    height: 155pt;
+}
+
+.bottom-right {
+    margin-top: 20pt;
+    float: left;
+    width: 484pt;
+}
+
+.insta-feed {
+    width: 484pt;
+    background-color: #f9b625;
+    height: 82pt;
 }

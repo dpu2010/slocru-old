@@ -44,6 +44,9 @@
         <div class="column far-right">
             <div class="column right-top">
                 <p class="headings">YOUTUBE</p>
+                <div class="youtube-vid">
+                    <p class="coming">Youtube Videos Coming Soon</p>
+                </div>
             </div>
             <div class="column right-middle">
                 <p class="headings">Twitter</p>
@@ -74,6 +77,10 @@
         </div>
         <div class="column bottom-right">
             <p class="headings">INSTAGRAM (Follow us @crucentralcoast)</p>
+            <!-- SnapWidget -->
+            <div class="insta-feed">
+                <p class="coming">Instagram feed Coming Soon</p>
+            </div>
         </div>
     </div>
 </div>
