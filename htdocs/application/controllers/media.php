@@ -7,7 +7,7 @@ class Media extends CI_Controller {
         $this->load->model('event_model', '', true);
 
         $url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
-        $getfield = '?screen_name=slocru&count=10';
+        $getfield = '?q=from:slocru+OR+from:jameypappas&count=10';
         $requestMethod = 'GET';
 
         $twitter = new Twitterapiexchange();

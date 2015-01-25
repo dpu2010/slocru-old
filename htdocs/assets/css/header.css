@@ -17,6 +17,14 @@ and open the template in the editor.
     src: url('../fonts/FreigSanProSem.otf') format('opentype');
 }
 
+body {
+    background-color: #FcFdFd;
+}
+
+#header {
+    background-color: #ffffff;
+}
+
 a:hover {
     text-decoration: none;
 }
@@ -29,7 +37,7 @@ img.logo {
     margin-left: 40px;
     margin-top: 25px;
     width: 95pt;
-    height: 75pt;
+    //height: 75pt;
 }
 
 img.social {

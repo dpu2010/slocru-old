@@ -34,6 +34,7 @@ and open the template in the editor.
 }
 
 .middle {
+    padding-top: 15pt;
     height: 175pt;
     background-color: #f7f8f8;
 }
@@ -103,6 +104,8 @@ span.time {
 }
 
 .break {
+    margin-left: 40pt;
+    margin-right: 40pt;
     border-top-width: 1pt;
     border-top-style: solid;
     border-top-color: #e4e5e4;
@@ -141,6 +144,7 @@ p.button {
 }
 
 .bottom {
+    padding-top: 10pt;
     height: 215pt;
     background-color: #e4e5e4;
 }

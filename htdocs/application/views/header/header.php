@@ -4,9 +4,9 @@ $this->load->helper('url');
 ?>
 <html>
     <head>
-        <title>Cru Central Coast | Campus Crusade for Christ on the Central Coast</title>
+        <title>Cru Central Coast</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/x-icon" href="../../../assets/img/logo2.png">
+        <link rel="icon" type="image/png" href="../../../assets/img/logo2.png">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="../assets/js/header.js"></script>
         <!-- Bootstrap -->
@@ -22,83 +22,72 @@ $this->load->helper('url');
         <link href="../assets/css/footer.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <div id="header" role="navigation">
-            <div class="container">
-                <a href="home">
-                    <img src="../assets/img/logo.png" class="logo"/>
-                </a>
-                <a href="https://twitter.com/SLOcru" target="_blank">
-                    <img src="../assets/img/twitter.png" class="social" id="twitter"/>
-                </a>
-                <a href="http://instagram.com/slo_cru/" target="_blank">
-                    <img src="../assets/img/instagram.png" class="social" id="instagram"/>
-                </a>
-                <a href="https://www.facebook.com/SloCrusade" target="_blank">
-                    <img src="../assets/img/facebook.png" class="social" id="facebook"/>
-                </a>
-            </div>
-            
-            <div class="container">
-                <ul class="menu">
-                    <li class="menu-about state2">
-                        <a href="about" class="menu-items"> ABOUT </a>
-                    </li>
-                    <li class="menu-involvement state2">
-                        <a href="involvement" class="menu-items"> GET INVOLVED </a>
-                    </li>
-                    <li class="menu-resources state2">
-                        <a href="resources" class="menu-items"> RESOURCES </a>
-                    </li>
-                    <li class="menu-media state2">
-                        <a href="media" class="menu-items"> MEDIA </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="container buffer">
-                <div class="subcatagories hidden">
-                    <div id="about-links" class="subs hidden">
-                        <p class="subs">
-                            <a href="staff" class="subs">STAFF</a>
-                            &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
-                            <a href="https://give.cru.org/2281756" class="subs" target="_blank">GIVE</a>
-                            &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
-                            <a href="construction" class="subs">HISTORY</a>
-                            &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
-                            <a href="http://www.cru.org/" class="subs" target="_blank">CRU.ORG</a>
-                        </p>
-                    </div>
-                    <div id="involvement-links" class="subs hidden">
-                        <p class="subs">
-                            <a href="" class="subs">COMMUNITY GROUPS</a>
-                            &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
-                            <a href="ministry" class="subs">MINISTRY TEAMS</a>
-                            &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
-                            <a href="events" class="subs">EVENTS</a>
-                            &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
-                            <a href="construction" class="subs">CONTEXTUALIZED MINISTRIES</a>
-                            &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
-                            <a href="construction" class="subs">SUMMER MISSIONS</a>
-                        </p>
-                    </div>
-                    <div id="resources-links" class="subs hidden">
-                        <p class="subs">
-                            <a href="housing" class="subs">HOUSING</a>
-                            &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
-                            <a href="literature" class="subs">LITERATURE</a>
-                        </p>
-                    </div>
-                    <div id="media-links" class="subs hidden">
-                        <p class="subs">
-                            <a href="https://www.youtube.com/user/slocrusade/videos" class="subs" target="_blank">YOUTUBE</a>
-                            &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
-                            <a href="https://www.facebook.com/SloCrusade" class="subs" target="_blank">FACEBOOK</a>
-                            &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
-                            <a href="https://twitter.com/SLOcru" class="subs" target="_blank">TWITTER</a>
-                            &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
-                            <a href="http://instagram.com/slo_cru/" class="subs" target="_blank">INSTAGRAM</a>
-                            &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
-                            <a href="construction" class="subs">PHOTO GALLERY</a>
-                        </p>
+        <div class="container">
+            <div id="header" role="navigation">
+                <div class="container">
+                    <a href="home">
+                        <img src="../assets/img/crulogo.png" class="logo"/>
+                    </a>
+                    <a href="https://twitter.com/SLOcru" target="_blank">
+                        <img src="../assets/img/twitter.png" class="social" id="twitter"/>
+                    </a>
+                    <a href="http://instagram.com/slo_cru/" target="_blank">
+                        <img src="../assets/img/instagram.png" class="social" id="instagram"/>
+                    </a>
+                    <a href="https://www.facebook.com/SloCrusade" target="_blank">
+                        <img src="../assets/img/facebook.png" class="social" id="facebook"/>
+                    </a>
+                </div>
+
+                <div class="container">
+                    <ul class="menu">
+                        <li class="menu-about state2">
+                            <a href="about" class="menu-items mabout"> ABOUT </a>
+                        </li>
+                        <li class="menu-involvement state2">
+                            <a href="construction" class="menu-items minvolvement"> GET INVOLVED </a>
+                        </li>
+                        <li class="menu-resources state2">
+                            <a href="resources" class="menu-items mresources"> RESOURCES </a>
+                        </li>
+                        <li class="menu-media state2">
+                            <a href="media" class="menu-items mmedia"> MEDIA </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container buffer">
+                    <div class="subcatagories hidden">
+                        <div id="about-links" class="subs hidden">
+                            <p class="subs">
+                                <a href="staff" class="subs">STAFF</a>
+                                &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
+                                <a href="https://give.cru.org/2281756" class="subs" target="_blank">GIVE</a>
+                                &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
+                                <a href="construction" class="subs">HISTORY</a>
+                            </p>
+                        </div>
+                        <div id="involvement-links" class="subs hidden">
+                            <p class="subs">
+                                <a href="" class="subs">COMMUNITY GROUPS</a>
+                                &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
+                                <a href="ministry" class="subs">MINISTRY TEAMS</a>
+                                &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
+                                <a href="events" class="subs">EVENTS</a>
+                                &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
+                                <a href="construction" class="subs">ALL MINISTRIES</a>
+                                &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
+                                <a href="construction" class="subs">SUMMER MISSIONS & STINT</a>
+                            </p>
+                        </div>
+                        <div id="resources-links" class="subs hidden">
+                            <p class="subs">
+                                <a href="construction" class="subs">SERMONS</a>
+                                &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp; 
+                                <a href="housing" class="subs">HOUSING</a>
+                                &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
+                                <a href="literature" class="subs">LITERATURE</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

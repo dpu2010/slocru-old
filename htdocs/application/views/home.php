@@ -17,7 +17,7 @@
 <div class="container middle">
     <div class="column">
         <div class="text">
-            <p class="about">WHAT IS CRU CENTRAL COAST?</p>
+            <p class="about">WHAT IS SLO CRU?</p>
             <p class="mission" id="line1">A caring community passionate about</p>
             <p class="mission" id="line2">connecting people to Jesus Christ.</p>
             <div class="learn-more-button">
@@ -29,7 +29,7 @@
     </div>
     <div class="column">
         <div class="text">
-            <p class="meeting">WEEKLY MEETING</p>
+            <p class="meeting">SLO CRU WEEKLY MEETING</p>
             <p class="meeting-info" id="line1"><span class="time">Tuesdays at 8pm</span> (doors open at 7:30pm)</p>
             <p class="meeting-info" id="line2">Mountainbrook Community Church</p>
             <p class="break"></p>
@@ -38,7 +38,7 @@
     </div>
     <div class="column">
         <div class="directions-button">
-            <a href="">
+            <a href="https://www.google.com/maps/place/1775+Calle+Joaquin,+San+Luis+Obispo,+CA+93405/@35.2417196,-120.6880619,1463m/data=!3m1!1e3!4m2!3m1!1s0x80ecf0cab0fe565d:0x85364dfc5018da90">
                 <p class="button">GET DIRECTIONS</p>
             </a>
         </div>
@@ -55,13 +55,19 @@
      to always be the same three, but will change throughout the year. -->
 <div class="container bottom">
     <div class="wrap">
-        <img src="../assets/img/image-holder1.png" class="holder" id="holder1"/>
+        <a href="construction">
+            <img src="../assets/img/image-holder1.png" class="holder" id="holder1"/>
+        </a>
     </div>
     <div class="wrap">
-        <img src="../assets/img/image-holder2.png" class="holder" id="holder2"/>
+        <a href="construction">
+            <img src="../assets/img/image-holder2.png" class="holder" id="holder2"/>
+        </a>
     </div>
     <div class="wrap">
-        <img src="../assets/img/image-holder3.png" class="holder" id="holder3"/>
+        <a href="construction">
+            <img src="../assets/img/image-holder3.png" class="holder" id="holder3"/>
+        </a>
     </div>
 </div>
 <?php $this->load->view('javascript'); ?>

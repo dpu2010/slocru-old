@@ -12,9 +12,12 @@ var checker = function(item1, item2, item3) {
         //window.alert(item1);
         temp = '.menu-' + item1;
         $(temp).css({
-                "background-color" : "#ffffff",
-                "font-family" : "FreightSansProLight",
-                "color" : "#666062"
+            "background-color" : "#ffffff"
+        });
+        temp = '.m' + item1;
+        $(temp).css({
+            "font-family" : "FreightSansProLight",
+            "color" : "#666062"
         });
         temp = '#' + item1 + '-links';
         jQuery( temp).toggleClass('hidden');
@@ -22,9 +25,12 @@ var checker = function(item1, item2, item3) {
     if (item2) {
         temp = '.menu-' + item2;
         $(temp).css({
-                "background-color" : "#ffffff",
-                "font-family" : "FreightSansProLight",
-                "color" : "#666062"
+            "background-color" : "#ffffff"
+        });
+        temp = '.m' + item2;
+        $(temp).css({
+            "font-family" : "FreightSansProLight",
+            "color" : "#666062"
         });
         temp = '#' + item2 + '-links';
         jQuery( temp).toggleClass('hidden');
@@ -32,9 +38,12 @@ var checker = function(item1, item2, item3) {
     if (item3) {
         temp = '.menu-' + item3;
         $(temp).css({
-                "background-color" : "#ffffff",
-                "font-family" : "FreightSansProLight",
-                "color" : "#666062"
+            "background-color" : "#ffffff",
+        });
+        temp = '.m' + item3;
+        $(temp).css({
+            "font-family" : "FreightSansProLight",
+            "color" : "#666062"
         });
         temp = '#' + item3 + '-links';
         jQuery( temp).toggleClass('hidden');
@@ -43,12 +52,14 @@ var checker = function(item1, item2, item3) {
 
 var main = function() {
     var about, involvement, resources, media;
-    $('.menu-about, #about-links').mouseover(function() {
+    $('.menu-about').mouseenter(function() {
         if (!about) {
             about = 'about';
             //window.alert(about);
             $(this).css({
-                "background-color": "#f9b625",
+                "background-color": "#f9b625"
+            });
+            $('.mabout').css({
                 "color": "#ffffff",
                 "font-family" : "FreightSansProSemiBold"
             });
@@ -86,7 +97,9 @@ var main = function() {
             involvement = 'involvement';
             //window.alert(about);
             $(this).css({
-                "background-color": "#f9b625",
+                "background-color": "#f9b625"
+            });
+            $('.minvolvement').css({
                 "color": "#ffffff",
                 "font-family" : "FreightSansProSemiBold"
             });
@@ -102,7 +115,9 @@ var main = function() {
             resources = 'resources';
             //window.alert(about);
             $(this).css({
-                "background-color": "#f9b625",
+                "background-color": "#f9b625"
+            });
+            $('.mresources').css({
                 "color": "#ffffff",
                 "font-family" : "FreightSansProSemiBold"
             });
@@ -117,7 +132,9 @@ var main = function() {
             media = 'media';
             //window.alert(about);
             $(this).css({
-                "background-color": "#f9b625",
+                "background-color": "#f9b625"
+            });
+            $('.mmedia').css({
                 "color": "#ffffff",
                 "font-family" : "FreightSansProSemiBold"
             });

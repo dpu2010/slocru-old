@@ -4,7 +4,7 @@ $links = array(
         'href' => 'http://www.crupressgreen.com',
         'desc' => 'Get resources for Bible studies, discipleship, new believers, and more.'
     ),
-    'National Cru Resources' => array(
+    '...from Cru' => array(
         'href' => 'http://www.cru.org/training-and-growth/index.htm',
         'desc' => 'Resources for training & growth from the main cru site.'
     ),
@@ -12,12 +12,12 @@ $links = array(
         'href' => 'http://meettheprof.com/university/california-polytechnic-state-university-san-luis-obispo/',
         'desc' => 'Find professors who are following Christ.'
     ),
-    'Podcasts' => array(
-        'href' => 'https://itunes.apple.com/us/podcast/slo-crusade/id337947386?mt=2',
+    'Sermons' => array(
+        'href' => 'construction',
         'desc' => 'Listen to recordings of past meetings.'
     ),
-    'Livestream' => array(
-        'href' => 'https://www.livestream.com/slocrusade',
+    'Live Stream' => array(
+        'href' => 'https://www.youtube.com/user/slocrusade/videos',
         'desc' => 'Watch the weekly meeting live.'
     )
 );
