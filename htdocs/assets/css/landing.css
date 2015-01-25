@@ -1,0 +1,48 @@
+/* 
+    Created on : Jan 24, 2015, 9:07:07 PM
+    Author     : kylereis
+*/
+
+@font-face {
+    font-family: "FreightSansProLight";
+    src: url('../fonts/FreigSanProLig.otf') format('opentype');
+}
+
+body {
+    background-image: url("../img/landing/Bishop-peak_gray.jpg");
+    background-size: 100%;
+}
+
+.holder {
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+#CCC {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p.tagline {
+    padding-top: 7pt;
+    padding-bottom: 7pt;
+    margin-top: 10pt;
+    margin-bottom: 20pt;
+    margin-right: 9%;
+    margin-left: 8%;
+    text-align: center;
+    font-family: "FreightSansProLight";
+    font-size: 14pt;
+    color: #ffffff;
+    border-top-color: #ffffff;
+    border-top-width: 1pt;
+    border-top-style: solid;
+    border-bottom-color: #ffffff;
+    border-bottom-width: 1pt;
+    border-bottom-style: solid;
+}
+
+.ministry {
+    margin-bottom: 20pt;
+}

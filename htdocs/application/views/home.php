@@ -38,7 +38,7 @@
     </div>
     <div class="column">
         <div class="directions-button">
-            <a href="https://www.google.com/maps/place/1775+Calle+Joaquin,+San+Luis+Obispo,+CA+93405/@35.2417196,-120.6880619,1463m/data=!3m1!1e3!4m2!3m1!1s0x80ecf0cab0fe565d:0x85364dfc5018da90">
+            <a href="https://www.google.com/maps/place/1775+Calle+Joaquin,+San+Luis+Obispo,+CA+93405/@35.2417196,-120.6880619,1463m/data=!3m1!1e3!4m2!3m1!1s0x80ecf0cab0fe565d:0x85364dfc5018da90" target="_blank">
                 <p class="button">GET DIRECTIONS</p>
             </a>
         </div>

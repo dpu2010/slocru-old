@@ -31,7 +31,7 @@ $this->load->helper('url');
                     <a href="https://twitter.com/SLOcru" target="_blank">
                         <img src="../assets/img/twitter.png" class="social" id="twitter"/>
                     </a>
-                    <a href="http://instagram.com/slo_cru/" target="_blank">
+                    <a href="http://instagram.com/slocru/" target="_blank">
                         <img src="../assets/img/instagram.png" class="social" id="instagram"/>
                     </a>
                     <a href="https://www.facebook.com/SloCrusade" target="_blank">

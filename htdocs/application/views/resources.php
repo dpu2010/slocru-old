@@ -4,9 +4,9 @@ $links = array(
         'href' => 'http://www.crupressgreen.com',
         'desc' => 'Get resources for Bible studies, discipleship, new believers, and more.'
     ),
-    '...from Cru' => array(
+    'National Cru Resources' => array(
         'href' => 'http://www.cru.org/training-and-growth/index.htm',
-        'desc' => 'Resources for training & growth from the main cru site.'
+        'desc' => 'Resources for training & growth from Cru.'
     ),
     'MeetTheProf' => array(
         'href' => 'http://meettheprof.com/university/california-polytechnic-state-university-san-luis-obispo/',
