@@ -20,39 +20,37 @@ $this->load->helper('url');
             <a href="home">
                 <img src="../assets/img/landing/slo-cru.png" class="ministry"><img>
             </a>
-            <a href="">
+            <a href="https://www.facebook.com/groups/6433923302/?fref=nf">
                 <img src="../assets/img/landing/cuesta-cru.png" class="ministry"><img>
             </a>
-            <a href="">
+            <a href="https://www.facebook.com/groups/epicslo/">
                 <img src="../assets/img/landing/epic.png" class="ministry"><img>
             </a>
-            <a href="">
+            <a href="https://www.facebook.com/groups/86209282438/">
                 <img src="../assets/img/landing/destino.png" class="ministry"><img>
             </a>
-            <a href="">
+            <a href="https://www.facebook.com/groups/121310101276733/">
                 <img src="../assets/img/landing/greek-row.png" class="ministry"><img>
             </a>
-            <a href="">
+            <a href="https://www.facebook.com/calpolyaia">
                 <img src="../assets/img/landing/athletes.png" class="ministry"><img>
             </a>
-            <a href="">
+            <a href="http://facultycommonsslo.com/">
                 <img src="../assets/img/landing/faculty-commons.png" class="ministry"><img>
             </a>
-            <a href="">
+            <a href="https://www.facebook.com/groups/428875980518440/?ref=br_tf">
                 <img src="../assets/img/landing/branded.png" class="ministry"><img>
             </a>
-            <a href="">
+            <a href="https://www.facebook.com/groups/385306844974162/">
                 <img src="../assets/img/landing/cuesta-north.png" class="ministry"><img>
             </a>
-            <a href="">
+            <a href="https://www.facebook.com/CRUatHancock">
                 <img src="../assets/img/landing/hancock.png" class="ministry"><img>
             </a>
-            <a href="">
+            <a href="https://www.facebook.com/groups/229636323901336/">
                 <img src="../assets/img/landing/cru-high.png" class="ministry"><img>
             </a>
-            <a href="">
-                <img src="../assets/img/landing/choose.png" class="ministry"><img>
-            </a>
+            <img src="../assets/img/landing/choose.png" class="ministry" id="choose"><img>
         </div>
     </body>
 </html>
