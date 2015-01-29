@@ -15,7 +15,7 @@ $this->load->helper('url');
     <body>
         <img src="../assets/img/landing/cru-central-coast-resize.png" id="CCC"><img>
 
-        <p class="tagline">A family of ministries giving every student on California's Central Coast the opportunity to hear the Good News of Jesus Christ</p>
+        <p class="tagline">A family of ministries giving every student and faculty on California's Central Coast the opportunity to hear the Good News of Jesus Christ</p>
         <div class="holder">
             <a href="home">
                 <img src="../assets/img/landing/slo-cru.png" class="ministry"><img>
