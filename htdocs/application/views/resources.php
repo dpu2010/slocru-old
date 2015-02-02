@@ -6,11 +6,11 @@ $links = array(
     ),
     'National Cru Resources' => array(
         'href' => 'http://www.cru.org/training-and-growth/index.htm',
-        'desc' => 'Resources for training & growth from Cru.'
+        'desc' => 'Information for training and growth from the home office in Orlanda, FL.'
     ),
     'MeetTheProf' => array(
         'href' => 'http://meettheprof.com/university/california-polytechnic-state-university-san-luis-obispo/',
-        'desc' => 'Find professors who are following Christ.'
+        'desc' => 'Find local professors who are following Christ.'
     ),
     'Sermons' => array(
         'href' => 'construction',
