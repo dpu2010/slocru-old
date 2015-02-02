@@ -1,7 +1,5 @@
-<div class="container" style="box-shadow: 0px 1px 10px #888888;
-     border-radius: 0px 0px 10px 10px;
-     background-color: #fff;
-     padding: 0 100px 80px 100px">
+<div class="container" style="
+     background-color: #fff;">
     <br/>
     <div class="col-md-12" style="text-align: center; font-size: 36pt; font-weight: 300; padding: 10px 25px;">
         Ministry Teams
