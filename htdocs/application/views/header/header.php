@@ -45,7 +45,7 @@ $this->load->helper('url');
                             <a href="about" class="menu-items mabout"> ABOUT </a>
                         </li>
                         <li class="menu-involvement state2">
-                            <a href="construction" class="menu-items minvolvement"> GET INVOLVED </a>
+                            <a href="involvement" class="menu-items minvolvement"> GET INVOLVED </a>
                         </li>
                         <li class="menu-resources state2">
                             <a href="resources" class="menu-items mresources"> RESOURCES </a>
