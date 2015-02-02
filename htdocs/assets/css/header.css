@@ -107,7 +107,7 @@ a.menu-items {
     display: none;
 }
 
-#twitter:hover, #facebook:hover, #instagram:hover {
+#twitter:hover, #facebook:hover, #instagram:hover, #youtube:hover {
     opacity: .5;
 }
 

@@ -82,7 +82,7 @@
             controlNav: false,
             prevText: '<',
             nextText: '>',
-            directionNav: false
+            directionNav: true
         });
     });
 </script>

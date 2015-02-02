@@ -41,7 +41,7 @@ and open the template in the editor.
 
 .box {
     float: left;
-    width: 340pt;
+    width: 33%;
 }
 
 .text#housing {
@@ -50,7 +50,7 @@ and open the template in the editor.
 }
 
 .housing#line2 {
-    margin-top: 3pt;
+    margin-top: 30pt;
     color: #ffffff;
 }
 
@@ -69,6 +69,12 @@ p.housing#line1 {
     font-family: "FreightSansProSemiBold";
     font-size: 14pt;
     color: #ffffff;
+    border: 1pt solid #ffffff;
+    width: 220pt;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10pt;
+    padding-bottom: 10pt;
 }
 
 a.housing, a.housing:hover {
@@ -78,21 +84,24 @@ a.housing, a.housing:hover {
 }
 
 .picture {
-    width: 514pt;
+    width: 66%;
     float: right;
+    background-image: url("../img/weekly-meeting-blue.jpg");
+    height: inherit;
+    background-position: 0pt -145pt;
 }
 
-.title-heading {
-    margin-top: 24pt;
-    margin-left: 30pt;
-    font-family: "FreightSansProSemiBold";
-    font-size: 18pt;
-    color: #f9b625;
-    background-color: #ffffff;
-}
-
-.title {
-    background-color: #ffffff;
+.sermons, .sermons:hover {
+    font-family: "FreightSansProBold";
+    font-size: 24pt;
+    color: #ffffff;
+    width: 250pt;
+    text-align: center;
+    margin-top: 60pt;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1pt solid #ffffff;
+    padding:  10pt 10pt 10pt 10pt;
 }
 
 .bottom {
@@ -108,6 +117,7 @@ a.housing, a.housing:hover {
 .resources {
     float: left;
     width: 33.3%;
+    padding-left: 40pt;
 }
 
 #section1{

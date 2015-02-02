@@ -64,10 +64,9 @@ $fasting = array(
             <p class="housing" id="line3">Check out the <a href="housing" class="housing" target="_blank">HOUSING BOARD</a></p>
         </div>
     </div>
-    <img src="../../assets/img/computerguy.jpg" class="picture"/> 
-</div>
-<div class="container title">
-    <p class="title-heading">RESOURCES FOR SPIRITUAL GROWTH</p>
+    <div class="picture">
+        <a href="construction"><p class="sermons">SERMONS & WEEKLY MEETINGS</p></a>
+    </div>
 </div>
 <div class="container bottom">
     <div class="shift">

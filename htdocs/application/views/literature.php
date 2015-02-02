@@ -55,10 +55,6 @@ $fasting = array(
     'Book: Celebration of Discipline by Richard J Foster' => 'http://www.amazon.com/Celebration-Discipline-Path-Spiritual-Growth/dp/0060628391'
 )
 ?>
-
-<div class="container title">
-    <p class="title-heading">RESOURCES FOR SPIRITUAL GROWTH</p>
-</div>
 <div class="container bottom">
     <div class="shift">
         <div class="column resources" id="section1">

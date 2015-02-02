@@ -33,19 +33,6 @@ and open the template in the editor.
     src: url('../fonts/FreigSanProMed.otf') format('opentype');
 }
 
-.title-heading {
-    margin-top: 24pt;
-    margin-left: 30pt;
-    font-family: "FreightSansProSemiBold";
-    font-size: 18pt;
-    color: #f9b625;
-    background-color: #ffffff;
-}
-
-.title {
-    background-color: #ffffff;
-}
-
 .bottom {
     padding-top: 28pt;
     padding-bottom: 28pt;
@@ -59,6 +46,7 @@ and open the template in the editor.
 .resources {
     float: left;
     width: 33.3%;
+    padding-left: 40pt;
 }
 
 #section1{
