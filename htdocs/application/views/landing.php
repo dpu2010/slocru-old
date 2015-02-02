@@ -17,7 +17,7 @@ $this->load->helper('url');
 
         <p class="tagline">A family of ministries giving every student and faculty on California's Central Coast the opportunity to hear the Good News of Jesus Christ</p>
         <div class="holder">
-            <a href="home">
+            <a href="http://www.slocru.com">
                 <img src="../assets/img/landing/slo-cru.png" class="ministry"><img>
             </a>
             <a href="https://www.facebook.com/groups/6433923302/?fref=nf">
