@@ -36,7 +36,7 @@ and open the template in the editor.
 .middle {
     padding-top: 15pt;
     height: 175pt;
-    background-color: #f7f8f8;
+    background-color: #f5f5f5;
 }
 
 .column {
@@ -139,7 +139,7 @@ span.time {
 p.button {
     text-align: center;
     padding-top: 5pt;
-    font-family: "FreightSansProBold";
+    font-family: "FreightSansProSemiBold";
     font-size: 14pt;
     color: #ffffff;
 }
@@ -147,7 +147,7 @@ p.button {
 .bottom {
     padding-top: 10pt;
     height: 215pt;
-    background-color: #e4e5e4;
+    background-color: #626262;
 }
 
 img.holder {

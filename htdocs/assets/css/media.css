@@ -61,6 +61,7 @@ and open the template in the editor.
 .right {
     float: left;
     width: 66.6%;
+    background-color: #626262;
 }
 
 .middle {
@@ -77,6 +78,7 @@ and open the template in the editor.
     height: 200px;
     overflow-y: scroll;
     width: 226pt;
+    background-color: #ffffff;
 }
 
 div.coming {
