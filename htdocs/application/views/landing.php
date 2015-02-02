@@ -13,7 +13,7 @@ $this->load->helper('url');
         <link href="../assets/css/landing.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <img src="../assets/img/landing/cru-central-coast.png" id="CCC"><img>
+        <img src="../assets/img/landing/cru-central-coast-resize.png" id="CCC"><img>
 
         <p class="tagline">A family of ministries giving every student and faculty on California's Central Coast the opportunity to hear the Good News of Jesus Christ</p>
         <div class="holder">
@@ -38,7 +38,7 @@ $this->load->helper('url');
             <a href="http://facultycommonsslo.com/">
                 <img src="../assets/img/landing/faculty-commons.png" class="ministry"><img>
             </a>
-            <a href="https://www.facebook.com/groups/428875980518440/?ref=br_tf">
+            <a href="https://www.facebook.com/brandedchristiansinagriculture">
                 <img src="../assets/img/landing/branded.png" class="ministry"><img>
             </a>
             <a href="https://www.facebook.com/groups/385306844974162/">
