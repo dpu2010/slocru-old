@@ -1,0 +1,39 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 1, 2015, 8:18:29 PM
+    Author     : kylereis
+*/
+
+@font-face {
+    font-family: "FreightSansProLight";
+    src: url('../fonts/FreigSanProLig.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "FreightSansProSemiBold";
+    src: url('../fonts/FreigSanProSem.otf') format('opentype');
+}
+
+.top {
+    height: 400pt;
+}
+
+.column {
+    width: 33%;
+}
+
+.bottom {
+    height: 200pt;
+}
+
+.history {
+    width: 66%;
+}
+
+.give {
+    width: 33%;
+}

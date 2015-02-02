@@ -1,4 +1,26 @@
-<div class="container" style="box-shadow: 0px 1px 10px #888888;
+<div class="container">
+    <div class="top">
+        <div class="column about">
+
+        </div>
+        <div class="column involvement">
+
+        </div>
+        <div class="column staff">
+
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="history">
+            
+        </div>
+        <div class="give">
+        
+        </div>
+    </div>
+</div>
+
+<!--<div class="container" style="box-shadow: 0px 1px 10px #888888;
      border-radius: 0px 0px 10px 10px;
      background-color: #fff;
      padding: 0 100px 80px 100px">
@@ -42,5 +64,4 @@
         </p>
     </div>
 
-</div>
-<?php $this->load->view('javascript');?>
+</div>-->
