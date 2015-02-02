@@ -39,11 +39,17 @@ and open the template in the editor.
     font-family: "FreightSansProSemiBold";
     font-size: 18pt;
     color: #f9b625;
+    background-color: #ffffff;
+}
+
+.title {
+    background-color: #ffffff;
 }
 
 .bottom {
-    margin-top: 28pt;
-    margin-bottom: 28pt;
+    padding-top: 28pt;
+    padding-bottom: 28pt;
+    background-color: #ffffff;
 }
 
 .shift {
@@ -85,7 +91,7 @@ and open the template in the editor.
 }
 
 .links, .links:hover {
-    font-family: "FreightSansProMedium";
+    font-family: "FreightSansProLight";
     font-size: 12pt;
     color: #dd7d1b;
 }

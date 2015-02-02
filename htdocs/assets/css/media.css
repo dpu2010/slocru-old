@@ -13,11 +13,36 @@ and open the template in the editor.
     src: url('../fonts/FreigSanProLig.otf') format('opentype');
 }
 
+@font-face {
+    font-family: "FreightSansProSemiBold";
+    src: url('../fonts/FreigSanProSem.otf') format('opentype');
+}
+
+
+@font-face {
+    font-family: "FreightSansProMedium";
+    src: url('../fonts/FreigSanProMed.otf') format('opentype');
+}
+
 .headings {
+    text-align: center;
+    font-family: "FreightSansProMedium";
+    font-size: 14pt;
+    color: #ffffff;
+}
+
+.insta-info {
     text-align: center;
     font-family: "FreightSansProLight";
     font-size: 12pt;
-    color: #666062;
+    color: #ffffff;
+}
+
+.heading-gallery {
+    text-align: center;
+    font-family: "FreightSansProSemiBold";
+    font-size: 16pt;
+    color: #007398;
 }
 
 .gallery-name {
@@ -25,12 +50,13 @@ and open the template in the editor.
     text-align: center;
     font-family: "FreightSansProLight";
     font-size: 10pt;
-    color: #666062;
+    color: #3EB1C8;
 }
 
 .left {
     float: left;
     width: 33.3%;
+    background-color: #f5f5f5;
 }
 
 .gallery-pain-left {
@@ -61,6 +87,8 @@ and open the template in the editor.
 .right {
     float: left;
     width: 66.6%;
+    background-color: #626262;
+    padding-bottom: 25pt; 
 }
 
 .middle {
@@ -77,6 +105,7 @@ and open the template in the editor.
     height: 200px;
     overflow-y: scroll;
     width: 226pt;
+    background-color: #ffffff;
 }
 
 div.coming {

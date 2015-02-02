@@ -1,7 +1,5 @@
-<div class="container" style="box-shadow: 0px 1px 10px #888888;
-     border-radius: 0px 0px 10px 10px;
-     background-color: #fff;
-     padding: 0 100px 80px 100px">
+<div class="container" style="
+     background-color: #fff;">
     <br/>
     <?php if ($this->session->flashdata('email_response')) { ?>
         <div class="alert alert-success alert-dismissable" style="text-align: center;">
@@ -13,10 +11,6 @@
     <div class="col-md-12" style="text-align: center; font-size: 36pt; font-weight: 300; padding: 10px 25px;">
         Sign up for a bible study
     </div>
-    <br/>
-    <img src="../assets/img/dropshadowup2.png" style="width:100%; height:25px;"/>
-    <br/>
-    <br/>
     <br/>
     <div class="row text-center">
         <!-- Button trigger modal -->

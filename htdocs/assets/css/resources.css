@@ -36,7 +36,7 @@ and open the template in the editor.
 .top {
     height: 212pt;
     width: 100%;
-    background-color: #f8f8f9;
+    background-color: #626262;
 }
 
 .box {
@@ -51,10 +51,12 @@ and open the template in the editor.
 
 .housing#line2 {
     margin-top: 3pt;
+    color: #ffffff;
 }
 
 .housing#line3 {
     margin-top: -7pt;
+    color: #ffffff;
 }
 
 p.housing {
@@ -66,13 +68,13 @@ p.housing {
 p.housing#line1 {
     font-family: "FreightSansProSemiBold";
     font-size: 14pt;
-    color: #727375;
+    color: #ffffff;
 }
 
 a.housing, a.housing:hover {
     font-family: "FreightSansProMedium";
     font-size: 12pt;
-    color: #3eb1c8;
+    color: #F9B625;
 }
 
 .picture {
@@ -86,11 +88,17 @@ a.housing, a.housing:hover {
     font-family: "FreightSansProSemiBold";
     font-size: 18pt;
     color: #f9b625;
+    background-color: #ffffff;
+}
+
+.title {
+    background-color: #ffffff;
 }
 
 .bottom {
-    margin-top: 28pt;
-    margin-bottom: 28pt;
+    padding-top: 28pt;
+    padding-bottom: 28pt;
+    background-color: #ffffff;
 }
 
 .shift {

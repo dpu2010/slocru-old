@@ -1,11 +1,7 @@
-<div class="container" style="box-shadow: 0px 1px 10px #888888; border-radius:0 0 10px 10px; background-color: #fff; padding: 0 100px 0 100px">
-    <br/>
+<div class="container" style="background-color: #fff;">
     <div class="col-md-12" style="text-align: center; font-weight: 300; font-size: 36pt; padding: 10px 25px 10px 25px;">
         Staff
     </div>
-    <br/>
-    <img src="../assets/img/dropshadowup2.png" style="width:100%; height:25px;"/>
-    <br/><br/><br/>
     <?php
     
         //Since we have 2 Mission Team Leaders, we center those up top
