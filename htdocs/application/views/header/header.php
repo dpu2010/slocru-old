@@ -41,7 +41,7 @@ $this->load->helper('url');
                         <img src="../assets/img/facebook.png" class="social" id="facebook"/>
                     </a>
                     <a href="https://www.crucentralcoast.com">
-                        <img src="../assets/img/back-crucentral_full.png" class="central" id="to-landing"/>
+                        <img data-alt-src="../assets/img/back-crucentral_full-blue.png" src="../assets/img/back-crucentral_full.png" class="central" id="to-landing"/>
                     </a>
                 </div>
 
