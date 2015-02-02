@@ -16,7 +16,6 @@ var checker = function(item1, item2, item3) {
         });
         temp = '.m' + item1;
         $(temp).css({
-            "font-family" : "FreightSansProLight",
             "color" : "#666062"
         });
         temp = '#' + item1 + '-links';
@@ -29,7 +28,6 @@ var checker = function(item1, item2, item3) {
         });
         temp = '.m' + item2;
         $(temp).css({
-            "font-family" : "FreightSansProLight",
             "color" : "#666062"
         });
         temp = '#' + item2 + '-links';
@@ -42,7 +40,6 @@ var checker = function(item1, item2, item3) {
         });
         temp = '.m' + item3;
         $(temp).css({
-            "font-family" : "FreightSansProLight",
             "color" : "#666062"
         });
         temp = '#' + item3 + '-links';
@@ -60,8 +57,7 @@ var main = function() {
                 "background-color": "#f9b625"
             });
             $('.mabout').css({
-                "color": "#ffffff",
-                "font-family" : "FreightSansProSemiBold"
+                "color": "#ffffff"
             });
             jQuery('#about-links, .subcatagories').toggleClass('hidden');
         }
@@ -100,8 +96,7 @@ var main = function() {
                 "background-color": "#f9b625"
             });
             $('.minvolvement').css({
-                "color": "#ffffff",
-                "font-family" : "FreightSansProSemiBold"
+                "color": "#ffffff"
             });
             jQuery('#involvement-links, .subcatagories').toggleClass('hidden');
 
@@ -118,8 +113,7 @@ var main = function() {
                 "background-color": "#f9b625"
             });
             $('.mresources').css({
-                "color": "#ffffff",
-                "font-family" : "FreightSansProSemiBold"
+                "color": "#ffffff"
             });
             jQuery('#resources-links, .subcatagories').toggleClass('hidden');
         }
@@ -135,8 +129,7 @@ var main = function() {
                 "background-color": "#f9b625"
             });
             $('.mmedia').css({
-                "color": "#ffffff",
-                "font-family" : "FreightSansProSemiBold"
+                "color": "#ffffff"
             });
             jQuery('#media-links, .subcatagories').toggleClass('hidden');
         }
