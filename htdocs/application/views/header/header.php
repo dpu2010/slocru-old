@@ -28,6 +28,9 @@ $this->load->helper('url');
                     <a href="home">
                         <img src="../assets/img/crulogo.png" class="logo"/>
                     </a>
+                    <a href="https://www.youtube.com/user/slocrusade" target="_blank">
+                        <img src="../assets/img/youtube.png" class="social-youtube" id="youtube"/>
+                    </a>
                     <a href="https://twitter.com/SLOcru" target="_blank">
                         <img src="../assets/img/twitter.png" class="social" id="twitter"/>
                     </a>
@@ -37,6 +40,9 @@ $this->load->helper('url');
                     <a href="https://www.facebook.com/SloCrusade" target="_blank">
                         <img src="../assets/img/facebook.png" class="social" id="facebook"/>
                     </a>
+                    <a href="https://www.crucentralcoast.com">
+                        <img src="../assets/img/back-crucentral_full.png" class="central" id="to-landing"/>
+                    </a>
                 </div>
 
                 <div class="container">
@@ -45,7 +51,7 @@ $this->load->helper('url');
                             <a href="about" class="menu-items mabout"> ABOUT </a>
                         </li>
                         <li class="menu-involvement state2">
-                            <a href="construction" class="menu-items minvolvement"> GET INVOLVED </a>
+                            <a href="involvement" class="menu-items minvolvement"> GET INVOLVED </a>
                         </li>
                         <li class="menu-resources state2">
                             <a href="resources" class="menu-items mresources"> RESOURCES </a>
@@ -68,13 +74,13 @@ $this->load->helper('url');
                         </div>
                         <div id="involvement-links" class="subs hidden">
                             <p class="subs">
-                                <a href="" class="subs">COMMUNITY GROUPS</a>
+                                <a href="studies" class="subs">COMMUNITY GROUPS</a>
                                 &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
                                 <a href="ministry" class="subs">MINISTRY TEAMS</a>
                                 &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
                                 <a href="events" class="subs">EVENTS</a>
                                 &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
-                                <a href="construction" class="subs">ALL MINISTRIES</a>
+                                <a href="http://crucentralcoast.com" class="subs">ALL MINISTRIES</a>
                                 &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
                                 <a href="construction" class="subs">SUMMER MISSIONS & STINT</a>
                             </p>

@@ -1,6 +1,6 @@
 <div class="container">
     <div class="column left">
-        <p class="headings">PHOTO GALLERY</p>
+        <p class="heading-gallery">PHOTO GALLERY</p>
         <a href="construction">
             <img src="../../assets/img/placeholders/fallretreat2014.jpg" class="top-album">
         </a>
@@ -76,7 +76,7 @@
             </div>
         </div>
         <div class="column bottom-right">
-            <p class="headings">INSTAGRAM (Follow us @crucentralcoast)</p>
+            <p class="headings">INSTAGRAM <span class="insta-info">(Follow us @crucentralcoast)</span></p>
             <!-- SnapWidget -->
             <div class="insta-feed">
                 <p class="coming">Instagram feed Coming Soon</p>
