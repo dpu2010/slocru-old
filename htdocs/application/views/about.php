@@ -19,11 +19,11 @@
                 Discipleship relationships, short-term missions, and weekly
                 large group meetings.
             </p>
-            <div class="button-about">
-                <a href="events">
+            <a href="events">
+                <div class="button-about">
                     <p class="button link-dark">Check out our upcoming events</p>
-                </a>
-            </div>
+                </div>
+            </a>
         </div>
         <div class="column div-involvement">
             <p class="header-light">
@@ -44,11 +44,11 @@
                 <a href="construction">rides available</a>
                 from Cal Poly meeting at the <i>PAC</i> at 7:30pm.
             </p>
-            <div class="button-involvement">
-                <a href="construction">
+            <a href="construction">
+                <div class="button-involvement">
                     <p class="button link-light">Join a Community Group</p>
-                </a>
-            </div>
+                </div>
+            </a>
         </div>
         <div class="column-biggerish div-staff">
             <p class="header-blue">
@@ -60,11 +60,11 @@
                 Our current teams has 15 full-time staff members and nine interns
                 and part-time staff.
             </p>
-            <div class="button-staff">
-                <a href="staff">
+            <a href="staff">
+                <div class="button-staff">
                     <p class="button link-dark">Get to know the staff team</p>
-                </a>
-            </div>
+                </div>
+            </a>
         </div>
         <div class="column-biggerish div-staff-img">
             <img src="../../assets/img/cru-staff-bw.jpg"></img>
@@ -88,11 +88,11 @@
                 needed to reach every student on the Central Coast with the
                 Good News of Jesus Christ.
             </p>
-            <div class="button-give">
-                <a href="https://give.cru.org/2281756">
+            <a href="https://give.cru.org/2281756">
+                <div class="button-give">
                     <p class="button link-light">GIVE TO SLO CRU</p>
-                </a>
-            </div>
+                </div>
+            </a>
         </div>
     </div>
 </div>

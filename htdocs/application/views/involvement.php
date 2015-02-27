@@ -55,58 +55,60 @@
         <br/>
 
         <?php foreach($events as $event) { ?>
-        <?php
-            $timestamp = strtotime($event->Date);
-            $month = date("M", $timestamp);
-            $day = date("j", $timestamp);
-        ?>
-        <div class="list-item-event">
-            <div class="date-container">
-                <div class="event-date">
-                    <div class="month"><?php echo strtoupper($month); ?></div>
-                    <div class="day"><?php echo $day; ?></div>
+            <?php
+                $timestamp = strtotime($event->Date);
+                $month = date("M", $timestamp);
+                $day = date("j", $timestamp);
+            ?>
+            <a class="event" href="events">
+                <div class="list-item-event">
+                    <div class="date-container">
+                        <div class="event-date">
+                            <div class="month"><?php echo strtoupper($month); ?></div>
+                            <div class="day"><?php echo $day; ?></div>
+                        </div>
+                    </div>
+                    <div class="event-text">
+                        <div class="event-text-title">
+                            <?php
+                                $str = $event->Name . " (";
+                                $starttime = strtotime($event->StartTime);
+                                if(isset($event->EndTime)) {
+                                    $endtime = strtotime($event->EndTime);
+                                }
+                                else {
+                                    $endtime = NULL;
+                                }
+
+                                $str .= date("g", $starttime);
+                                if(date("i", $starttime) !== "00") {
+                                    $str .= ":" . date("i", $starttime);
+                                }
+
+                                if($endtime !== NULL) {
+                                    $str .= "&ndash;";
+                                    $str .= date("g", $endtime);
+                                    if(date("i", $endtime) !== "00") {
+                                        $str .= ":" . date("i", $endtime);
+                                    }
+                                    $str .= date("a", $endtime);
+                                }
+                                else {
+                                    $str .= $str .= date("a", $starttime);
+                                }
+
+                                $str .= ")";
+
+                                echo $str;
+                                //Weekly Meeting Week 1 (8pm)&ndash;
+                                ?>
+                        </div>
+                        <div class="event-text-desc">
+                            <?php echo $event->Location; ?>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="event-text">
-                <div class="event-text-title">
-                    <?php
-                        $str = $event->Name . " (";
-                        $starttime = strtotime($event->StartTime);
-                        if(isset($event->EndTime)) {
-                            $endtime = strtotime($event->EndTime);
-                        }
-                        else {
-                            $endtime = NULL;
-                        }
-
-                        $str .= date("g", $starttime);
-                        if(date("i", $starttime) !== "00") {
-                            $str .= ":" . date("i", $starttime);
-                        }
-
-                        if($endtime !== NULL) {
-                            $str .= "&ndash;";
-                            $str .= date("g", $endtime);
-                            if(date("i", $endtime) !== "00") {
-                                $str .= ":" . date("i", $endtime);
-                            }
-                            $str .= date("a", $endtime);
-                        }
-                        else {
-                            $str .= $str .= date("a", $starttime);
-                        }
-
-                        $str .= ")";
-
-                        echo $str;
-                        //Weekly Meeting Week 1 (8pm)&ndash;
-                        ?>
-                </div>
-                <div class="event-text-desc">
-                    <?php echo $event->Location; ?>
-                </div>
-            </div>
-        </div>
+            </a>
         <?php } ?>
     </div>
 </div>

@@ -83,6 +83,10 @@ and open the template in the editor.
     margin-bottom: 5%;
 }
 
+.event:hover .list-item-event{
+    opacity: .6;
+}
+
 .list-item{
     width: 100%;
 }
@@ -103,7 +107,7 @@ and open the template in the editor.
 }
 .list-item-event{
     display: block;
-    background-color: white;
+    background-color: #ffffff;
     width: 100%;
     overflow: auto;
     padding: 10px;
