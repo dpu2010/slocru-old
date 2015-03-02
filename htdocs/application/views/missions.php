@@ -1,5 +1,5 @@
 <div class="container">
-    <a href="http://www.cru.org/opportunities/mission-trips/summer/explore/desti-nations.html?tripid=384">
+    <a href="http://www.cru.org/opportunities/mission-trips/summer/explore/destinations.html?tripid=384">
         <div class="box" id="east-asia">
             <p>LEARN MORE<br>ABOUT OUR<br>PARTNERSHIP<br>IN EAST ASIA</p>
         </div>
@@ -14,14 +14,14 @@
             <br>partnerships that are specifi c to SLO Cru! 
             <br>
             <br>Our current Stateside partnerships for Summer 
-            <br>Missions are: <a class="mission-link" href="">Santa Monica</a>, CA; <a class="mission-link" href="">Ocean City</a>, NJ; 
-            <br><a class="mission-link" href="">Daytona Beach</a>, FL; and <a class="mission-link" href="">San Diego</a>, CA.
+            <br>Missions are: <a class="mission-link" href="http://www.cru.org/opportunities/mission-trips/summer/explore/destinations.html?tripid=408">Santa Monica</a>, CA; <a class="mission-link" href="http://www.cru.org/opportunities/mission-trips/summer/explore/destinations.html?tripid=329">Ocean City</a>, NJ; 
+            <br><a class="mission-link" href="http://www.cru.org/opportunities/mission-trips/summer/explore/destinations.html?tripid=690">Daytona Beach</a>, FL; and <a class="mission-link" href="http://www.cru.org/opportunities/mission-trips/summer/explore/destinations.html?tripid=455">San Diego</a>, CA.
             <br>
             <br>Our overseas partnerships for Summer Missions 
-            <br>and STINT are <a class="mission-link" href="">East Asia</a> and the <a class="mission-link" href="">Middle East</a>.
+            <br>and STINT are <a class="mission-link" href="http://www.cru.org/opportunities/mission-trips/summer/explore/destinations.html?tripid=384">East Asia</a> and the <a class="mission-link" href="http://www.cru.org/opportunities/mission-trips/summer/explore/destinations.html?tripid=865">Middle East</a>.
         </p>
     </div>
-    <a href="http://www.cru.org/opportunities/mission-trips/summer/explore/desti-nations.html?tripid=865">
+    <a href="http://www.cru.org/opportunities/mission-trips/summer/explore/destinations.html?tripid=865">
         <div class="box" id="oasis">
             <p>LEARN MORE<br>ABOUT OUR<br>MIDDLE EAST<br>PARTNERSHIP</p>
         </div>
@@ -51,7 +51,7 @@
         </div>
         <p><br></p>
     </div>
-    <a href="http://www.cru.org/opportunities/mission-trips/summer/explore/desti-nations.html?tripid=408">
+    <a href="http://www.cru.org/opportunities/mission-trips/summer/explore/destinations.html?tripid=408">
         <div class="box" id="stateside">
             <p>LEARN MORE<br>ABOUT OUR<br>STATESIDE<br>PARTNERSHIPS</p>
         </div>
@@ -73,7 +73,7 @@
             <br><br>
         </p>
         <div class="button">
-            <a class="button-stint" href="http://www.cru.org/opportunities/mission-trips/summer/plan/apply.html">
+            <a class="button-stint" href="http://www.cru.org/opportunities/missiontrips/summer/plan/apply.html">
                 <div class="button-stint">
                     <p class="button-stint">Apply for STINT</p>
                 </div>
