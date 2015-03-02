@@ -34,7 +34,7 @@
             </a>
         </div>
         <div class="box">
-            <a href="<?php echo base_url() . "summer" ?>">
+            <a href="<?php echo base_url() . "missions" ?>">
                 <div class="white-box">
                     <img class="photo" src="../assets/img/involvement/summer.jpg"/>
                     <br />

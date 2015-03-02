@@ -60,7 +60,7 @@
         </a>
     </div>
     <div class="wrap">
-        <a href="construction">
+        <a href="missions">
             <img src="../assets/img/image-holder2.png" class="holder" id="holder2"/>
         </a>
     </div>
