@@ -1,43 +1,62 @@
-<div class="container" style="background-color: #fff;">
-    <div class="col-md-12" style="text-align: center; font-weight: 300; font-size: 36pt; padding: 10px 25px 10px 25px;">
-        Staff
-    </div>
+<div class="container">
     <?php
-    
-        //Since we have 2 Mission Team Leaders, we center those up top
-        echo '<div class="row" style="padding: 10px 0 30px 0;">';
-        echo '<div class="col-md-3"></div>';
-        
         $group = '';
         $groups = 0;
         
         //Loop through the rest of staff
         for($i = 0; $i < count($staff); $i) 
         {
-            if($group != $staff[$i]->group)
+            if($group != $staff[$i]->Group && $group != '')
             {
-                echo '<div class="' . $staff[$i]->group . '">';
-                $group = $staff[$i]->group;
-                $groups++;
+                echo '</div>';
+                echo '<div class="' . $staff[$i]->Group . '">';
+                $group = $staff[$i]->Group;
+                if($group == 'staff')
+                {
+                    echo '<hr class="header-lines-staff" />';
+                    echo '<p class="header-staff">CAMPUS FIELD STAFF & AREA DIRECTORS</p>';
+                    echo '<hr class="header-lines-staff" />';
+                }
+                elseif($group == 'intern')
+                {
+                    echo '<hr class="header-lines-intern" />';
+                    echo '<p class="header-intern">CAMPUS MINISTRY INTERNS & PART-TIME FIELD STAFF</p>';
+                    echo '<hr class="header-lines-intern" />';
+                }
             }
-            echo '<div class="row">';
-            
-            for($j = 0; $j < 3; $j++) 
+            elseif($group != $staff[$i]->Group)
             {
-                echo '<div class="card">';
-                echo '<img src="' . $staff[$i]->Picture . '" class="picture"></img>';
+                echo '<div class="' . $staff[$i]->Group . '">';
+                $group = $staff[$i]->Group;
+                if($group == 'mtl')
+                {
+                    echo '<hr class="header-lines-mtl" />';
+                    echo '<p class="header-mtl">CRU CENTRAL COAST MISSIONAL TEAM LEADERS</p>';
+                    echo '<hr class="header-lines-mtl" />';
+                }
+            }
+            
+            echo '<div class="column">';
+            if($i%3 == 0)
+            {
+                echo '<div class="card-left">';
+            }
+            elseif($i%3 == 1)
+            {
+                echo '<div class="card-middle">';
+            }
+            elseif($i%3 == 2)
+            {
+                echo '<div class="card-right">';
+            }
+                
+                echo '<img src="../../assets/img/staff/' . $staff[$i]->Picture . '" class="picture">';
                 echo '<p class="name">' . $staff[$i]->Name . '</p>';
-                echo '<p class="role">' . $staff[$i]->Role . '</p><br/>';
+                echo '<p class="role">' . $staff[$i]->Role . '</p>';
                 echo '<a class="email" href="mailto:'.$staff[$i]->Email.'" target="_blank">'.$staff[$i]->Email.'</a>';
                 echo '</div>';
+                echo '</div>';
                 $i++;
-            }
-            echo '</div>';
-        }
-        
-        while($groups--)
-        {
-            echo '</div>';
         }
     ?>
     <?php $this->load->view('javascript'); ?>

@@ -1,0 +1,124 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 4, 2015, 1:53:44 PM
+    Author     : kylereis
+*/
+
+@font-face {
+    font-family: "FreightSansProLight";
+    src: url('../fonts/FreigSanProLig.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "FreightSansProMedium";
+    src: url('../fonts/FreigSanProMed.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "FreightSansProSemiBold";
+    src: url('../fonts/FreigSanProSem.otf') format('opentype');
+}
+
+.mtl {
+    background-color: #262626; 
+    padding-top: 30pt;
+    display: inline-block;
+    width: 100%;
+}
+
+.header-mtl {
+    text-align: center;
+    font-family: "FreightSansProMedium";
+    font-size: 16pt;
+    color: #ffffff;
+}
+
+.header-lines-mtl {
+    width: 95%;
+}
+
+.staff {
+    background-color: #626262;
+    padding-top: 30pt;
+    display: inline-block;
+    width: 100%;
+}
+
+.header-staff {
+    text-align: center;
+    font-family: "FreightSansProMedium";
+    font-size: 16pt;
+    color: #ffffff;
+}
+
+.header-lines-staff {
+    
+}
+
+.intern {
+    background-color: #F5F5F5;
+    padding-top: 30pt;
+    display: inline-block;
+    width: 100%;
+}
+
+.header-intern {
+    text-align: center;
+    font-family: "FreightSansProMedium";
+    font-size: 16pt;
+}
+
+.header-lines-intern {
+    
+}
+
+.card-left {
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-bottom: 15pt;
+    padding-top: 10pt;
+    padding-bottom: 10pt;
+    padding-left: 10pt;
+    padding-right: 10pt;
+}
+
+.card-middle {
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-bottom: 15pt;
+    padding-top: 10pt;
+    padding-bottom: 10pt;
+    padding-left: 10pt;
+    padding-right: 10pt;
+}
+
+.card-right {
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-bottom: 15pt;
+    padding-top: 10pt;
+    padding-bottom: 10pt;
+    padding-left: 10pt;
+    padding-right: 10pt;
+}
+
+.column {
+    width: 33.333333333%;
+    float: left;
+}
+
+.picture {
+    float: left;
+    width: 60pt;
+    height: 60pt;
+}
