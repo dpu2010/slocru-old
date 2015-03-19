@@ -51,9 +51,9 @@
             }
                 
                 echo '<img src="../../assets/img/staff/' . $staff[$i]->Picture . '" class="picture">';
-                echo '<p class="name">' . $staff[$i]->Name . '</p>';
+                echo '<p class="' . $group . '-name">' . $staff[$i]->Name . '</p>';
                 echo '<p class="role">' . $staff[$i]->Role . '</p>';
-                echo '<a class="email" href="mailto:'.$staff[$i]->Email.'" target="_blank">'.$staff[$i]->Email.'</a>';
+                echo '<p class="email"><a href="mailto:'.$staff[$i]->Email.'" target="_blank">'.$staff[$i]->Email.'</a></p>';
                 echo '</div>';
                 echo '</div>';
                 $i++;

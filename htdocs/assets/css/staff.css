@@ -25,7 +25,6 @@ and open the template in the editor.
 
 .mtl {
     background-color: #262626; 
-    padding-top: 30pt;
     display: inline-block;
     width: 100%;
 }
@@ -43,7 +42,6 @@ and open the template in the editor.
 
 .staff {
     background-color: #626262;
-    padding-top: 30pt;
     display: inline-block;
     width: 100%;
 }
@@ -56,12 +54,11 @@ and open the template in the editor.
 }
 
 .header-lines-staff {
-    
+    width: 95%;
 }
 
 .intern {
     background-color: #F5F5F5;
-    padding-top: 30pt;
     display: inline-block;
     width: 100%;
 }
@@ -70,10 +67,12 @@ and open the template in the editor.
     text-align: center;
     font-family: "FreightSansProMedium";
     font-size: 16pt;
+    color: #007398;
 }
 
 .header-lines-intern {
-    
+    width: 95%;
+    border-color: #626262;
 }
 
 .card-left {
@@ -121,4 +120,48 @@ and open the template in the editor.
     float: left;
     width: 60pt;
     height: 60pt;
+}
+
+.mtl-name {
+    margin-top: 8pt;
+    font-family: "FreightSansProSemiBold";
+    font-size: 12pt;
+    color: #007398;
+    text-align: center;
+}
+
+.staff-name {
+    margin-top: 8pt;
+    font-family: "FreightSansProSemiBold";
+    font-size: 12pt;
+    color: #f9b625;
+    text-align: center;
+}
+
+.intern-name {
+    margin-top: 8pt;
+    font-family: "FreightSansProSemiBold";
+    font-size: 12pt;
+    color: #3eb1c8;
+    text-align: center;
+}
+
+.role {
+    margin-top: -8pt;
+    font-family: "FreightSansProMedium";
+    font-size: 10pt;
+    color: #666062;
+    text-align: center;
+}
+
+.email {
+    font-family: "FreightSansProLight";
+    font-size: 10pt;
+    color: #666062;
+    text-align: center;
+    margin-top: -8pt;
+}
+
+a, a:hover{
+    color: inherit;
 }
