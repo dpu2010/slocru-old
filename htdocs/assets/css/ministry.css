@@ -8,3 +8,59 @@ and open the template in the editor.
     Author     : kylereis
 */
 
+@font-face {
+    font-family: "FreightSansProSemiBold";
+    src: url('../fonts/FreigSanProSem.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "FreightSansProBold";
+    src: url('../fonts/FreigSanProBold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "FreightSansProBook";
+    src: url('../fonts/FreigSanProBook.otf') format('opentype');
+}
+
+.title {
+    
+}
+
+#sidebar {
+    float: right;
+    width: 33.333333333%;
+    background: #F5F5F5;
+}
+
+#list {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list-group-item {
+    margin-top: 5pt;
+    border: none;
+}
+
+#content {
+    float: left;
+    width: 66.666666666%;
+    background: url(../img/ministry/background.jpg);
+    background-repeat: no-repeat;
+}
+
+.select {
+    font-family: "FreightSansProBold";
+    font-size: 24pt;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 15pt;
+    padding-bottom: 15pt;
+    padding-left: 20pt;
+    padding-right: 20pt;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 1pt;
+}

@@ -1,51 +1,43 @@
-<div class="container" style="
-     background-color: #fff;">
-    <br/>
-    <div class="col-md-12" style="text-align: center; font-size: 36pt; font-weight: 300; padding: 10px 25px;">
-        Ministry Teams
-    </div>
-    <br/>
-    <div class="col-md-3">
-        <div class="list-group" id="sidebar">
-    <?php
-        for($i = 0; $i < count($ministry); $i++) {
-            $id = explode(" ",$ministry[$i]->Name);
-            $id = explode("'", $id[0]);
-            $id = $id[0];
-            echo '<a href="#'.$id.'" data-toggle="tab" class="list-group-item">';
-            echo $ministry[$i]->Name;
-            echo '</a>';
-        }
-    ?>
+<div class="container">
+    <div id="sidebar">
+        <p class="title">Ministry Teams</p>
+        <div class="list-group" id="list">
+            <?php
+                for($i = 0; $i < count($ministry); $i++) {
+                    $id = explode(" ",$ministry[$i]->Name);
+                    $id = explode("'", $id[0]);
+                    $id = $id[0];
+                    echo '<a href="#'.$id.'" data-toggle="tab" class="list-group-item">';
+                    echo $ministry[$i]->Name;
+                    echo '</a>';
+                }
+            ?>
         </div>
     </div>
-    <div id='content' class="tab-content col-md-9">
+    <div id='content' class="tab-content">
+        <div class=" ministry tab-pane fade in active">
+            <p class="select">SELECT A TEAM<br>TO LEARN MORE</p>
+        </div>
         <?php
             for($i = 0; $i < count($ministry); $i++) {
                 $id = explode(" ",$ministry[$i]->Name);
                 $id = explode("'", $id[0]);
                 $id = $id[0];
 
-                echo '<div class="tab-pane fade';
-                if($i == 0) {
-                    echo ' in active';
-                }
+                echo '<div class="ministry tab-pane fade';
                 echo '" id="'.$id.'" style="text-align: center">';
-                echo '<img src="';
+                echo '<img class="photo" src="';
                 if(empty($ministry[$i]->Image)) {
                     echo 'http://placehold.it/400x300&text=%20';
                 }
                 else {
                     echo $ministry[$i]->Image;
                 }
-                echo '" style="border-radius: 10px; padding: 7px; border: 1px solid #ccc; background-color: white;"/>';
+                echo '"/>';
                 echo '<h2>'.$ministry[$i]->Name.'</h2>';
                 echo str_replace("\n",'<br/>',$ministry[$i]->Description);
-                echo '<br/><br/>';
-                echo '<div class="container" style="width: 40%">';
-                    echo '<a data-toggle="modal" href="#'.$id.'modal" class="btn btn-warning btn-lg btn-block"  disabled="true" style="padding: 20px; font-size: 25pt;"><i>SIGN UP</i></a>';
-                echo '</div>';
-                
+                echo '<p><a data-toggle="modal" href="#'.$id.'modal" class="button">Sign-up Here</a></p>';
+
                 echo '<div class="modal fade" id="'.$id.'modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">';
                 echo '<div class="modal-dialog">';
                     echo '<div class="modal-content">';
@@ -83,16 +75,14 @@
                             echo '</div>';
                             echo '<div class="modal-footer">';
                                 echo '<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>';
-                                echo '<button type="submit" disabled="true" id="submit_button" class="btn btn-primary" data-loading-text="Sending...">Submit</button>';
+                                echo '<button type="submit" id="submit_button" class="btn btn-primary" data-loading-text="Sending...">Submit</button>';
                             echo '</div>';
                         echo '</form>';
                     echo '</div>';
                 echo '</div>';
-            echo '</div>';
-                
-                            
-                echo '</div>';
-            }
+            echo '</div>';               
+        echo '</div>';
+        }
         ?>
     </div>
 </div>
