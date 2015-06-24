@@ -14,7 +14,6 @@ $this->load->helper('url');
         <link href="../assets/css/bootstrap.css" rel="stylesheet" media="screen"/>
         <link href="../assets/css/nivo-slider.css" rel="stylesheet" media="screen"/>
         <link href="../assets/themes/light/light.css" rel="stylesheet" media="screen"/>
-        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
         <!-- Page Formatting -->
         <link href="../assets/css/header.css" rel="stylesheet" type="text/css">
         <!-- Loads the CSS for the specific page -->

@@ -24,9 +24,12 @@ and open the template in the editor.
 }
 
 .mtl {
-    background-color: #262626; 
-    display: inline-block;
-    width: 100%;
+    background-color: #262626;
+    width: 1170px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .header-mtl {
@@ -42,8 +45,11 @@ and open the template in the editor.
 
 .staff {
     background-color: #626262;
-    display: inline-block;
-    width: 100%;
+    width: 1170px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .header-staff {
@@ -59,8 +65,11 @@ and open the template in the editor.
 
 .intern {
     background-color: #F5F5F5; //5% grey
-    display: inline-block;
-    width: 100%;
+    width: 1170px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .header-intern {
@@ -75,51 +84,26 @@ and open the template in the editor.
     border-color: #626262;
 }
 
-.card-left {
-    background-color: #ffffff;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    margin-bottom: 15pt;
-    padding-top: 10pt;
-    padding-bottom: 10pt;
-    padding-left: 10pt;
-    padding-right: 10pt;
+.header {
+    width: 100%;
 }
 
-.card-middle {
+.card {
     background-color: #ffffff;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    margin-bottom: 15pt;
-    padding-top: 10pt;
-    padding-bottom: 10pt;
-    padding-left: 10pt;
-    padding-right: 10pt;
-}
-
-.card-right {
-    background-color: #ffffff;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    margin-bottom: 15pt;
-    padding-top: 10pt;
-    padding-bottom: 10pt;
-    padding-left: 10pt;
-    padding-right: 10pt;
-}
-
-.column {
-    width: 33.333333333%;
-    float: left;
+    width: 340px;
+    height: 100px;
+    margin-left: 30px;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .picture {
     float: left;
     width: 60pt;
     height: 60pt;
+    margin-top: 7pt;
+    margin-left: 10pt;
 }
 
 .mtl-name {
@@ -128,6 +112,7 @@ and open the template in the editor.
     font-size: 12pt;
     color: #007398;
     text-align: center;
+    margin-top: 20px;
 }
 
 .staff-name {
@@ -136,6 +121,7 @@ and open the template in the editor.
     font-size: 12pt;
     color: #f9b625;
     text-align: center;
+    margin-top: 20px;
 }
 
 .intern-name {
@@ -144,6 +130,7 @@ and open the template in the editor.
     font-size: 12pt;
     color: #3eb1c8;
     text-align: center;
+    margin-top: 20px;
 }
 
 .role {
