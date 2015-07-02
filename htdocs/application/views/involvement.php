@@ -45,7 +45,7 @@
     </div>
     <div class="right">
         <div class="list-item">
-            <div class="list-icon">
+            <div class="list-icon"> 
                 <i class="fa fa-calendar fa-3x"></i>
             </div>
             <div class="list-text">
@@ -60,7 +60,8 @@
                 $month = date("M", $timestamp);
                 $day = date("j", $timestamp);
             ?>
-            <a class="event" href="events">
+            <a class="event" href="construction">
+            <!--<a class="event" href="events">-->
                 <div class="list-item-event">
                     <div class="date-container">
                         <div class="event-date">

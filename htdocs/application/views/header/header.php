@@ -92,8 +92,6 @@ $this->load->helper('url');
                                 <a href="construction" class="subs">SERMONS</a>
                                 &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp; 
                                 <a href="housing" class="subs">HOUSING</a>
-                                &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
-                                <a href="literature" class="subs">LITERATURE</a>
                             </p>
                         </div>
                     </div>
