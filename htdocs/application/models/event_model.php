@@ -1,13 +1,10 @@
 <?php
-
 class Event_model extends CI_Model
 {
-
     function __construct()
     {
         parent::__construct();
     }
-
     /**
      * Function to return event informtion
      */
@@ -32,5 +29,4 @@ class Event_model extends CI_Model
         $this->db->where('Id', $id);
         $this->db->update('events', $event);
     }
-
 }

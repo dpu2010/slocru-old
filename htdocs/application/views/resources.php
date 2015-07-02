@@ -6,18 +6,18 @@ $links = array(
     ),
     'National Cru Resources' => array(
         'href' => 'http://www.cru.org/training-and-growth/index.htm',
-        'desc' => 'Resources for training & growth from the main cru site.'
+        'desc' => 'Information for training and growth from the home office in Orlanda, FL.'
     ),
     'MeetTheProf' => array(
         'href' => 'http://meettheprof.com/university/california-polytechnic-state-university-san-luis-obispo/',
-        'desc' => 'Find professors who are following Christ.'
+        'desc' => 'Find local professors who are following Christ.'
     ),
-    'Podcasts' => array(
-        'href' => 'https://itunes.apple.com/us/podcast/slo-crusade/id337947386?mt=2',
+    'Sermons' => array(
+        'href' => 'construction',
         'desc' => 'Listen to recordings of past meetings.'
     ),
-    'Livestream' => array(
-        'href' => 'https://www.livestream.com/slocrusade',
+    'Live Stream' => array(
+        'href' => 'https://www.youtube.com/user/slocrusade/videos',
         'desc' => 'Watch the weekly meeting live.'
     )
 );
@@ -56,92 +56,64 @@ $fasting = array(
 )
 ?>
 
-<div class="container" style="box-shadow: 0px 1px 10px #888888;
-     border-radius: 0px 0px 10px 10px;
-     background-color: #fff;
-     padding: 0 100px 80px 100px">
-
-    <br/>
-    <div class="col-md-12 text-center" style="font-size: 36pt; font-weight: 300; padding: 10px 25px">
-        Resources
+<div class="container top">
+    <div class="box">
+        <div class="text" id="housing">
+            <p class="housing" id="line1">LOOKING FOR A ROOMMATE?</p>
+            <p class="housing" id="line2">You're not the only one.</p>
+            <p class="housing" id="line3">Check out the <a href="housing" class="housing" target="_blank">HOUSING BOARD</a></p>
+        </div>
     </div>
-    <br/>
-
-    <img src="../assets/img/dropshadowup2.png" style="width:100%; height:25px;"/>
-    <br/><br/><br/>    
-
-    <div class="container" style="margin: 10px 0 10px 0">
-        <div class="container col-md-6" style="border-right: 1px dashed #CCC; padding-bottom: 20px">
-            <div class="text-center" style="font-size: 24pt; font-weight: 300;">
-                Links
-            </div>
-            <br/>
-            <ul class="list-unstyled" style="font-size: 16pt; font-weight: 300;">
+    <div class="picture">
+        <a href="construction"><p class="sermons">SERMONS & WEEKLY MEETINGS</p></a>
+    </div>
+</div>
+<div class="container bottom">
+    <div class="shift">
+        <div class="column resources" id="section1">
+            <p class="headings">RECOMMENDED SITES</p>
+            <div class="sites">
                 <?php
                 foreach ($links as $name => $parts) {
-                    echo '<div style="margin-bottom: 1em;">';
-                    echo '<li><a href="' . $parts['href'] . '">' . $name . '</a></li>';
-                    echo '<li style="padding: .1em 0 0 1em">';
+                    echo '<a class="site-link" href="' . $parts['href'] . '" target="_blank">' . $name . '</a>';
+                    echo '<p class="description">';
                     echo $parts['desc'];
-                    echo '</li></div>';
+                    echo '</p>';
                 }
                 ?>
-            </ul>
-        </div>
-
-        <div class="container col-md-6">
-            <div class="text-center" style="font-size: 24pt; font-weight: 300;">
-                Downloads
             </div>
-            <br/>
-            <ul class="list-unstyled" style="margin-left: 10%; font-size: 16pt; font-weight: 300;">
-                <?php
-                foreach ($downloads as $title => $files) {
-                    echo '<div style="margin-bottom: 1em;">';
-                    echo '<li>' . $title . '</li>';
-                    foreach ($files as $name => $path) {
-                        echo '<li style="margin: .2em 0 0 1em">';
-                        echo '<a href="' . $path . '">' . $name . '</a>';
-                        echo '</li>';
-                    }
-                    echo '</div>';
-                }
-                ?>
-            </ul>
         </div>
-    </div>
-    <hr/>
-    <div class="container" style="margin: 10px 0 10px 0">
-        <div class="container col-md-6">
-            <div class="text-center" style="font-size: 24pt; font-weight: 300;">
-                Prayer
-            </div>
-            <br/>
-            <ul class="list-unstyled" style="font-size: 16pt; font-weight: 300;">
+        <div class="column resources" id="section2">
+            <p class="headings">GUIDES</p>
+            <div class="guides">
+                <p class="subheadings">Prayer</p>
                 <?php
                 foreach ($prayer as $title => $files) {
-                    echo '<div style="margin-bottom: 1em;">';
-                    echo '<li><a href="' . $files . '">' . $title . '</a></li>';
-                    echo '</div>';
+                    echo '<p class="links"><a class="links" href="' . $files . '" target="_blank">' . $title . '</a></p>';
                 }
                 ?>
-            </ul>
-        </div>
-        <div class="container col-md-6" style="border-left: 1px dashed #CCC; padding-bottom: 20px">
-            <div class="text-center" style="font-size: 24pt; font-weight: 300;">
-                Fasting
-            </div>
-            <br/>
-            <ul class="list-unstyled" style="font-size: 16pt; font-weight: 300;">
+                <p class="subheadings">Fasting</p>
                 <?php
                 foreach ($fasting as $title => $files) {
-                    echo '<div style="margin-bottom: 1em;">';
-                    echo '<li><a href="' . $files . '">' . $title . '</a></li>';
-                    echo '</div>';
+                    echo '<p class="links"><a class="links" href="' . $files . '" target="_blank">' . $title . '</a></p>';
                 }
                 ?>
-            </ul>
+            </div>
+        </div>
+        <div class="column resources" id="section3">
+            <p class="headings">DOWNLOAD NOW</p>
+            <div class="downloads">
+                <?php
+                foreach ($downloads as $title => $files) {
+                    echo '<p class="subheadings">' . $title . '</p>';
+                    foreach ($files as $name => $path) {
+                        echo '<p class="links"><a class="links" href="' . $path . '" target="_blank">' . $name . '</a></p>';
+                    }
+                }
+                ?>
+            </div>
         </div>
     </div>
 </div>
+
 <?php $this->load->view('javascript'); ?>

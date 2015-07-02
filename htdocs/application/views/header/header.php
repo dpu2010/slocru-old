@@ -1,121 +1,102 @@
 <?php
 $this->load->helper('html');
 $this->load->helper('url');
-
-function print_navbar_links($use_image) {
-    $left_links = array(
-        'BIBLE STUDIES' => base_url() . 'studies',
-        'GET INVOLVED' => base_url() . 'ministry',
-        'EVENTS' => base_url() . 'events',
-        'RESOURCES' => base_url() . 'resources',
-        //'STAFF' => base_url() . 'staff'
-    );
-    $right_links = array(
-        'STAFF' => base_url() . 'staff',
-        'ABOUT' => base_url() . 'about',
-        'HOUSING' => 'http://www.slocru.com/housing/',
-        //'RIDES' => 'http://www.slocru.com/rides/login/',
-        'GIVE' => 'https://give.cru.org/2281756',
-        '' => ''
-    );
-    foreach ($left_links as $name => $href) {
-        echo '<li>';
-        echo '<a href="' . $href . '">';
-        echo $name;
-        echo '</a></li>';
-    }
-    if ($use_image) {
-        echo '<li>';
-        echo '<img id="home-button" src="../assets/img/top_link.png">';
-        echo '</li>';
-    }
-
-    foreach ($right_links as $name => $href) {
-        echo '<li>';
-        echo '<a href="' . $href . '">';
-        echo $name;
-        echo '</a></li>';
-    }
-}
 ?>
 <html>
     <head>
-        <title>Slo cru | Campus Crusade for Christ at Cal Poly and Cuesta</title>
+        <title>Cru Central Coast</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="../../../assets/img/logo2.png">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="../assets/js/header.js"></script>
         <!-- Bootstrap -->
         <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,400italic' rel='stylesheet' type='text/css'/>
         <link href="../assets/css/bootstrap.css" rel="stylesheet" media="screen"/>
         <link href="../assets/css/nivo-slider.css" rel="stylesheet" media="screen"/>
         <link href="../assets/themes/light/light.css" rel="stylesheet" media="screen"/>
-        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-        <style type="text/css">
-            * {
-                margin: 0;
-                padding: 0;
-
-                -webkit-font-smoothing: antialiased;
-                /*-webkit-box-sizing: border-box;
-                -moz-box-sizing: border-box;
-                box-sizing: border-box;*/
-            }
-            #desktop-navbar {
-                width: 100%;
-            }
-            #desktop-navbar > li {
-                float: none;
-                display: inline-block;
-                width: 9%;
-            }
-            #home-button:hover {
-                cursor: pointer;
-            }
-            #navbar-div {
-                box-shadow: 1px 5px 5px -4px #888888;
-                overflow: hidden;
-            }
-            #mobile-navbar {
-                padding-left: 10px;
-            }
-            .navbar-collapse {               
-                max-height: none; /* The default 340px cuts off links. */
-            }
-            .navbar-header button {
-                float: left;
-                margin-left: 15px;
-            }
-            .nivoSlider {
-                position:relative;
-                background:url(../assets/themes/light/loading.gif) no-repeat 50% 50%;
-            }
-            .nivoSlider img {
-                position:absolute;
-                top:0px;
-                left:0px;
-                display:none;
-            }
-            .nivoSlider a {
-                border:0;
-                display:block;
-            }
-        </style>
+        <!-- Page Formatting -->
+        <link href="../assets/css/header.css" rel="stylesheet" type="text/css">
+        <!-- Loads the CSS for the specific page -->
+        <?php echo '<link href="../assets/css/' . (basename($_SERVER['PHP_SELF']) == 'index.php' ? 'home' : basename($_SERVER['PHP_SELF'])) . '.css" rel="stylesheet" type="text/css">'; ?>
+        <link href="../assets/css/footer.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <div id="header" class="navbar navbar-default" role="navigation">
-            <div class="navbar-header">
-                <button type="button" class="visible-xs visible-sm navbar-toggle" data-toggle="collapse" data-target="#navbar-div">
-                    <img src="assets/img/top_link.png">
-                </button>
-            </div>
-            <div id="navbar-div" class="collapse navbar-collapse navbar-inner">
-                <ul id="desktop-navbar" class="nav navbar-nav text-center hidden-xs hidden-sm">
-                    <?php
-                    print_navbar_links(/* use_image= */true);
-                    ?>
-                </ul>       
-                <ul id="mobile-navbar" class="nav navbar-nav visible-xs visible-sm">
-                    <?php
-                    print_navbar_links(/* use_image= */false);
-                    ?>
-                </ul>
+        <div class="container">
+            <div id="header" role="navigation">
+                <div class="container">
+                    <a href="home">
+                        <img src="../assets/img/crulogo.png" class="logo"/>
+                    </a>
+                    <a href="https://www.youtube.com/user/slocrusade" target="_blank">
+                        <img src="../assets/img/youtube.png" class="social-youtube" id="youtube"/>
+                    </a>
+                    <a href="https://twitter.com/SLOcru" target="_blank">
+                        <img src="../assets/img/twitter.png" class="social" id="twitter"/>
+                    </a>
+                    <a href="http://instagram.com/slocru/" target="_blank">
+                        <img src="../assets/img/instagram.png" class="social" id="instagram"/>
+                    </a>
+                    <a href="https://www.facebook.com/SloCrusade" target="_blank">
+                        <img src="../assets/img/facebook.png" class="social" id="facebook"/>
+                    </a>
+                    <a href="https://www.crucentralcoast.com">
+                        <img data-alt-src="../assets/img/back-crucentral_full-blue.png" src="../assets/img/back-crucentral_full.png" class="central" id="to-landing"/>
+                    </a>
+                </div>
+
+                <div class="container">
+                    <ul class="menu">
+                        <li class="menu-about state2">
+                            <a href="about" class="menu-items mabout"> ABOUT </a>
+                        </li>
+                        <li class="menu-involvement state2">
+                            <a href="involvement" class="menu-items minvolvement"> GET INVOLVED </a>
+                        </li>
+                        <li class="menu-resources state2">
+                            <a href="resources" class="menu-items mresources"> RESOURCES </a>
+                        </li>
+                        <li class="menu-media state2">
+                            <a href="construction" class="menu-items mmedia">MEDIA</a>
+                            <!--<a href="media" class="menu-items mmedia"> MEDIA </a>-->
+                        </li>
+                    </ul>
+                </div>
+                <div class="container buffer">
+                    <div class="subcatagories hidden">
+                        <div id="about-links" class="subs hidden">
+                            <p class="subs">
+                                <a href="staff" class="subs">STAFF</a>
+                                &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
+                                <a href="https://give.cru.org/2281756" class="subs" target="_blank">GIVE</a>
+                                &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
+                                <a href="http://www.cru.org/about/what-we-do/milestones.html" class="subs" target="_blank">HISTORY</a>
+                            </p>
+                        </div>
+                        <div id="involvement-links" class="subs hidden">
+                            <p class="subs">
+                                <a href="construction" class="subs">COMMUNITY GROUPS</a>
+                                <!--<a href="studies" class="subs">COMMUNITY GROUPS</a>-->
+                                &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
+                                <a href="ministry" class="subs">MINISTRY TEAMS</a>
+                                &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp; 
+                                <a href="construction" class="subs">EVENTS</a>
+                                <!--<a href="events" class="subs">EVENTS</a>-->
+                                &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
+                                <a href="http://crucentralcoast.com" class="subs">ALL MINISTRIES</a>
+                                &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
+                                <a href="missions" class="subs">SUMMER MISSIONS & STINT</a>
+                            </p>
+                        </div>
+                        <div id="resources-links" class="subs hidden">
+                            <p class="subs">
+                                <a href="construction" class="subs">SERMONS</a>
+                                &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp; 
+                                <a href="housing" class="subs">HOUSING</a>
+                                &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
+                                <a href="literature" class="subs">LITERATURE</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>

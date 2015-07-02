@@ -1,28 +1,22 @@
-<div class="container" style="box-shadow: 0px 1px 10px #888888;
-     border-radius: 0px 0px 10px 10px;
-     background-color: #fff;
-     padding: 0 100px 80px 100px">
+<div class="container">
     <br/>
-    <div class="col-md-12" style="text-align: center; font-size: 36pt; font-weight: 300; padding: 10px 25px">
+    <div class="title">
         Events
     </div>
     <br/>
-    <img src="../assets/img/dropshadowup2.png" style="width:100%; height:25px;"/>
-    <div class="col-md-3">
-        <div class="list-group" id="sidebar">
-            <?php
-            for ($i = 0; $i < count($events); $i++) {
-                $id = explode(" ", $events[$i]->Name);
-                $id = explode("'", $id[0]);
-                $id = $id[0];
-                echo '  <a href="#' . $id . '" data-toggle="tab" class="list-group-item">';
-                echo $events[$i]->Name;
-                echo '</a>';
-            }
-            ?>
-        </div>
+    <div class="list-group" id="sidebar">
+        <?php
+        for ($i = 0; $i < count($events); $i++) {
+            $id = explode(" ", $events[$i]->Name);
+            $id = explode("'", $id[0]);
+            $id = $id[0];
+            echo '  <a href="#' . $id . '" data-toggle="tab" class="list-group-item">';
+            echo $events[$i]->Name;
+            echo '</a>';
+        }
+        ?>
     </div>
-    <div id='content' class="tab-content col-md-9">
+    <div id='content' class="tab-content">
         <?php
         for ($i = 0; $i < count($events); $i++) {
             $id = explode(" ", $events[$i]->Name);
