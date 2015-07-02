@@ -1,25 +1,22 @@
-<div class="container" style="
-     background-color: #fff;">
+<div class="container">
     <br/>
-    <div class="col-md-12" style="text-align: center; font-size: 36pt; font-weight: 300; padding: 10px 25px">
+    <div class="title">
         Events
     </div>
     <br/>
-    <div class="col-md-3">
-        <div class="list-group" id="sidebar">
-            <?php
-            for ($i = 0; $i < count($events); $i++) {
-                $id = explode(" ", $events[$i]->Name);
-                $id = explode("'", $id[0]);
-                $id = $id[0];
-                echo '  <a href="#' . $id . '" data-toggle="tab" class="list-group-item">';
-                echo $events[$i]->Name;
-                echo '</a>';
-            }
-            ?>
-        </div>
+    <div class="list-group" id="sidebar">
+        <?php
+        for ($i = 0; $i < count($events); $i++) {
+            $id = explode(" ", $events[$i]->Name);
+            $id = explode("'", $id[0]);
+            $id = $id[0];
+            echo '  <a href="#' . $id . '" data-toggle="tab" class="list-group-item">';
+            echo $events[$i]->Name;
+            echo '</a>';
+        }
+        ?>
     </div>
-    <div id='content' class="tab-content col-md-9">
+    <div id='content' class="tab-content">
         <?php
         for ($i = 0; $i < count($events); $i++) {
             $id = explode(" ", $events[$i]->Name);

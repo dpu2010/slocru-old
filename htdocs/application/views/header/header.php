@@ -56,7 +56,8 @@ $this->load->helper('url');
                             <a href="resources" class="menu-items mresources"> RESOURCES </a>
                         </li>
                         <li class="menu-media state2">
-                            <a href="media" class="menu-items mmedia"> MEDIA </a>
+                            <a href="construction" class="menu-items mmedia">MEDIA</a>
+                            <!--<a href="media" class="menu-items mmedia"> MEDIA </a>-->
                         </li>
                     </ul>
                 </div>
@@ -73,11 +74,13 @@ $this->load->helper('url');
                         </div>
                         <div id="involvement-links" class="subs hidden">
                             <p class="subs">
-                                <a href="studies" class="subs">COMMUNITY GROUPS</a>
+                                <a href="construction" class="subs">COMMUNITY GROUPS</a>
+                                <!--<a href="studies" class="subs">COMMUNITY GROUPS</a>-->
                                 &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
                                 <a href="ministry" class="subs">MINISTRY TEAMS</a>
-                                &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
-                                <a href="events" class="subs">EVENTS</a>
+                                &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp; 
+                                <a href="construction" class="subs">EVENTS</a>
+                                <!--<a href="events" class="subs">EVENTS</a>-->
                                 &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
                                 <a href="http://crucentralcoast.com" class="subs">ALL MINISTRIES</a>
                                 &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   

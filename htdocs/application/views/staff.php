@@ -42,7 +42,11 @@
             }
             echo '<div class="card">';
 
-            echo '<img src="../../assets/img/staff/' . $staff[$i]->Picture . '" class="picture">';
+            if($staff[$i]->Picture === ""){
+                echo '<div class=picture></div>';
+            } else {
+                echo '<img src="../../assets/img/staff/' . $staff[$i]->Picture . '" class="picture">';
+            }
             echo '<p class="' . $group . '-name">' . $staff[$i]->Name . '</p>';
             echo '<p class="role">' . $staff[$i]->Role . '</p>';
             if($staff[$i]->Email != ""){
