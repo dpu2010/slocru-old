@@ -12,7 +12,7 @@
     <body>
         <div class="container">
             <a href="home">
-                <img src="../assets/img/logo.png" class="logo" href="home"/>
+                <img src="../assets/img/crulogo.png" class="logo" href="home"/>
             </a>
         </div>
         <div class="container">
