@@ -28,10 +28,14 @@ and open the template in the editor.
     src: url('../fonts/FreigSanProMed.otf') format('opentype');
 }
 
+body {
+    background-color: #ffffff;
+}
+
 img.logo {
     margin-left: 40px;
     margin-top: 25px;
-    width: 95pt;
+    width: 95px;
     height: 75pt;
     margin-bottom: 15pt;
 }
