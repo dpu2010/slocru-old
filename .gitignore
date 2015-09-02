@@ -1,0 +1,6 @@
+
+*.properties
+
+htdocs/nbproject/private/private.xml
+
+slocru/

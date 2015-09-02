@@ -65,8 +65,8 @@
         </a>
     </div>
     <div class="wrap">
-        <a href="construction">
-            <img src="../assets/img/image-holder3.png" class="holder" id="holder3"/>
+        <a href="https://www.facebook.com/groups/286005258236719/">
+            <img src="../assets/img/image-holder3.jpg" class="holder" id="holder3"/>
         </a>
     </div>
 </div>

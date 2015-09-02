@@ -7,8 +7,9 @@ class Staff extends CI_Controller {
     
     public function index() {
         
-        $result = $this->staff_model->getStaff();
-        $data['staff'] = $result;
+        $data['mtl'] = $this->staff_model->getMTL();
+        $data['staff'] = $this->staff_model->getStaff();
+        $data['intern'] = $this->staff_model->getIntern();
         $this->load->view('header/header');
         $this->load->view('staff',$data);
         $this->load->view('footer/footer');
