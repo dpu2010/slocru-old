@@ -39,7 +39,7 @@ $this->load->helper('url');
                     <a href="https://www.facebook.com/SloCrusade" target="_blank">
                         <img src="../assets/img/facebook.png" class="social" id="facebook"/>
                     </a>
-                    <a href="https://www.crucentralcoast.com">
+                    <a href="https://crucentralcoast.com">
                         <img data-alt-src="../assets/img/back-crucentral_full-blue.png" src="../assets/img/back-crucentral_full.png" class="central" id="to-landing"/>
                     </a>
                 </div>

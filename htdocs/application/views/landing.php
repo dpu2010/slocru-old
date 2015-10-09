@@ -20,7 +20,7 @@ $this->load->helper('url');
             <a href="http://www.slocru.com">
                 <img src="../assets/img/landing/slo-cru.png" class="ministry"><img>
             </a>
-            <a href="https://www.facebook.com/groups/6433923302/?fref=nf">
+            <a href="http://www.slocru.com">
                 <img src="../assets/img/landing/cuesta-cru.png" class="ministry"><img>
             </a>
             <a href="https://www.facebook.com/groups/epicslo/">
