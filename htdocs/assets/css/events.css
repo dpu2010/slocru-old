@@ -28,6 +28,17 @@ and open the template in the editor.
     src: url('../fonts/FreigSanProLigIt.otf') format('opentype');
 }
 
+@font-face {
+    font-family: "FreigtSanProBook";
+    src: url('../fonts/FreigSanProBook.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "FreigtSanProBook";
+    src: url('../fonts/FreigSanProBook.otf') format('opentype');
+}
+
+
 .left {
     background-color: #626262;
     padding-left: 50px;
@@ -194,4 +205,16 @@ and open the template in the editor.
     width: 30%;
     float: left;
     overflow: auto;
+}
+
+.left p {
+    font-family: "FreigtSanProBook";
+    font-size: 12pt;
+    color: white;
+}
+
+.left h3 {
+    font-family: "FreightSansProSemiPro";
+    font-size: 14pt;
+    color: #f9b625;
 }

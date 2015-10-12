@@ -73,9 +73,21 @@
     </div>
     <div class="left">
         <hr />
-        <div class="left-header">
-            There are so many ways to get involved with SLO Cru!
+        <div>
+            <p>
+            <?php echo $events[$selectedevent]->Description; ?>
+            </p>
+            <div class="box">
+                <h3>WHEN</h3>
+                <p><?php 
+$date = new DateTime($events[$selectedevent]->Date);
+$result = $date->format('l F jS, Y');
+echo $result; ?></p>
+            </div>
+            <div class="box">
+                <h3>WHERE</h3>
+                <p><?php echo $events[$selectedevent]->Location; ?></p>
+            </div>
         </div>
-        <hr />
     </div>
 </div>
