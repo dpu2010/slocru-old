@@ -19,6 +19,8 @@ class Events extends CI_Controller
     {
         $result = $this->event_model->getEvents();
         $data['events'] = $result;
+        
+        $data['selectedevent'] = 0;
         if($method !== 'empty')
         {
             $data['directlink'] = $method;

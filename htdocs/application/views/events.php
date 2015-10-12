@@ -1,84 +1,81 @@
 <div class="container">
-    <br/>
-    <div class="title">
-        Events
+    <div class="light-left">
+        <img class="banner-photo" src="http://slocru.com/<?php echo  $events[$selectedevent]->Image; ?>"/>
     </div>
-    <br/>
-    <div class="list-group" id="sidebar">
-        <?php
-        for ($i = 0; $i < count($events); $i++) {
-            $id = explode(" ", $events[$i]->Name);
-            $id = explode("'", $id[0]);
-            $id = $id[0];
-            echo '  <a href="#' . $id . '" data-toggle="tab" class="list-group-item">';
-            echo $events[$i]->Name;
-            echo '</a>';
-        }
-        ?>
-    </div>
-    <div id='content' class="tab-content">
-        <?php
-        for ($i = 0; $i < count($events); $i++) {
-            $id = explode(" ", $events[$i]->Name);
-            $id = explode("'", $id[0]);
-            $id = $id[0];
+    <div class="right">
+        <div class="list-item">
+            <div class="list-icon"> 
+                <i class="fa fa-calendar fa-3x"></i>
+            </div>
+            <div class="list-text">
+                UPCOMING EVENTS
+            </div>
+        </div>
+        <br/>
 
-            echo '<div class="tab-pane fade';
-            if ($directlink === 'index' && $i == 0)
-            {
-                echo ' in active';
-            }
-            elseif ($directlink === $events[$i]->DirectLink)
-            {
-                echo ' in active';
-            }
-            echo '" id="'.$id.'" style="text-align: center">';
-                echo '<img src="' . $events[$i]->Image . '" style="width: 100%;"/>';
-                echo '<br/>';
-                echo '<br/>';
-                echo '<div style="text-align: left; font-size: 16pt">';
-                    echo '<strong>' . $events[$i]->Name . '</strong>';
-                echo '</div>';
-                echo '<table style="width: 100%;">';
-                    echo '<tr style = "border-top: 1px solid #ccc;">';
-                        echo '<td style="padding: 7px; border-right: 1px solid #ccc; width: 50%;">';
-                            echo '<i class="fa fa-calendar"></i> ';
-                            echo date('l, F j, Y', strtotime($events[$i]->Date));
-                        echo '</td>';
-                        echo '<td style="padding: 7px;">';
-                            echo '<i class="fa fa-clock-o"></i> ';
-                            echo date('g:i a', strtotime($events[$i]->StartTime));
-                        echo '</td>';
-                    echo '</tr>';
-                    echo '</table>';
-                    echo '<table style="width: 100%;">';
-                    echo '<tr style = "border-top: 1px solid #ccc;">';
-                        echo '<td style="padding: 7px;">';
-                            echo '<i class="fa fa-map-marker"></i> ';
-                            echo $events[$i]->Location;
-                        echo '</td>';
-                        echo '<td></td>';
-                    echo '</tr>';
-                    echo '<tr style = "border-top: 1px solid #ccc;">';
-                        echo '<td style="padding: 7px;">';
-                            echo '<i class="fa fa-align-left" style="float:left; margin-right: 5px;"></i>';
-                            echo '<table><tr><td>';
-                            echo '<div>' . $events[$i]->Description . '</div>';
-                            echo '</td></tr></table>';
-                        echo '</td>';
-                    echo '</tr>';
-                    echo '</table>';
-                    echo '<table style="width: 100%">';
-                    echo '<tr>';
-                        echo '<td style="text-align: center;">';
-                            echo '<br/>';
-                            echo '<a href="'. $events[$i]->Link .'" class="btn btn-primary" style="padding: 10px; font-size: 15pt;"><i>More Information</i></a>';
-                        echo '</td>';
-                    echo '</tr>';
-                echo '</table>';
-            echo '</div>';
-        }
-        ?>
+        <?php foreach($events as $event) { ?>
+            <?php
+                $timestamp = strtotime($event->Date);
+                $month = date("M", $timestamp);
+                $day = date("j", $timestamp);
+            ?>
+            <a class="event" href="construction">
+            <!--<a class="event" href="events">-->
+                <div class="list-item-event">
+                    <div class="date-container">
+                        <div class="event-date">
+                            <div class="month"><?php echo strtoupper($month); ?></div>
+                            <div class="day"><?php echo $day; ?></div>
+                        </div>
+                    </div>
+                    <div class="event-text">
+                        <div class="event-text-title">
+                            <?php
+                                $str = $event->Name . " (";
+                                $starttime = strtotime($event->StartTime);
+                                if(isset($event->EndTime)) {
+                                    $endtime = strtotime($event->EndTime);
+                                }
+                                else {
+                                    $endtime = NULL;
+                                }
+
+                                $str .= date("g", $starttime);
+                                if(date("i", $starttime) !== "00") {
+                                    $str .= ":" . date("i", $starttime);
+                                }
+
+                                if($endtime !== NULL) {
+                                    $str .= "&ndash;";
+                                    $str .= date("g", $endtime);
+                                    if(date("i", $endtime) !== "00") {
+                                        $str .= ":" . date("i", $endtime);
+                                    }
+                                    $str .= date("a", $endtime);
+                                }
+                                else {
+                                    $str .= $str .= date("a", $starttime);
+                                }
+
+                                $str .= ")";
+
+                                echo $str;
+                                //Weekly Meeting Week 1 (8pm)&ndash;
+                                ?>
+                        </div>
+                        <div class="event-text-desc">
+                            <?php echo $event->Location; ?>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        <?php } ?>
+    </div>
+    <div class="left">
+        <hr />
+        <div class="left-header">
+            There are so many ways to get involved with SLO Cru!
+        </div>
+        <hr />
     </div>
 </div>
-<?php $this->load->view('javascript'); ?>
