@@ -1,16 +1,20 @@
 <script>
     var currentEvent = -1;
 function activateEvent(id) {
+    location.hash = id;
     $("#event" + id).show();
     $("#eventPhoto" + id).show();
     $("#eventBttn" + id).fadeTo(.6);
     if(currentEvent != id)  {
         $("#event" + currentEvent).hide();
         $("#eventPhoto" + currentEvent).hide();
-
     }
     currentEvent = id;
 }
+    window.onhashchange = function() {
+        if(document.getElementById("event" + location.hash.substr(1)) != null)
+            activateEvent(location.hash.substr(1));
+    };
 </script>
 
 <div class="container">
@@ -90,11 +94,7 @@ function activateEvent(id) {
     </div>
     <?php 
         for($i = 0; $i < count($events); $i++) { ?>
-    <?php 
-        if($i == 0) { ?>
-            <script>$(document).ready(function() { activateEvent(<?php echo $events[$i]->Id; ?>); });</script>
-        <?php } ?>
-    <div class="left" style="height: 445px; display: <?php if($i == 0) { echo 'block'; } else { echo "none"; } ?>;" id="event<?php echo $events[$i]->Id; ?>">
+    <div class="left" style="height: 445px; display:none;" id="event<?php echo $events[$i]->Id; ?>">
         
         <div>
             <div class="left-header" >
@@ -124,6 +124,16 @@ echo $date . " " . $startTime . " - " . $endTime; ?></p>
             <a target="_blank" href="<?php echo $events[$i]->Link; ?>"><div class="btn">SEE MORE INFO</div></a>
             <?php } ?>
         </div>
+        <?php 
+        if($i == 0) { ?>
+            <script>$(document).ready(function() { 
+                if(location.hash == null || location.hash == "" || document.getElementById("event" + location.hash.substr(1)) == null) {
+                    activateEvent(<?php echo $events[$i]->Id; ?>); 
+                } else {
+                    activateEvent(location.hash.substr(1));
+                }
+            });</script>
+        <?php } ?>
     </div>
     <?php } ?>
     <div class="right weeklyevents" style="height:200px;">
