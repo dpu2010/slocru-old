@@ -79,7 +79,7 @@ $this->load->helper('url');
                                 &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
                                 <a href="ministry" class="subs">MINISTRY TEAMS</a>
                                 &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp; 
-                                <a href="construction" class="subs">EVENTS</a>
+                                <a href="events" class="subs">EVENTS</a>
                                 <!--<a href="events" class="subs">EVENTS</a>-->
                                 &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
                                 <a href="http://crucentralcoast.com" class="subs">ALL MINISTRIES</a>

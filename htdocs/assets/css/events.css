@@ -34,8 +34,8 @@ and open the template in the editor.
 }
 
 @font-face {
-    font-family: "FreigtSanProBook";
-    src: url('../fonts/FreigSanProBook.otf') format('opentype');
+    font-family: "FreigtSanProBold";
+    src: url('../fonts/FreigSanProBold.otf') format('opentype');
 }
 
 
@@ -221,10 +221,54 @@ and open the template in the editor.
 }
 
 .right-header {
-    font-family: "FreightSansProMedium";
-    font-size: 16pt;
+    font-family: "FreigtSanProBold";
+    font-size: 18pt;
     text-align: center;
     color: white;
-    width: 256px;
+    width: 210px;
+    height: 34px;
     margin: 0 auto;
+    border-color: white;
+    border: solid;
+    border-width: thin;
+}
+
+.right-header-small {
+    font-family: "FreightSansProSemiPro";
+    font-size: 11pt;
+    text-align: center;
+    color: #f9b625;
+}
+
+
+.right p {
+    font-family: "FreigtSanProBook";
+    font-size: 11pt;
+    color: white;
+}
+
+.weeklyevents img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.2;
+/*
+    background-image: url('../img/events/clubshowcase.jpg');
+    background-size: 125%;
+    background-position-y: -32px;
+    background-position-x: -37px;
+*/
+}
+
+.weeklyevents {
+    position: relative;
+    overflow: hidden;
+    background-color: #2E758C;
+}
+
+.weeklyevents div, .weeklyevents p {
+    position: relative;
+    z-index: 2;
 }
