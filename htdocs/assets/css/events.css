@@ -254,12 +254,6 @@ and open the template in the editor.
     width: 100%;
     height: auto;
     opacity: 0.2;
-/*
-    background-image: url('../img/events/clubshowcase.jpg');
-    background-size: 125%;
-    background-position-y: -32px;
-    background-position-x: -37px;
-*/
 }
 
 .weeklyevents {
@@ -271,4 +265,15 @@ and open the template in the editor.
 .weeklyevents div, .weeklyevents p {
     position: relative;
     z-index: 2;
+}
+
+.left .btn {
+    width: 150px;
+    height: 30px;
+    background-color: #f9b625;
+    border-radius: 0;
+    color: white;
+    font-family: "FreightSansProMedium";
+    font-size: 11pt;
+    margin: 0 auto;
 }

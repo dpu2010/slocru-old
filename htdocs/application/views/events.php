@@ -120,6 +120,9 @@ echo $date . " " . $startTime . " - " . $endTime; ?></p>
                 <h3>WHERE</h3>
                 <p><?php echo $events[$i]->Location; ?></p>
             </div>
+            <?php if($events[$i]->Link != "" || $events[$i]->Link != null) { ?>
+            <a target="_blank" href="<?php echo $events[$i]->Link; ?>"><div class="btn">SEE MORE INFO</div></a>
+            <?php } ?>
         </div>
     </div>
     <?php } ?>
