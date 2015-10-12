@@ -2,17 +2,23 @@
     var currentEvent = -1;
 function activateEvent(id) {
     $("#event" + id).show();
-    if(currentEvent != id) 
+    $("#eventPhoto" + id).show();
+    if(currentEvent != id)  {
         $("#event" + currentEvent).hide();
+        $("#eventPhoto" + currentEvent).hide();
+
+    }
     currentEvent = id;
 }
 </script>
 
 <div class="container">
     <div class="light-left">
-        <img class="banner-photo" src="http://slocru.com/<?php echo  $events[$selectedevent]->Image; ?>"/>
+        <?php foreach($events as $event) {  ?>
+        <img id="eventPhoto<?php echo $event->Id; ?>" style="display:none;" class="banner-photo" src="http://slocru.com/<?php echo  $event->Image; ?>"/>
+        <?php } ?>
     </div>
-    <div class="right">
+    <div class="right" style="height: 400px;">
         <div class="list-item">
             <div class="list-icon"> 
                 <i class="fa fa-calendar fa-3x"></i>
@@ -90,7 +96,7 @@ function activateEvent(id) {
     <div class="left" style="display: <?php if($i == 0) { echo 'block'; } else { echo "none"; } ?>;" id="event<?php echo $events[$i]->Id; ?>">
         
         <div>
-            <div class="left-header">
+            <div class="left-header" >
                 <hr />
             <?php echo strtoupper($events[$i]->Name); ?>
                 <hr />
@@ -116,4 +122,7 @@ echo $date . " " . $startTime . " - " . $endTime; ?></p>
         </div>
     </div>
     <?php } ?>
+    <div class="right">
+        <div class="right-header">WEEKLY EVENTS</div>
+    </div>
 </div>
