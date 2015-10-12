@@ -23,7 +23,7 @@ function activateEvent(id) {
         <img id="eventPhoto<?php echo $event->Id; ?>" style="display:none;" class="banner-photo" src="http://slocru.com/<?php echo  $event->Image; ?>"/>
         <?php } ?>
     </div>
-    <div class="right" style="height: 400px;">
+    <div class="right" style="height: 400px; overflow-y: scroll;">
         <div class="list-item">
             <div class="list-icon"> 
                 <i class="fa fa-calendar fa-3x"></i>
