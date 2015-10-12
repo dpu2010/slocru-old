@@ -1,3 +1,13 @@
+<script>
+    var currentEvent = -1;
+function activateEvent(id) {
+    $("#event" + id).show();
+    if(currentEvent != id) 
+        $("#event" + currentEvent).hide();
+    currentEvent = id;
+}
+</script>
+
 <div class="container">
     <div class="light-left">
         <img class="banner-photo" src="http://slocru.com/<?php echo  $events[$selectedevent]->Image; ?>"/>
@@ -19,7 +29,7 @@
                 $month = date("M", $timestamp);
                 $day = date("j", $timestamp);
             ?>
-            <a class="event" href="construction">
+            <a onclick="activateEvent(<?php echo $event->Id; ?>)" class="event">
             <!--<a class="event" href="events">-->
                 <div class="list-item-event">
                     <div class="date-container">
@@ -71,23 +81,39 @@
             </a>
         <?php } ?>
     </div>
-    <div class="left">
-        <hr />
+    <?php 
+        for($i = 0; $i < count($events); $i++) { ?>
+    <?php 
+        if($i == 0) { ?>
+            <script>$(document).ready(function() { activateEvent(<?php echo $events[$i]->Id; ?>); });</script>
+        <?php } ?>
+    <div class="left" style="display: <?php if($i == 0) { echo 'block'; } else { echo "none"; } ?>;" id="event<?php echo $events[$i]->Id; ?>">
+        
         <div>
+            <div class="left-header">
+                <hr />
+            <?php echo strtoupper($events[$i]->Name); ?>
+                <hr />
+            </div>
             <p>
-            <?php echo $events[$selectedevent]->Description; ?>
+            <?php echo $events[$i]->Description; ?>
             </p>
             <div class="box">
                 <h3>WHEN</h3>
                 <p><?php 
-$date = new DateTime($events[$selectedevent]->Date);
-$result = $date->format('l F jS, Y');
-echo $result; ?></p>
+$date = new DateTime($events[$i]->Date);
+$startTime = new DateTime($events[$i]->StartTime);
+$endTime = new DateTime($events[$i]->EndTime);
+$startTime = $startTime->format("g:ia");
+$endTime = $endTime->format("g:ia");
+$date = $date->format('l F jS, Y');
+echo $date . " " . $startTime . " - " . $endTime; ?></p>
             </div>
             <div class="box">
                 <h3>WHERE</h3>
-                <p><?php echo $events[$selectedevent]->Location; ?></p>
+                <p><?php echo $events[$i]->Location; ?></p>
             </div>
         </div>
     </div>
+    <?php } ?>
 </div>
