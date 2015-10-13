@@ -28,7 +28,7 @@ function activateEvent(id) {
             <div class="list-icon"> 
                 <i class="fa fa-calendar fa-3x"></i>
             </div>
-            <div class="list-text">
+            <div class="list-text" style="margin-bottom: 10px;">
                 UPCOMING EVENTS
             </div>
         </div>
@@ -40,7 +40,7 @@ function activateEvent(id) {
                 $month = date("M", $timestamp);
                 $day = date("j", $timestamp);
             ?>
-            <a onclick="activateEvent(<?php echo $event->Id; ?>)" class="event">
+            <a style="cursor:pointer;" onclick="activateEvent(<?php echo $event->Id; ?>)" class="event">
             <!--<a class="event" href="events">-->
                 <div id="eventBttn<?php echo $event->Id; ?>" class="list-item-event">
                     <div class="date-container">

@@ -14,6 +14,7 @@ $this->load->helper('url');
         <link href="../assets/css/bootstrap.css" rel="stylesheet" media="screen"/>
         <link href="../assets/css/nivo-slider.css" rel="stylesheet" media="screen"/>
         <link href="../assets/themes/light/light.css" rel="stylesheet" media="screen"/>
+        <link href="../assets/css/font-awesome.css" rel="stylesheet" media="screen"/>
         <!-- Page Formatting -->
         <link href="../assets/css/header.css" rel="stylesheet" type="text/css">
         <!-- Loads the CSS for the specific page -->
