@@ -101,6 +101,7 @@ and open the template in the editor.
 
 .list-item{
     width: 100%;
+    min-width:290px;
 }
 
 .list-item .list-icon{
