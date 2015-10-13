@@ -4,10 +4,14 @@ if (!defined('BASEPATH'))
     exit('No direct script access allowed');
 
 class Home extends CI_Controller {
+    
+    public function __construct() {
+        parent::__construct();
+        $this->load->model('event_model', '', true);
+    }
 
     public function index() {
         $this->load->library('twitterapiexchange');
-        $this->load->model('event_model', '', true);
 
         $url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
         $getfield = '?screen_name=slocru&count=10';
