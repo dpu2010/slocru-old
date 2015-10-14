@@ -60,7 +60,7 @@
                 $month = date("M", $timestamp);
                 $day = date("j", $timestamp);
             ?>
-            <a class="event" href="construction">
+            <a class="event" href="events#<?php echo $event->Id; ?>">
             <!--<a class="event" href="events">-->
                 <div class="list-item-event">
                     <div class="date-container">
