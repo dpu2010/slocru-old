@@ -28,6 +28,7 @@ $this->load->helper('url');
                     <a href="home">
                         <img src="../assets/img/crulogo.png" class="logo"/>
                     </a>
+                    <!-- Snapchat link goes here -->
                     <a href="https://www.youtube.com/user/slocrusade" target="_blank">
                         <img src="../assets/img/youtube.png" class="social-youtube" id="youtube"/>
                     </a>
