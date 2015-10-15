@@ -108,13 +108,14 @@ function activateEvent(id) {
             <div class="box">
                 <h3>WHEN</h3>
                 <p><?php 
-$date = new DateTime($events[$i]->Date);
-$startTime = new DateTime($events[$i]->StartTime);
-$endTime = new DateTime($events[$i]->EndTime);
-$startTime = $startTime->format("g:ia");
-$endTime = $endTime->format("g:ia");
-$date = $date->format('l F jS, Y');
-echo $date . " " . $startTime . " - " . $endTime; ?></p>
+                    $date = new DateTime($events[$i]->Date);
+                    $startTime = new DateTime($events[$i]->StartTime);
+                    $endTime = new DateTime($events[$i]->EndTime);
+                    $startTime = $startTime->format("g:ia");
+                    $endTime = $endTime->format("g:ia");
+                    $date = $date->format('l F jS, Y');
+                    echo $date . " " . $startTime . " - " . $endTime; ?>
+                </p>
             </div>
             <div class="box">
                 <h3>WHERE</h3>
@@ -145,14 +146,10 @@ echo $date . " " . $startTime . " - " . $endTime; ?></p>
             Week Days at 8am (Upstairs in the UU)
         </p>
         </center>
-        <div class="right-header-small">Houses of Prayer</div>
+        <div class="right-header-small">Sharing Times</div>
         <center>
         <p>
-            Thursday at 6:30pm (754 Boysen Ave., #11) <br />
-
-Friday at 4:30pm (165 Ferrini Road) <br />
-
-Saturday at 4pm (Terrace Hill) <br />
+            Tuesday and Thursday from 11-12 (UU Mustang) <br />
         </p>
         </center>
     </div>
