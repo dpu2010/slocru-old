@@ -18,11 +18,20 @@ class Ministry extends CI_Controller {
             $cell = $this->input->post('cell');
             $notes = $this->input->post('notes');
             $tls = $this->input->post('tls');
-            $config = Array(
+            /*$config = Array(
                 'protocol' => 'smtp',
                 'smtp_host' => 'mail.slocrusade.com',
                 'smtp_port' => 26,
                 'smtp_user' => 'admin+slocrusade.com',
+                'smtp_pass' => 'romans125',
+                'mailtype' => 'html',
+                'charset' => 'iso-8859-1'
+            );*/
+            $config = Array(
+                'protocol' => 'smtp',
+                'smtp_host' => 'just140.justhost.com',
+                'smtp_port' => 26,
+                'smtp_user' => 'admin@slocru.com',
                 'smtp_pass' => 'romans125',
                 'mailtype' => 'html',
                 'charset' => 'iso-8859-1'
