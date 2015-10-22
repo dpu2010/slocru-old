@@ -76,7 +76,7 @@ $this->load->helper('url');
                         </div>
                         <div id="involvement-links" class="subs hidden">
                             <p class="subs">
-                                <a href="construction" class="subs">COMMUNITY GROUPS</a>
+                                <a href="http://goo.gl/forms/3oIMUCulUt" class="subs">COMMUNITY GROUPS</a>
                                 <!--<a href="studies" class="subs">COMMUNITY GROUPS</a>-->
                                 &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;   
                                 <a href="ministry" class="subs">MINISTRY TEAMS</a>
