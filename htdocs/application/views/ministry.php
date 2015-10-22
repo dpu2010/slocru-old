@@ -27,7 +27,11 @@
                 echo '<div class="ministry tab-pane fade" id="'.$id.'" style="text-align: center">';
                     echo '<img class="photo" src="'.$ministry[$i]->Image.'"/>';
                     echo '<p class="ministry-name">'.$ministry[$i]->Name.'</p>';
+                    echo '<p class="description">';
                     echo str_replace("\n",'<br/>',$ministry[$i]->Description);
+                    echo '</p>';
+                    echo '<p class="description">';
+                    echo '<i>Leaders: ' . $ministry[$i]->Leaders . '</i></p>';
                     echo '<br>';
                     echo '<a class="sign-up" data-toggle="modal" href="#'.$id.'modal" class="button">Sign-up Here</a>';          
                     echo '<br>';
