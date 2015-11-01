@@ -149,7 +149,7 @@ function activateEvent(id) {
         <div class="right-header-small">Sharing Times</div>
         <center>
         <p>
-            Tuesday and Thursday from 11-12 (UU Mustang) <br />
+            Thursday from 11-12 (UU Mustang) <br />
         </p>
         </center>
     </div>

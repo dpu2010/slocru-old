@@ -4,6 +4,7 @@
             <a href="<?php echo base_url(); ?>">
                 <img src="../assets/img/slides/Banner1_SLOCRU.png"/>
             </a>
+            <img src="../assets/img/slides/sharingtimes.jpg"/>
             <?php
             for ($i = 0; $i < count($events); $i++) {
                 if ($events[$i]->ShowSlide != 0) {
