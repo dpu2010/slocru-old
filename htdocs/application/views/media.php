@@ -2,7 +2,7 @@
     <div class="column left">
         <p class="heading-gallery">PHOTO GALLERY</p>
         <a href="construction">
-            <img src="../../assets/img/placeholders/fallretreat2014.jpg" class="top-album">
+			<img src="../../assets/img/placeholders/fallretreat2014.jpg" class="top-album">
         </a>
         <p class="gallery-name">Fall Retreat 2014</p>
         <div class="column gallery-pain-left">
@@ -45,7 +45,37 @@
             <div class="column right-top">
                 <p class="headings">YOUTUBE</p>
                 <div class="youtube-vid">
-                    <p class="coming">Youtube Videos Coming Soon</p>
+                    <!--<p class="coming">Youtube Videos Coming Soon</p>-->
+                    <?php
+                        
+                        function get_youtube($url){
+
+                            $youtube = "http://www.youtube.com/oembed?url=". $url ."&format=json";
+
+                            $curl = curl_init($youtube);
+                            curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+                            $return = curl_exec($curl);
+                            curl_close($curl);
+                            
+                            return json_decode($return, true);
+                        }
+
+                        $url = "https://www.youtube.com/playlist?list=PLi2onRqvLcjnULwq581sf-6w26kuHe2P3";
+
+                        // Display Data 
+                        function extractYTsrc($html) {
+                            $html = substr($html,strpos($html,"src=\"")+5);
+                            return substr($html,0,strpos($html,"\""));
+                        }
+                        
+                        function phpAlert($msg) {
+                            echo '<script type="text/javascript">alert("' . $msg . '")</script>';
+                        }
+
+                        echo '<iframe src="' . extractYTsrc(get_youtube($url)["html"]) . '" width="301" height="160" allowfullscreen="" frameborder="0"></iframe>';
+                        //phpAlert( get_youtube($url)["html"] );
+                        //phpAlert("hello");
+                    ?>
                 </div>
             </div>
             <div class="column right-middle">
